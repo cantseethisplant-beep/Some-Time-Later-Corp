@@ -2,6 +2,8 @@
 
 The authoritative queue is [board.json](board.json). Follow [the production rules](../docs/PRODUCTION.md) to claim one task atomically before working. Filter status=ready to find work that can start now. Backlog and review tasks are not claimable.
 
-The initial five tasks need no external research or runtime testing: they formalise existing concept requirements. Their acceptance checks are clarity, coverage, consistency and explicit uncertainty. Technical research and component tests will have their own scoped tasks later where necessary.
+Fifteen initial work packages are defined. They formalise the concept, operating rules and evidence requirements using existing public inputs. No external research or runtime tests are required for these packages. A task being accepted as a specification does not prove the eventual app or component works.
 
-Do not edit this summary to announce ownership; only a verified board claim reserves a task. No task is currently claimed by the repository-setup assistant.
+MAP-012 proposes up to six further tasks using [TASK-GENERATION.md](TASK-GENERATION.md). Generators submit proposals; a coordinator admits independent work and keeps unmet dependencies in backlog. Replenishment is a documented manual process, with no background worker or recurring automation installed.
+
+Read [the map index](../docs/map/INDEX.md) for the package list. Use the live board for current ownership and status; this summary does not reserve tasks.
