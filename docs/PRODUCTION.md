@@ -18,12 +18,12 @@ Every task must fit one focused work session. Split it if it requires a broad ex
 
 ## Atomic claim procedure
 
-GitHub's Contents API requires the current file blob SHA to update an existing file. Use that compare-and-swap operation on the single board file. In this chat's GitHub connector, fetch_file returns that SHA and update_file accepts it as content_sha. This is the claim gate; do not use a blind branch ref update as a substitute.
+GitHub's Contents API requires the current file blob SHA to update an existing file. Use that compare-and-swap operation on the single board file. In this chat's GitHub connector, fetch_file returns that SHA and update_file accepts it as sha. This is the claim gate; do not use a blind branch ref update as a substitute.
 
 1. Fetch production/board.json from main, including its current blob SHA.
 2. Validate that the task is ready, its dependencies are accepted, its inputs are present, and output paths do not overlap another ready/active task. Reject the claim if the worker already owns a claimed task or an unreleased review claim.
 3. Generate a unique claim token and worker ID; set status to claimed, fill the claim fields and increment board_revision. Keep every unrelated record unchanged.
-4. Update the board with the exact fetched content_sha. A conflict means no claim: reread the latest board and revalidate. Never retry with stale contents or force an overwrite.
+4. Update the board with the exact fetched sha. A conflict means no claim: reread the latest board and revalidate. Never retry with stale contents or force an overwrite.
 5. Fetch the saved board and verify your token and ownership. Only then start work. If a write times out, reread and resolve its outcome before retrying.
 
 Simultaneous updates to this one board are serialised by GitHub's file SHA check. The protocol also checks different tasks against the one-task-per-worker rule. This is a cooperative production workflow, not a security lock against administrators or clients that deliberately ignore it. No autonomous queue service is installed.
@@ -51,3 +51,9 @@ Reuse accepted evidence while its conditions hold. Reopen only affected records 
 ## Completion gate
 
 The map is build-ready only when its scope is bounded; all in-scope requirements have implementation steps and acceptance checks; upstream identities/versions/licences and dependencies are resolved; interfaces, roles, data, hosting, recovery and rollout decisions are consistent; required component evidence exists; and no build-blocking unknown remains. Record a frozen map revision. Actual build integration and deployment checks follow that revision and its declared environment.
+
+## Queue expansion and task generation
+
+Follow [TASK-GENERATION.md](../production/TASK-GENERATION.md) for bounded proposal batches, duplicate checks, admission and replenishment. Generators write proposals; coordinators admit work against the latest board. There is no automatic scheduler running. Keep one generator ready/active at a time and stop when the map completion gate passes.
+
+Start each isolated work branch from current main after claiming, while reading task inputs at their pinned revisions. This preserves current production instructions without treating newer unfinished deliverables as accepted inputs.
