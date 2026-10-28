@@ -25,7 +25,7 @@ Build Idea 1 was a fixed corporation software installation. Build Idea 2 is this
 
 **Project creator: VelesPhylakos.**
 
-[Proposal for Pyrex — three-part YouTube series](docs/PYREX-YOUTUBE-PROPOSAL.md) is available here as a public draft for discussion. It covers the concept and recruitment, development progress, and a coordinated launch video and EVE forum advertisement once the app is completed and verified.
+[Proposal for Pyrex — three-part YouTube series](docs/PYREX-YOUTUBE-PROPOSAL.md), provisionally titled **Crashing the EVE Tool Hosting Economy by Lowering the Barrier to Entry**, is available here as a public draft for discussion. It covers the concept and recruitment, development progress, and a coordinated launch video and EVE forum advertisement once the app is completed and verified.
 
 Publishing this draft in the repository does not approve the proposed videos or promotional launch. No collaboration, dates, financial arrangements or publication commitments have been agreed. The draft's competitor-price statement is supplied planning context and has not been verified by this project; substantiate any comparison before using it in promotion.
 
