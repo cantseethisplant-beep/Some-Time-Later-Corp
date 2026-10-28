@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 1,
+  "board_revision": 2,
   "updated_on": "2026-10-28",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -165,6 +165,337 @@
       "claim": null,
       "submission": null,
       "accepted_revision": null
+    },
+    {
+      "id": "MAP-006",
+      "title": "Define operation status and failure reporting",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/operations.md"
+      ],
+      "scope": "Specify user-visible operation states and truthful progress/error reporting, without choosing transport or implementation.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover requested, authorised, queued, running, verifying, completed, failed, cancelled and recovery-required distinctions.",
+        "Include timeout/unknown outcome and retry/idempotency requirements; never infer success from launch alone.",
+        "Use synthetic cases and flag undecided policy; do not redefine the backup-specific contract owned by MAP-004."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-007",
+      "title": "Define scheduling and time semantics",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/scheduling.md"
+      ],
+      "scope": "Specify common time semantics for operating periods, expiry, backups and movement windows; field ownership remains with MAP-003.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover UTC storage/display intent, explicit timezones, daylight-saving ambiguity, missed schedules and clock uncertainty.",
+        "Separate a permitted movement window from a promise of successful automatic migration.",
+        "Provide boundary examples and policy questions, without selecting a scheduling library or inventing defaults."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-008",
+      "title": "Define controller outage behaviour",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/controller-outage.md"
+      ],
+      "scope": "Describe required behaviour when the controller or its network is unavailable, from the existing concept only.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Separate continuing workloads from unavailable management functions and application-owned dependencies.",
+        "Cover reconnect, stale status, pending commands and prevention of duplicate execution as requirements.",
+        "Identify later failure exercises and unresolved hosting decisions; claim no demonstrated resilience."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-009",
+      "title": "Define public/private information handling",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/information-boundary.md"
+      ],
+      "scope": "Classify project information and define a safe public evidence-summary format; do not create a role/action matrix.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Distinguish public concept/synthetic examples, private engineering detail, sensitive operational records and secrets excluded from Git.",
+        "Define what a public worker can use when underlying verification material is private.",
+        "Include publication/redaction checks and examples without copying actual private data."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-010",
+      "title": "Prepare the pilot decision brief",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/pilot-brief.md"
+      ],
+      "scope": "Create a concise decision brief for the first pilot using only settled intent and explicit unanswered choices.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Separate user decisions needed from facts that can be checked later in scoped tasks.",
+        "Cover controller owner, trusted host, intended users, host OS, initial application bundle, budget and recovery targets.",
+        "Offer bounded alternatives with tradeoffs; do not choose a stack or claim current vendor capabilities."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-011",
+      "title": "Define map-wide evidence and invalidation records",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/evidence-record.md"
+      ],
+      "scope": "Specify reusable provenance, check-result and validity records for the build map; application catalogue fields remain MAP-005's responsibility.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Separate user intent, proposed design, documentation-reviewed, component-tested and integration-tested evidence.",
+        "Include exact source/revision, environment, check date/method, result, limitations, invalidation triggers and affected records.",
+        "Provide synthetic examples and targeted reopening rules; do not assert that any component is tested."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-012",
+      "title": "Propose the next independent task batch",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        },
+        {
+          "revision": "ca160e55f2088c1a83ab3431c97d0d75e596c101",
+          "paths": [
+            "production/TASK-GENERATION.md",
+            "docs/PRODUCTION.md",
+            "docs/map/INDEX.md",
+            "production/board.json"
+          ],
+          "evidence_type": "published workflow and queue snapshot; reread live board for conflicts"
+        }
+      ],
+      "output_paths": [
+        "production/proposals/batch-001.json",
+        "production/proposals/batch-001.md"
+      ],
+      "scope": "Use the task-generation recipe and live queue to propose up to six next work packages that close concrete map gaps.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "For every candidate supply immutable inputs, dependencies, output paths, scope, access needs and observable checks.",
+        "Check semantic and path overlap against all current tasks/submissions, including other proposed candidates.",
+        "Classify as ready-candidate only if all inputs are accepted and available; otherwise backlog. Write proposals only; do not mutate the live queue."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-013",
+      "title": "Define cloud scope and spending guardrails",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/cloud-cost-controls.md"
+      ],
+      "scope": "Specify provider-neutral cloud resource and spending requirements, without selecting a provider or claiming API support.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover allowed resource types, budget units/periods, estimates versus measured charges, alerts, hard-limit uncertainty and cleanup ownership.",
+        "Describe outcomes for budget exhaustion, failed provisioning and abandoned resources as requirements.",
+        "List decisions/evidence needed before provisioning; no cloud account connection, purchases or credential creation."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-014",
+      "title": "Define node enrolment and withdrawal lifecycle",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/node-lifecycle.md"
+      ],
+      "scope": "Specify the lifecycle of a hosting node and its consent/revocation requirements; resource offer fields remain with MAP-003.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover offered, enrolment-pending, approved, active, disconnected, draining, revoked and retired meanings.",
+        "Distinguish removal of management access from verified workload/data cleanup on an offline physical host.",
+        "Identify required trust evidence and unresolved identity/key mechanism; do not claim isolation from the hardware owner."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-015",
+      "title": "Define application release and rollback lifecycle",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/release-lifecycle.md"
+      ],
+      "scope": "Specify the intended review, pinning, update and rollback lifecycle for approved bundles without identifying current upstream releases.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Separate proposed, reviewed, approved-for-environment, deployed, superseded and withdrawn releases.",
+        "Cover dependency changes, data/schema migrations, backup prerequisites and limits of rollback.",
+        "Define later adapter-specific evidence needed; no installation, runtime test or universal rollback promise."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
     }
   ],
   "backlog": [
@@ -203,6 +534,11 @@
       "event": "initialised",
       "date": "2026-10-28",
       "note": "Five independent specification tasks; no claims and no accepted task outputs yet."
+    },
+    {
+      "event": "queue-expanded",
+      "date": "2026-10-28",
+      "note": "User requested more tasks and task generation. Added MAP-006 through MAP-015, including one bounded generator. No existing task or claim changed."
     }
   ]
 }
