@@ -1,5 +1,6 @@
 # Proposal for Pyrex — Three-Part YouTube Series
 
+**Proposed series title:** Crashing the EVE Tool Hosting Economy by Lowering the Barrier to Entry  
 **Project:** Some Time Later Corp / Eve Cloud  
 **Project creator:** VelesPhylakos (not Exorock)  
 **Status:** Working draft — not approved for publication
