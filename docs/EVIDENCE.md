@@ -17,3 +17,7 @@ Earlier assistant statements about upstream projects and provider features are h
 | Production support and service commitments | Not established |
 
 No private account identifiers, credentials, actual device inventory or corporation operational records are required for this explanation.
+
+## Production reframe
+
+The user subsequently requested a public AI production workbench: small exclusive claims, a ready queue containing only independent tasks, and a checked map intended to eliminate repeated discovery during the later build. Production rules and an initial queue are now recorded. They are not evidence that the map is complete or that an automated queue service exists. Initial queued tasks only formalise the existing baseline and require no external research or runtime tests.

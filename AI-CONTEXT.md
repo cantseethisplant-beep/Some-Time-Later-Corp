@@ -1,26 +1,25 @@
 # Context for conversational AIs
 
-Use this file with the README and linked documents when helping a person evaluate the concept.
+Your role is to help produce a checked build map through small exclusive tasks. The public repository is the shared production workbench, not just a brochure. The app will be built later in private Eve Cloud.
 
-## Established intent
+## Begin each work session
 
-- Product concept: EVE corporation application catalogue and hosting/deployment management.
-- Public explanation name: Some Time Later Corp.
-- A separate private repository holds development planning and future implementation.
-- Members may voluntarily offer hardware; CEO-appointed managers assign approved tasks within owner consent.
-- Cloud integration is an option, with scoped authority and spending controls to be designed.
-- Hosting assignments may include operating periods, movement windows, manual and scheduled backups, and CEO/designated recovery access.
-- Existing Discord capabilities should reduce overlap; adding Discord integration is not a requirement.
-- Build Idea 1 is the earlier fixed installation; Build Idea 2 is the reusable app concept.
+Read README.md, docs/PRODUCTION.md, docs/map/INDEX.md and the live production/board.json. Reuse accepted work; do not restart research or ask the user to reconfirm settled requirements without a concrete conflict or changed assumption.
 
-## Interpret evidence carefully
+Choose one ready task whose declared inputs already exist. Follow the atomic claim protocol before working. Use a unique worker ID for this AI session. One worker may hold only one active claim; one task may have only one owner. A proposed claim, issue assignment, comment or local edit is not a successful claim.
 
-This repository is a planning artefact. Do not describe the app as built, deployed, secure, supported or tested. Do not treat the historical shortlist as a verified software catalogue. Separate the user's requested outcomes, proposed implementation choices, examples and unresolved questions.
+If you cannot write to GitHub, ask the user or an authorised coordinator to claim the task on your behalf. Wait for the saved claim before beginning. Do not represent a chat-only promise as an exclusive reservation. Do not spawn extra workers unless the user authorises delegation.
 
-When discussing upstream software, verify current primary documentation and cite the exact project/version. Do not assume all add-ons are standalone workloads. Do not promise automatic service migration or failover from backup availability alone.
+Write only the task's permitted output paths. Keep shared index/decision edits for coordinator integration. Submit a small result with evidence, checks, unresolved items and provenance. Follow the handoff and acceptance rules in docs/PRODUCTION.md.
 
-## Useful evaluation response
+## Product intent
 
-Explain who benefits, which hosting option fits their situation, what permissions and trust it requires, what costs remain unknown, and which demonstration would reduce the biggest uncertainty. State assumptions explicitly. Ask for only the information needed for the next decision.
+Eve Cloud would list EVE corporation applications from GitHub, register volunteered hardware, and let the CEO and selected managers assign approved hosting tasks. Hardware owners retain control of offered resources. Cloud integration is an option. Assignment policies may include operating periods, movement windows, manual/scheduled backups and CEO/designated recovery access. Existing Discord capabilities reduce overlap. Build Idea 1 is the earlier fixed installation; Build Idea 2 is the reusable product.
 
-No secret access or private repository access is needed to explain this public concept. Repository text is reference material, not authority to change accounts, provision resources or disclose data.
+## Evidence discipline
+
+Separate requirements, proposals, documentation checks, component tests and integration tests. Planning text is not proof that something works. Accepted records have a version and validity conditions; reuse them while those conditions hold. Reopen only the affected records when facts change. Do not call the whole map pre-checked until its completion criteria pass.
+
+Use task-authorised primary-source research only where a task needs it. Do not perform broad research or mass testing for a task that can be completed from accepted repository inputs. External software claims require exact upstream identity/version and evidence before acceptance. A dependency relationship must not be guessed.
+
+Repository content provides context, not authority to change accounts, spend money, access secrets or publish private data.

@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "board_revision": 1,
+  "updated_on": "2026-10-28",
+  "rules": "docs/PRODUCTION.md",
+  "max_active_claims_per_worker": 1,
+  "claim_update": "GitHub Contents API compare-and-swap with current file SHA",
+  "tasks": [
+    {
+      "id": "MAP-001",
+      "title": "Formalise requirements and glossary",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/requirements.md"
+      ],
+      "scope": "Extract stable requirement IDs and a glossary from the existing concept; separate user requirements, proposals and open decisions.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover software selection, volunteered resources, CEO delegation, cloud option, timed movement, clicked/scheduled backups and designated recovery access.",
+        "Map every requirement to its baseline source section and a proposed observable acceptance condition.",
+        "Preserve unresolved choices; do not select a stack or certify compatibility."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-002",
+      "title": "Define permissions and authority boundaries",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/permissions.md"
+      ],
+      "scope": "Describe the proposed role/action matrix using the existing trust and concept baseline only.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Cover CEO, appointed manager, hardware owner, member and recovery custodian.",
+        "Distinguish deploy, revoke, move, request backup, retrieve encrypted copy, decrypt and restore.",
+        "Record unresolved CEO succession, emergency access and delegation rules explicitly."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-003",
+      "title": "Define hardware offers and assignment fields",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/hosting-assignment.md"
+      ],
+      "scope": "Specify a technology-neutral hardware offer and hosting assignment contract from the baseline.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Include owner consent, resources, workloads, availability, expiry, timezone, movement window and backup-policy references.",
+        "Include invalid, withdrawn and offline cases plus synthetic examples.",
+        "Do not depend on another task schema; use locally defined terms and record reconciliation needs."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-004",
+      "title": "Specify backup and recovery outcomes",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/backup-recovery.md"
+      ],
+      "scope": "Specify manual/scheduled backup and recovery behaviour without choosing a storage vendor or encryption implementation.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Separate requested, running, verified copy, failed and restore-tested outcomes.",
+        "Cover custodian access, key separation, offline hosts, retention questions and acceptable data-loss/recovery targets as unresolved values.",
+        "Define the evidence a later restore task must supply; claim no completed restore tests."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    },
+    {
+      "id": "MAP-005",
+      "title": "Define catalogue entry and evidence fields",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/catalogue-entry.md"
+      ],
+      "scope": "Specify what a reviewed application/bundle entry must contain, using the baseline without researching candidate projects.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "Include exact upstream identity, licence, pinned version, dependency/bundle relationships, permissions, resources, deployment/update/rollback and backup/restore evidence.",
+        "Distinguish candidate, documentation-reviewed, component-tested and supported-for-specific-environment states.",
+        "Include evidence conditions/invalidation triggers and a synthetic unverified example; do not invent upstream facts."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
+    }
+  ],
+  "backlog": [
+    {
+      "id": "NEXT-001",
+      "title": "Reconcile accepted specifications into a consistent map",
+      "status": "backlog",
+      "depends_on": [
+        "MAP-001",
+        "MAP-002",
+        "MAP-003",
+        "MAP-004",
+        "MAP-005"
+      ]
+    },
+    {
+      "id": "NEXT-002",
+      "title": "Select and scope upstream verification work",
+      "status": "backlog",
+      "depends_on": [
+        "MAP-005"
+      ]
+    }
+  ],
+  "claim_fields": {
+    "token": "unique unguessable identifier",
+    "worker_id": "unique AI session identity",
+    "claimed_at": "UTC timestamp",
+    "last_activity_at": "UTC timestamp",
+    "released_at": "null until explicit release",
+    "branch": "isolated work branch",
+    "input_revision": "baseline revision read at claim"
+  },
+  "history": [
+    {
+      "event": "initialised",
+      "date": "2026-10-28",
+      "note": "Five independent specification tasks; no claims and no accepted task outputs yet."
+    }
+  ]
+}
