@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 27,
+  "board_revision": 28,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -495,7 +495,7 @@
     {
       "id": "MAP-009",
       "title": "Define public/private information handling",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -520,7 +520,17 @@
         "Define what a public worker can use when underlying verification material is private.",
         "Include publication/redaction checks and examples without copying actual private data."
       ],
-      "claim": null,
+      "claim": {
+        "token": "lPpJ2H2CdMD6BVtECTdvS3-3q1KOG0DN",
+        "worker_id": "hermes-laptop-map-009-auto-20261030",
+        "claimed_at": "2026-10-30T20:15:53.274028+00:00",
+        "last_activity_at": "2026-10-30T20:15:53.274028+00:00",
+        "released_at": null,
+        "branch": "hermes/map-009-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -997,6 +1007,12 @@
       "task_id": "MAP-005",
       "date": "2026-10-30T20:15:48.933274+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-009",
+      "date": "2026-10-30T20:15:53.274028+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
