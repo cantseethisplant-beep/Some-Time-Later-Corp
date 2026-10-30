@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 29,
+  "board_revision": 30,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -538,7 +538,7 @@
     {
       "id": "MAP-010",
       "title": "Prepare the pilot decision brief",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -563,7 +563,17 @@
         "Cover controller owner, trusted host, intended users, host OS, initial application bundle, budget and recovery targets.",
         "Offer bounded alternatives with tradeoffs; do not choose a stack or claim current vendor capabilities."
       ],
-      "claim": null,
+      "claim": {
+        "token": "ie5poT-uljWX0frIboTacskY3IND5gfG",
+        "worker_id": "hermes-laptop-map-010-auto-20261030",
+        "claimed_at": "2026-10-30T20:32:33.413807+00:00",
+        "last_activity_at": "2026-10-30T20:32:33.413807+00:00",
+        "released_at": null,
+        "branch": "hermes/map-010-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1020,6 +1030,12 @@
       "task_id": "MAP-009",
       "date": "2026-10-30T20:32:29.190044+00:00",
       "note": "Free provider failed after bounded transport retries"
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-010",
+      "date": "2026-10-30T20:32:33.413807+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
