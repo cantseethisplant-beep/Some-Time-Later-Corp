@@ -1,8 +1,8 @@
 # Hermes production — resume here
 
-Updated: 30 October 2026, 02:10 UTC.
+Updated: 30 October 2026, 02:19 UTC.
 
-**RUN RESUMED with user authorisation:** MAP-003 was corrected in the first bounded repair round; Hermes is continuing on MAP-004 using the existing free allowance. The original deadline and request ledger are unchanged. The 15-minute coordinator heartbeat has been restored.
+**RUN RESUMED with user authorisation:** MAP-003 was corrected in the first bounded repair round; Hermes is correcting MAP-004 using the existing free allowance; the user confirmed that the run should continue unattended toward the blueprint. The original deadline and request ledger are unchanged. The 15-minute coordinator heartbeat has been restored.
 
 ## Fixed run
 - Run: `eve-blueprint-20261030`.
@@ -17,9 +17,9 @@ Updated: 30 October 2026, 02:10 UTC.
 - **MAP-001:** native Hermes pilot handed back in [draft PR #4](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4). Exact GitHub content readback verified; claim released. [Native Markdown handoff](handoffs/MAP-001-hermes-20261030.md).
 - **MAP-002:** submitted in [draft PR #5](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/5), claim released; [native handoff](handoffs/MAP-002-hermes-20261030.md). One free request; formatting and wording findings listed in the PR.
 - **MAP-003:** first native repair addressed the original four findings; [draft PR #6](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/6) updated with exact readback, source/proposal distinction and documented remaining choices. Claim released to independent review. [Corrected handoff and original history](handoffs/MAP-003-hermes-20261030.md).
-- **MAP-004:** backup/recovery task claimed and queued from independent pinned baseline inputs; no dependence on the unaccepted drafts.
+- **MAP-004:** first native draft completed; coordinator found backup-operation/copy/restore-state ambiguity and routine-backup versus migration/cutover conflation. Exact feedback queued as correction round 1; original packet retained in local archive. Claim remains exclusively with this run; no unfinished output used by other tasks.
 - Drafts submitted to independent review: **3**. Accepted real specifications: **0**. Rejected MAP-003 version retained in Git/local archive; its correction is proposed, not accepted.
-- Ledger before MAP-004: **13** conservative request attempts including pilot trials and one MAP-003 correction. Ledger and original deadline were not reset. No paid fallback.
+- Ledger before MAP-004 correction: **14** conservative request attempts including pilot trials, one MAP-003 correction and MAP-004's initial draft. Ledger and original deadline were not reset. No paid fallback.
 - Earlier [PR #3](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/3) is a synthetic copy/paste workflow test, not a product specification.
 
 Pilot production/handoff checks passed. This does not accept the specification. In PR #4, REQ-16 is explicitly an unsourced proposed isolation check requiring review. No runtime, compatibility or restore tests have passed in this drafting run.
