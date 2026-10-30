@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 26,
+  "board_revision": 27,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -288,7 +288,7 @@
     {
       "id": "MAP-005",
       "title": "Define catalogue entry and evidence fields",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -317,14 +317,22 @@
         "token": "qwtgAXv4wOMwdNJM4viqCCxSc_H5gq8H",
         "worker_id": "hermes-laptop-map-005-auto-20261030",
         "claimed_at": "2026-10-30T19:26:09.865193+00:00",
-        "last_activity_at": "2026-10-30T20:13:04.183359+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T20:15:48.933274+00:00",
+        "released_at": "2026-10-30T20:15:48.933274+00:00",
         "branch": "hermes/map-005-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "96464d45c5c79db31a82bcb9cf13a1b1b65fb141",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/10",
+        "submitted_at": "2026-10-30T20:15:48.933274+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "blocked_reason": null,
       "claim_history": [
@@ -983,6 +991,12 @@
       "task_id": "MAP-005",
       "date": "2026-10-30T20:13:04.183359+00:00",
       "note": "Same saved producer claim resumed after a diagnosed provider fault; original inference/correction counters unchanged."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-005",
+      "date": "2026-10-30T20:15:48.933274+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
