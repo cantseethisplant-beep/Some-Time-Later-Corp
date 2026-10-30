@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 34,
+  "board_revision": 35,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -631,7 +631,7 @@
     {
       "id": "MAP-012",
       "title": "Propose the next independent task batch",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -671,15 +671,16 @@
         "token": "6fAygzswucPGauBYm0RX3JC18C_E_KCV",
         "worker_id": "hermes-laptop-map-012-auto-20261030",
         "claimed_at": "2026-10-30T20:50:27.767641+00:00",
-        "last_activity_at": "2026-10-30T20:50:27.767641+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T21:05:31.669932+00:00",
+        "released_at": "2026-10-30T21:05:31.669932+00:00",
         "branch": "hermes/map-012-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
       "submission": null,
-      "accepted_revision": null
+      "accepted_revision": null,
+      "blocked_reason": "Task preparation failed; exact diagnostic preserved in state/dispatch-errors"
     },
     {
       "id": "MAP-013",
@@ -1089,6 +1090,12 @@
       "task_id": "MAP-012",
       "date": "2026-10-30T20:50:27.767641+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-012",
+      "date": "2026-10-30T21:05:31.669932+00:00",
+      "note": "Task preparation failed; exact diagnostic preserved in state/dispatch-errors"
     }
   ]
 }
