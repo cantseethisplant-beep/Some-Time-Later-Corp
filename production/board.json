@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 3,
+  "board_revision": 4,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -502,7 +502,7 @@
       "title": "Synthetic user-mediated AI handoff test",
       "kind": "workflow-test",
       "synthetic": true,
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -514,6 +514,13 @@
             "production/forms/FINISHED-WORK.md"
           ],
           "evidence_type": "published workflow under test"
+        },
+        {
+          "revision": "a5932f71bc9c7e4819b345d5ff1e290a05524272",
+          "paths": [
+            "production/test-inputs/handoff-20261030010201.md"
+          ],
+          "evidence_type": "exact synthetic fixture supplied by coordinator; no product facts"
         }
       ],
       "output_paths": [
@@ -528,7 +535,16 @@
         "Complete file is transferred exactly into a coordinator branch and review PR.",
         "Only this synthetic task changes; real map tasks remain unchanged."
       ],
-      "claim": null,
+      "claim": {
+        "token": "claim-HANDOFF-20261030010201-hcxga6xw1dly70tpoyvd9l",
+        "worker_id": "simulated-offline-ai-handoff-20261030010201",
+        "claimed_at": "2026-10-30T01:02:40Z",
+        "last_activity_at": "2026-10-30T01:02:40Z",
+        "released_at": null,
+        "branch": "test/handoff-20261030010201",
+        "input_revision": "fd38109fe7c0a8713a85d284460a8d8a264ebcd0",
+        "request_issue": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/1"
+      },
       "submission": null,
       "accepted_revision": null
     }
@@ -580,6 +596,13 @@
       "date": "2026-10-30",
       "task_id": "TEST-HANDOFF-20261030010201",
       "note": "User requested end-to-end copy-and-paste workflow test. Synthetic fixture only; normal map tasks unchanged."
+    },
+    {
+      "event": "claimed",
+      "task_id": "TEST-HANDOFF-20261030010201",
+      "worker_id": "simulated-offline-ai-handoff-20261030010201",
+      "date": "2026-10-30T01:02:40Z",
+      "note": "Coordinator verified request and supplied immutable synthetic input before granting test claim."
     }
   ]
 }
