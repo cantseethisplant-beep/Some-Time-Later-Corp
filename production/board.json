@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 32,
+  "board_revision": 33,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -581,7 +581,7 @@
     {
       "id": "MAP-011",
       "title": "Define map-wide evidence and invalidation records",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -610,14 +610,22 @@
         "token": "EzS_eIVM7CFVKydt-Qx56MQDxH6WAYpy",
         "worker_id": "hermes-laptop-map-011-auto-20261030",
         "claimed_at": "2026-10-30T20:44:39.944934+00:00",
-        "last_activity_at": "2026-10-30T20:44:39.944934+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T20:50:23.553100+00:00",
+        "released_at": "2026-10-30T20:50:23.553100+00:00",
         "branch": "hermes/map-011-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "119bb89f6decab9c887e0e99bde38e7d6b1a6744",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/11",
+        "submitted_at": "2026-10-30T20:50:23.553100+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null
     },
     {
@@ -1059,6 +1067,12 @@
       "task_id": "MAP-011",
       "date": "2026-10-30T20:44:39.944934+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-011",
+      "date": "2026-10-30T20:50:23.553100+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
