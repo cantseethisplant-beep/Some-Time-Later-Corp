@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 17,
+  "board_revision": 18,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -288,7 +288,7 @@
     {
       "id": "MAP-005",
       "title": "Define catalogue entry and evidence fields",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -313,7 +313,17 @@
         "Distinguish candidate, documentation-reviewed, component-tested and supported-for-specific-environment states.",
         "Include evidence conditions/invalidation triggers and a synthetic unverified example; do not invent upstream facts."
       ],
-      "claim": null,
+      "claim": {
+        "token": "qwtgAXv4wOMwdNJM4viqCCxSc_H5gq8H",
+        "worker_id": "hermes-laptop-map-005-auto-20261030",
+        "claimed_at": "2026-10-30T19:26:09.865193+00:00",
+        "last_activity_at": "2026-10-30T19:26:09.865193+00:00",
+        "released_at": null,
+        "branch": "hermes/map-005-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -858,6 +868,12 @@
       "task_id": "MAP-004",
       "date": "2026-10-30T19:26:05.486261+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-005",
+      "date": "2026-10-30T19:26:09.865193+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
