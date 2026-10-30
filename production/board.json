@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 24,
+  "board_revision": 25,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -431,7 +431,7 @@
     {
       "id": "MAP-008",
       "title": "Define controller outage behaviour",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -460,15 +460,16 @@
         "token": "yI4VbatMdBiDFjhnFvoD1dnb3p0UcHAH",
         "worker_id": "hermes-laptop-map-008-auto-20261030",
         "claimed_at": "2026-10-30T20:03:48.125029+00:00",
-        "last_activity_at": "2026-10-30T20:03:48.125029+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T20:13:00.805583+00:00",
+        "released_at": "2026-10-30T20:13:00.805583+00:00",
         "branch": "hermes/map-008-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
       "submission": null,
-      "accepted_revision": null
+      "accepted_revision": null,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: Most coordinator corrections are applied (4.1/4.2 softened to task-imposed proposals; 4.4 fencing sourced precisely to planned move/handover with reconnect fencing marked proposed), but baseline-vs-proposed modality contradictions remain: Section 3.1 states \"The controller outage itself must not stop them\" as a hard requirement while register row COO-02 marks the same behaviour as baseline intent, not a hard requirement; Section 4.3 states \"Commands ... must not be silently applied\" as a categorical prohibition while register row COO-05 marks it task-imposed proposed and the paragraph concedes concept silence; Section 3.1 adds an unlabeled \"must be recorded per application\" recording mandate"
     },
     {
       "id": "MAP-009",
@@ -957,6 +958,12 @@
       "task_id": "MAP-008",
       "date": "2026-10-30T20:03:48.125029+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-008",
+      "date": "2026-10-30T20:13:00.805583+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: Most coordinator corrections are applied (4.1/4.2 softened to task-imposed proposals; 4.4 fencing sourced precisely to planned move/handover with reconnect fencing marked proposed), but baseline-vs-proposed modality contradictions remain: Section 3.1 states \"The controller outage itself must not stop them\" as a hard requirement while register row COO-02 marks the same behaviour as baseline intent, not a hard requirement; Section 4.3 states \"Commands ... must not be silently applied\" as a categorical prohibition while register row COO-05 marks it task-imposed proposed and the paragraph concedes concept silence; Section 3.1 adds an unlabeled \"must be recorded per application\" recording mandate"
     }
   ]
 }
