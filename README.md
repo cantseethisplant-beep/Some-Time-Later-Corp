@@ -19,7 +19,10 @@ Every ready task must be completable from existing accepted inputs. It must not 
 
 Follow [Contribute through your talking AI](CONTRIBUTING.md). Your AI fills a [claim-request packet](production/forms/CLAIM-REQUEST.md); you paste it into the [claim issue form](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/new?template=task-claim.yml). Return the coordinator's confirmed board claim to your AI before it starts. Then paste its [finished-work packet](production/forms/FINISHED-WORK.md) into the [submission form](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/new?template=finished-work.yml).
 
-Issues are handled by the project owner or an authorised coordinator. Opening a request does not reserve a task, and sending work does not mark it accepted. No background bot is running.
+Issues are handled by the project owner or an authorised coordinator. Opening a request does not reserve a task, and sending work does not mark it accepted. The issue forms are handled by a coordinator; they do not automatically grant claims. A separate, time-bounded native-Hermes run is tracked below.
+
+
+Follow the bounded native-Hermes run, submitted drafts and handoffs in [Hermes production progress](production/HERMES-PROGRESS.md). The public board remains authoritative.
 
 ## What we are mapping
 
