@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 9,
+  "board_revision": 10,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -123,7 +123,7 @@
     {
       "id": "MAP-003",
       "title": "Define hardware offers and assignment fields",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -148,7 +148,18 @@
         "Include invalid, withdrawn and offline cases plus synthetic examples.",
         "Do not depend on another task schema; use locally defined terms and record reconciliation needs."
       ],
-      "claim": null,
+      "claim": {
+        "token": "coord-1xjhxmsba7kms65cq3yrz370b9cqoocjgtks4czd",
+        "worker_id": "hermes-laptop-map003-20261030",
+        "claimed_at": "2026-10-30T01:45:17.234Z",
+        "last_activity_at": "2026-10-30T01:45:17.234Z",
+        "released_at": null,
+        "branch": "hermes/map-003-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "coordinator": "Codex user-authorised GitHub connection",
+        "runtime": "native Hermes laptop; zero-priced OpenRouter; bounded serial run",
+        "run": "eve-blueprint-20261030"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -709,6 +720,12 @@
       "task_id": "MAP-002",
       "date": "2026-10-30T01:45:01.709Z",
       "note": "Native Hermes draft PR #5; claim released. Formatting/handoff/proposal findings retained for independent review; no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-003",
+      "date": "2026-10-30T01:45:17.234Z",
+      "note": "Independent baseline inputs; prior native draft PR #5 released to review. Deadline unchanged."
     }
   ]
 }
