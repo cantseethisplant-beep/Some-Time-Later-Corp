@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 40,
+  "board_revision": 41,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -778,7 +778,7 @@
     {
       "id": "MAP-015",
       "title": "Define application release and rollback lifecycle",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -803,7 +803,17 @@
         "Cover dependency changes, data/schema migrations, backup prerequisites and limits of rollback.",
         "Define later adapter-specific evidence needed; no installation, runtime test or universal rollback promise."
       ],
-      "claim": null,
+      "claim": {
+        "token": "AvdXNQ8J6BvPuXItB1VXAUyQl3RAeKCr",
+        "worker_id": "hermes-laptop-map-015-auto-20261030",
+        "claimed_at": "2026-10-30T23:01:41.953606+00:00",
+        "last_activity_at": "2026-10-30T23:01:41.953606+00:00",
+        "released_at": null,
+        "branch": "hermes/map-015-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1257,6 +1267,12 @@
       "task_id": "MAP-014",
       "date": "2026-10-30T23:01:38.468401+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-015",
+      "date": "2026-10-30T23:01:41.953606+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
