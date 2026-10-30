@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 36,
+  "board_revision": 37,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -685,7 +685,7 @@
     {
       "id": "MAP-013",
       "title": "Define cloud scope and spending guardrails",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -714,15 +714,16 @@
         "token": "l_L_N3IJ_PBbJgjxA3sn8XMTk4CPTNwJ",
         "worker_id": "hermes-laptop-map-013-auto-20261030",
         "claimed_at": "2026-10-30T22:48:35.886576+00:00",
-        "last_activity_at": "2026-10-30T22:48:35.886576+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T22:52:45.837211+00:00",
+        "released_at": "2026-10-30T22:52:45.837211+00:00",
         "branch": "hermes/map-013-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
       "submission": null,
-      "accepted_revision": null
+      "accepted_revision": null,
+      "blocked_reason": "Native Hermes child failed; inspect local scrubbed log"
     },
     {
       "id": "MAP-014",
@@ -1112,6 +1113,12 @@
       "task_id": "MAP-013",
       "date": "2026-10-30T22:48:35.886576+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-013",
+      "date": "2026-10-30T22:52:45.837211+00:00",
+      "note": "Native Hermes child failed; inspect local scrubbed log"
     }
   ]
 }
