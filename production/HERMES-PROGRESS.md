@@ -1,3 +1,19 @@
+# Hermes production — local automation handoff
+
+**Current mode:** the user requested a local automatic drafting/critique/correction/submission loop to avoid recurring Codex check-ins. The local coordinator is running on the existing MAP-004 claim; its native critic found two remaining state/example inconsistencies and automatically queued correction round 2. No new claim is made without an atomic public-board update.
+
+**Local GitHub authentication is still required for automatic publication and further claims.** The Codex connector cannot be exported into the background worker. Setup uses a one-day fine-grained token for this public repository only, Contents and Pull requests read/write, stored Windows-encrypted outside Git and never given to models. Automatic approval review rejected launching the setup UI; the user must complete the local setup manually. Until then the coordinator can finish only the already-claimed task, then waits.
+
+Original hard inference stop: **30 October 2026, 16:41:46 UTC / UK GMT**. Original run `eve-blueprint-20261030` and request ledger preserved. Free-only route, 800-run cap, six total task attempts including native criticism, two correction rounds and 100-account-request reserve remain enforced. No 15-minute Codex automation is active.
+
+Validation: **37 offline checks passed**, including a simulated claim/draft/claim-release cycle and stale-SHA refusal. Native JSON critique ran against the real MAP-004 draft and produced actionable feedback. Authenticated unattended GitHub publication is **not yet proven**; do not infer it from the process being alive.
+
+For the user's planned review in about five hours, read local `outputs/hermes-production/AUTONOMOUS-HANDOFF.md`, `LOCAL-AUTOMATION.md`, `PROGRESS.md`, `state/auto.json`, native outbox/critic reports, archives, processed PR records and the live [board](board.json). Source tooling is archived privately in Eve Cloud under `operations/hermes-production/`. Drafts remain unaccepted; no merges or implementation occur automatically.
+
+---
+
+## Historical coordinator checkpoint (superseded operational status)
+
 # Hermes production — resume here
 
 **Automatic Codex check-ins disabled by the user to conserve limit.** The 15-minute heartbeat has been deleted. Hermes may finish its current MAP-004 correction locally, then wait; no automatic submission or next-task claim will occur. The existing 40-minute coordinator-absence stop and original hard deadline remain enabled. Resume through explicit manual coordination; do not recreate the heartbeat without a new user request. Older run details below are historical.
