@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-30T20:44:37.656970+00:00
-One task needs independent correction; local loop continues only independent ready tasks.
+Updated: 2026-10-30T20:50:25.192019+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T01:43:35.061152+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 51
+Conservative run attempts so far: 54
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -20,7 +20,7 @@ Conservative run attempts so far: 51
 - MAP-008: blocked — no submitted PR
 - MAP-009: blocked — no submitted PR
 - MAP-010: blocked — no submitted PR
-- MAP-011: ready — no submitted PR
+- MAP-011: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/11
 - MAP-012: ready — no submitted PR
 - MAP-013: ready — no submitted PR
 - MAP-014: ready — no submitted PR
