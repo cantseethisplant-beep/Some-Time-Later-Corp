@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 38,
+  "board_revision": 39,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -728,7 +728,7 @@
     {
       "id": "MAP-014",
       "title": "Define node enrolment and withdrawal lifecycle",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -753,7 +753,17 @@
         "Distinguish removal of management access from verified workload/data cleanup on an offline physical host.",
         "Identify required trust evidence and unresolved identity/key mechanism; do not claim isolation from the hardware owner."
       ],
-      "claim": null,
+      "claim": {
+        "token": "I8oVCKI5212yw99yMOML3ZyayV5zdKRG",
+        "worker_id": "hermes-laptop-map-014-auto-20261030",
+        "claimed_at": "2026-10-30T22:56:10.617824+00:00",
+        "last_activity_at": "2026-10-30T22:56:10.617824+00:00",
+        "released_at": null,
+        "branch": "hermes/map-014-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1227,6 +1237,12 @@
       "task_id": "MAP-016",
       "date": "2026-10-30T22:55:44.978485+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-014",
+      "date": "2026-10-30T22:56:10.617824+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
