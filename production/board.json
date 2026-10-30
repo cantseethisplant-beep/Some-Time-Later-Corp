@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 7,
+  "board_revision": 8,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -65,7 +65,7 @@
     {
       "id": "MAP-002",
       "title": "Define permissions and authority boundaries",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -90,7 +90,18 @@
         "Distinguish deploy, revoke, move, request backup, retrieve encrypted copy, decrypt and restore.",
         "Record unresolved CEO succession, emergency access and delegation rules explicitly."
       ],
-      "claim": null,
+      "claim": {
+        "token": "coord-aetuudw47yltl5kqaotifh6s2cnrtc98f06qzoqq",
+        "worker_id": "hermes-laptop-map002-20261030",
+        "claimed_at": "2026-10-30T01:42:19.824Z",
+        "last_activity_at": "2026-10-30T01:42:19.824Z",
+        "released_at": null,
+        "branch": "hermes/map-002-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "coordinator": "Codex user-authorised GitHub connection",
+        "runtime": "native Hermes laptop; zero-priced OpenRouter model; bounded serial run",
+        "run": "eve-blueprint-20261030"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -671,6 +682,12 @@
       "task_id": "MAP-001",
       "date": "2026-10-30T01:41:25.092Z",
       "note": "Native Hermes pilot production/handoff passed; draft PR #4. Claim released; specification acceptance remains pending."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-002",
+      "date": "2026-10-30T01:42:19.824Z",
+      "note": "Pilot handoff passed at draft PR #4; bounded production run deadline 2026-10-30T16:41:46.910052Z. MAP-002 uses independent baseline inputs only."
     }
   ]
 }
