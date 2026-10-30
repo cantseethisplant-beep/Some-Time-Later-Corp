@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 33,
+  "board_revision": 34,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -631,7 +631,7 @@
     {
       "id": "MAP-012",
       "title": "Propose the next independent task batch",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -667,7 +667,17 @@
         "Check semantic and path overlap against all current tasks/submissions, including other proposed candidates.",
         "Classify as ready-candidate only if all inputs are accepted and available; otherwise backlog. Write proposals only; do not mutate the live queue."
       ],
-      "claim": null,
+      "claim": {
+        "token": "6fAygzswucPGauBYm0RX3JC18C_E_KCV",
+        "worker_id": "hermes-laptop-map-012-auto-20261030",
+        "claimed_at": "2026-10-30T20:50:27.767641+00:00",
+        "last_activity_at": "2026-10-30T20:50:27.767641+00:00",
+        "released_at": null,
+        "branch": "hermes/map-012-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1073,6 +1083,12 @@
       "task_id": "MAP-011",
       "date": "2026-10-30T20:50:23.553100+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-012",
+      "date": "2026-10-30T20:50:27.767641+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
