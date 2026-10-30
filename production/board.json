@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 5,
+  "board_revision": 6,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -9,7 +9,7 @@
     {
       "id": "MAP-001",
       "title": "Formalise requirements and glossary",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -34,7 +34,17 @@
         "Map every requirement to its baseline source section and a proposed observable acceptance condition.",
         "Preserve unresolved choices; do not select a stack or certify compatibility."
       ],
-      "claim": null,
+      "claim": {
+        "token": "UCXYpOYb4oxNDMrCtZ_qoqSEjFDGnD5s",
+        "worker_id": "hermes-laptop-map001-20261030",
+        "claimed_at": "2026-10-30T01:19:22Z",
+        "last_activity_at": "2026-10-30T01:19:22Z",
+        "released_at": null,
+        "branch": "hermes/map-001-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "coordinator": "Codex user-authorised GitHub connection",
+        "runtime": "native Hermes laptop; free OpenRouter; one task only"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -634,6 +644,13 @@
       "task_id": "TEST-HANDOFF-20261030010201",
       "date": "2026-10-30T01:05:01Z",
       "note": "Synthetic copy-paste test complete through draft PR #3. Verified complete payload; producer claim explicitly released; acceptance pending."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-001",
+      "worker_id": "hermes-laptop-map001-20261030",
+      "date": "2026-10-30T01:19:22Z",
+      "note": "User authorised native Hermes one-task pilot before bounded 15-hour production run."
     }
   ]
 }
