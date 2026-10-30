@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-10-30T22:52:47.455182+00:00
-Local run stopped: Native Hermes child failed; inspect local scrubbed log
+Updated: 2026-10-30T22:55:46.997876+00:00
+Autonomous follow-up loop enabled. Existing independent original tasks run first; MAP-016 audits completed submissions, never future outputs.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T01:43:35.061152+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -25,7 +25,15 @@ Conservative run attempts so far: 63
 - MAP-013: blocked — no submitted PR
 - MAP-014: ready — no submitted PR
 - MAP-015: ready — no submitted PR
+- MAP-016: ready — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
 The map is incomplete until independent review, reconciliation, required evidence and the build-ready completion gate pass. Native critic decisions never establish compatibility, restore success or implementation.
+
+
+## Autonomous blueprint follow-ups
+After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
+Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
+Loop status: working; cycle: 1; next: MAP-016
+Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
