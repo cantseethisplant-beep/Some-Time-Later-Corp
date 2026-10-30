@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 31,
+  "board_revision": 32,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -581,7 +581,7 @@
     {
       "id": "MAP-011",
       "title": "Define map-wide evidence and invalidation records",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -606,7 +606,17 @@
         "Include exact source/revision, environment, check date/method, result, limitations, invalidation triggers and affected records.",
         "Provide synthetic examples and targeted reopening rules; do not assert that any component is tested."
       ],
-      "claim": null,
+      "claim": {
+        "token": "EzS_eIVM7CFVKydt-Qx56MQDxH6WAYpy",
+        "worker_id": "hermes-laptop-map-011-auto-20261030",
+        "claimed_at": "2026-10-30T20:44:39.944934+00:00",
+        "last_activity_at": "2026-10-30T20:44:39.944934+00:00",
+        "released_at": null,
+        "branch": "hermes/map-011-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1043,6 +1053,12 @@
       "task_id": "MAP-010",
       "date": "2026-10-30T20:44:35.118956+00:00",
       "note": "Invalid output after two document corrections; best drafts retained"
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-011",
+      "date": "2026-10-30T20:44:39.944934+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
