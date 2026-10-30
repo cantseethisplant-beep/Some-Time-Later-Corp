@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 25,
+  "board_revision": 26,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -288,7 +288,7 @@
     {
       "id": "MAP-005",
       "title": "Define catalogue entry and evidence fields",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -317,8 +317,8 @@
         "token": "qwtgAXv4wOMwdNJM4viqCCxSc_H5gq8H",
         "worker_id": "hermes-laptop-map-005-auto-20261030",
         "claimed_at": "2026-10-30T19:26:09.865193+00:00",
-        "last_activity_at": "2026-10-30T19:39:08.107749+00:00",
-        "released_at": "2026-10-30T19:39:08.107749+00:00",
+        "last_activity_at": "2026-10-30T20:13:04.183359+00:00",
+        "released_at": null,
         "branch": "hermes/map-005-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -326,7 +326,20 @@
       },
       "submission": null,
       "accepted_revision": null,
-      "blocked_reason": "Task preparation failed; inspect scope/repair budgets"
+      "blocked_reason": null,
+      "claim_history": [
+        {
+          "token": "qwtgAXv4wOMwdNJM4viqCCxSc_H5gq8H",
+          "worker_id": "hermes-laptop-map-005-auto-20261030",
+          "claimed_at": "2026-10-30T19:26:09.865193+00:00",
+          "last_activity_at": "2026-10-30T19:39:08.107749+00:00",
+          "released_at": "2026-10-30T19:39:08.107749+00:00",
+          "branch": "hermes/map-005-auto-20261030",
+          "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "run": "eve-blueprint-20261030",
+          "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+        }
+      ]
     },
     {
       "id": "MAP-006",
@@ -964,6 +977,12 @@
       "task_id": "MAP-008",
       "date": "2026-10-30T20:13:00.805583+00:00",
       "note": "Bounded draft corrections exhausted; preserve for independent correction: Most coordinator corrections are applied (4.1/4.2 softened to task-imposed proposals; 4.4 fencing sourced precisely to planned move/handover with reconnect fencing marked proposed), but baseline-vs-proposed modality contradictions remain: Section 3.1 states \"The controller outage itself must not stop them\" as a hard requirement while register row COO-02 marks the same behaviour as baseline intent, not a hard requirement; Section 4.3 states \"Commands ... must not be silently applied\" as a categorical prohibition while register row COO-05 marks it task-imposed proposed and the paragraph concedes concept silence; Section 3.1 adds an unlabeled \"must be recorded per application\" recording mandate"
+    },
+    {
+      "event": "transport-resumed",
+      "task_id": "MAP-005",
+      "date": "2026-10-30T20:13:04.183359+00:00",
+      "note": "Same saved producer claim resumed after a diagnosed provider fault; original inference/correction counters unchanged."
     }
   ]
 }
