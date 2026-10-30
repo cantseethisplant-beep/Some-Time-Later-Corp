@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 15,
+  "board_revision": 16,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -222,7 +222,7 @@
     {
       "id": "MAP-004",
       "title": "Specify backup and recovery outcomes",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -251,8 +251,8 @@
         "token": "dIoKBs0exZGqp20gSZvmfTjKXU02-wtP",
         "worker_id": "hermes-laptop-map004-20261030",
         "claimed_at": "2026-10-30T02:10:23.064Z",
-        "last_activity_at": "2026-10-30T19:24:31.385550+00:00",
-        "released_at": "2026-10-30T19:24:31.385550+00:00",
+        "last_activity_at": "2026-10-30T19:25:55.788172+00:00",
+        "released_at": null,
         "branch": "hermes/map-004-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "coordinator": "Codex user-authorised GitHub connection",
@@ -261,7 +261,21 @@
       },
       "submission": null,
       "accepted_revision": null,
-      "blocked_reason": "GitHub operation outside fixed allowlist"
+      "blocked_reason": null,
+      "claim_history": [
+        {
+          "token": "dIoKBs0exZGqp20gSZvmfTjKXU02-wtP",
+          "worker_id": "hermes-laptop-map004-20261030",
+          "claimed_at": "2026-10-30T02:10:23.064Z",
+          "last_activity_at": "2026-10-30T19:24:31.385550+00:00",
+          "released_at": "2026-10-30T19:24:31.385550+00:00",
+          "branch": "hermes/map-004-20261030",
+          "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "coordinator": "Codex user-authorised GitHub connection",
+          "runtime": "native Hermes; free-only; bounded self-correction enabled",
+          "run": "eve-blueprint-20261030"
+        }
+      ]
     },
     {
       "id": "MAP-005",
@@ -824,6 +838,12 @@
       "task_id": "MAP-004",
       "date": "2026-10-30T19:24:31.385550+00:00",
       "note": "GitHub operation outside fixed allowlist"
+    },
+    {
+      "event": "operational-claim-reopened",
+      "task_id": "MAP-004",
+      "date": "2026-10-30T19:25:55.788172+00:00",
+      "note": "Reopened same producer claim after fixing local GET compare guard; no native output/provenance/budget reset. Branch content verified exact; no other Hermes claim active."
     }
   ]
 }
