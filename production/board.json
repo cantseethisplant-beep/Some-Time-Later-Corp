@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 16,
+  "board_revision": 17,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -222,7 +222,7 @@
     {
       "id": "MAP-004",
       "title": "Specify backup and recovery outcomes",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -251,15 +251,23 @@
         "token": "dIoKBs0exZGqp20gSZvmfTjKXU02-wtP",
         "worker_id": "hermes-laptop-map004-20261030",
         "claimed_at": "2026-10-30T02:10:23.064Z",
-        "last_activity_at": "2026-10-30T19:25:55.788172+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T19:26:05.486261+00:00",
+        "released_at": "2026-10-30T19:26:05.486261+00:00",
         "branch": "hermes/map-004-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "coordinator": "Codex user-authorised GitHub connection",
         "runtime": "native Hermes; free-only; bounded self-correction enabled",
         "run": "eve-blueprint-20261030"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "ccf0957af0d80fe4608fc08b06b02408b485b1ca",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/7",
+        "submitted_at": "2026-10-30T19:26:05.486261+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "blocked_reason": null,
       "claim_history": [
@@ -844,6 +852,12 @@
       "task_id": "MAP-004",
       "date": "2026-10-30T19:25:55.788172+00:00",
       "note": "Reopened same producer claim after fixing local GET compare guard; no native output/provenance/budget reset. Branch content verified exact; no other Hermes claim active."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-004",
+      "date": "2026-10-30T19:26:05.486261+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
