@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 39,
+  "board_revision": 40,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -728,7 +728,7 @@
     {
       "id": "MAP-014",
       "title": "Define node enrolment and withdrawal lifecycle",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -757,14 +757,22 @@
         "token": "I8oVCKI5212yw99yMOML3ZyayV5zdKRG",
         "worker_id": "hermes-laptop-map-014-auto-20261030",
         "claimed_at": "2026-10-30T22:56:10.617824+00:00",
-        "last_activity_at": "2026-10-30T22:56:10.617824+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T23:01:38.468401+00:00",
+        "released_at": "2026-10-30T23:01:38.468401+00:00",
         "branch": "hermes/map-014-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "39981db00918b363bc50f33cdb2dfe2dec22d210",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/12",
+        "submitted_at": "2026-10-30T23:01:38.468401+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null
     },
     {
@@ -1243,6 +1251,12 @@
       "task_id": "MAP-014",
       "date": "2026-10-30T22:56:10.617824+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-014",
+      "date": "2026-10-30T23:01:38.468401+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
