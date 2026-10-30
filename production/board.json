@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 6,
+  "board_revision": 7,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -9,7 +9,7 @@
     {
       "id": "MAP-001",
       "title": "Formalise requirements and glossary",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -38,14 +38,28 @@
         "token": "UCXYpOYb4oxNDMrCtZ_qoqSEjFDGnD5s",
         "worker_id": "hermes-laptop-map001-20261030",
         "claimed_at": "2026-10-30T01:19:22Z",
-        "last_activity_at": "2026-10-30T01:19:22Z",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T01:41:25.092Z",
+        "released_at": "2026-10-30T01:41:25.092Z",
         "branch": "hermes/map-001-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "coordinator": "Codex user-authorised GitHub connection",
         "runtime": "native Hermes laptop; free OpenRouter; one task only"
       },
-      "submission": null,
+      "submission": {
+        "id": "hermes-pilot-map001-20261030",
+        "run": "eve-blueprint-20261030",
+        "output_commit": "c6cc2de20805455eb55c0343394d01225ff41ffd",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4",
+        "submitted_at": "2026-10-30T01:41:25.092Z",
+        "checks": {
+          "native_hermes": true,
+          "complete_packet": true,
+          "exact_github_readback": true,
+          "scope_checked": true
+        },
+        "review_status": "awaiting-independent-review; not accepted",
+        "request_attempts": 10
+      },
       "accepted_revision": null
     },
     {
@@ -651,6 +665,12 @@
       "worker_id": "hermes-laptop-map001-20261030",
       "date": "2026-10-30T01:19:22Z",
       "note": "User authorised native Hermes one-task pilot before bounded 15-hour production run."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-001",
+      "date": "2026-10-30T01:41:25.092Z",
+      "note": "Native Hermes pilot production/handoff passed; draft PR #4. Claim released; specification acceptance remains pending."
     }
   ]
 }
