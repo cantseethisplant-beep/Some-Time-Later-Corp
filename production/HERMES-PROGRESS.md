@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-10-30T19:24:32.975655+00:00
-Local run stopped: GitHub operation outside fixed allowlist
+Updated: 2026-10-30T19:26:07.392858+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-30T21:12:37.162971+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -13,7 +13,7 @@ Conservative run attempts so far: 18
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
 - MAP-002: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/5
 - MAP-003: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/6
-- MAP-004: blocked — no submitted PR
+- MAP-004: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/7
 - MAP-005: ready — no submitted PR
 - MAP-006: ready — no submitted PR
 - MAP-007: ready — no submitted PR
