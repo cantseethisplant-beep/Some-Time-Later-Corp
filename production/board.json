@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 10,
+  "board_revision": 11,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -123,7 +123,7 @@
     {
       "id": "MAP-003",
       "title": "Define hardware offers and assignment fields",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -152,16 +152,38 @@
         "token": "coord-1xjhxmsba7kms65cq3yrz370b9cqoocjgtks4czd",
         "worker_id": "hermes-laptop-map003-20261030",
         "claimed_at": "2026-10-30T01:45:17.234Z",
-        "last_activity_at": "2026-10-30T01:45:17.234Z",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T01:58:37.981Z",
+        "released_at": "2026-10-30T01:58:37.981Z",
         "branch": "hermes/map-003-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "coordinator": "Codex user-authorised GitHub connection",
         "runtime": "native Hermes laptop; zero-priced OpenRouter; bounded serial run",
         "run": "eve-blueprint-20261030"
       },
-      "submission": null,
-      "accepted_revision": null
+      "submission": {
+        "id": "hermes-map003-20261030-blocked",
+        "run": "eve-blueprint-20261030",
+        "output_commit": "be7f29cf90d14a80754f639ae9374c76332e996f",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/6",
+        "submitted_at": "2026-10-30T01:58:37.981Z",
+        "review_status": "blocked-coordinator-quality-gate; correction required; no acceptance",
+        "request_attempts_this_task": 1,
+        "checks": {
+          "native_hermes": true,
+          "complete_packet": true,
+          "exact_github_readback": true,
+          "internal_consistency": false,
+          "proposal_provenance": false
+        },
+        "blocking_findings": [
+          "Mandatory backup-policy reference contradicts optional example.",
+          "Withdrawal handling is unresolved but example mandates write blocking.",
+          "Proposed schema policies are presented as fully baseline-derived.",
+          "Shared backup procedure conflated with verified restore procedure."
+        ]
+      },
+      "accepted_revision": null,
+      "blocked_reason": "Native draft has internal contradictions and proposal/source ambiguity; exact draft preserved in PR #6 for correction. Bounded run stopped early."
     },
     {
       "id": "MAP-004",
@@ -726,6 +748,12 @@
       "task_id": "MAP-003",
       "date": "2026-10-30T01:45:17.234Z",
       "note": "Independent baseline inputs; prior native draft PR #5 released to review. Deadline unchanged."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-003",
+      "date": "2026-10-30T01:58:37.981Z",
+      "note": "Coordinator quality gate failed; unedited draft preserved in PR #6; claim released; native run stopped, no next claim."
     }
   ]
 }
