@@ -1,8 +1,8 @@
 # Hermes production — resume here
 
-Updated: 30 October 2026, 02:04 UTC.
+Updated: 30 October 2026, 02:10 UTC.
 
-**RUN RESUMED with user authorisation:** Hermes is correcting MAP-003 using the existing free allowance. The original deadline and request ledger are unchanged. The 15-minute coordinator heartbeat has been restored.
+**RUN RESUMED with user authorisation:** MAP-003 was corrected in the first bounded repair round; Hermes is continuing on MAP-004 using the existing free allowance. The original deadline and request ledger are unchanged. The 15-minute coordinator heartbeat has been restored.
 
 ## Fixed run
 - Run: `eve-blueprint-20261030`.
@@ -16,9 +16,10 @@ Updated: 30 October 2026, 02:04 UTC.
 ## Submitted and active
 - **MAP-001:** native Hermes pilot handed back in [draft PR #4](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4). Exact GitHub content readback verified; claim released. [Native Markdown handoff](handoffs/MAP-001-hermes-20261030.md).
 - **MAP-002:** submitted in [draft PR #5](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/5), claim released; [native handoff](handoffs/MAP-002-hermes-20261030.md). One free request; formatting and wording findings listed in the PR.
-- **MAP-003 — CORRECTION RUNNING:** native Hermes is repairing the issues identified in [draft PR #6](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/6), under a new saved claim. Original draft remains in branch history and local archive. Required-field examples, withdrawal semantics, proposal provenance and backup/restore distinctions are being corrected. [Original findings and handoff](handoffs/MAP-003-hermes-20261030.md).
-- Drafts submitted to normal review: **2**. Additional failed-gate draft preserved for correction: **1**. Accepted real specifications: **0**.
-- Ledger at restart: **12** conservative request attempts, including pilot trials. MAP-002 and MAP-003 used one new attempt each. No paid fallback.
+- **MAP-003:** first native repair addressed the original four findings; [draft PR #6](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/6) updated with exact readback, source/proposal distinction and documented remaining choices. Claim released to independent review. [Corrected handoff and original history](handoffs/MAP-003-hermes-20261030.md).
+- **MAP-004:** backup/recovery task claimed and queued from independent pinned baseline inputs; no dependence on the unaccepted drafts.
+- Drafts submitted to independent review: **3**. Accepted real specifications: **0**. Rejected MAP-003 version retained in Git/local archive; its correction is proposed, not accepted.
+- Ledger before MAP-004: **13** conservative request attempts including pilot trials and one MAP-003 correction. Ledger and original deadline were not reset. No paid fallback.
 - Earlier [PR #3](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/3) is a synthetic copy/paste workflow test, not a product specification.
 
 Pilot production/handoff checks passed. This does not accept the specification. In PR #4, REQ-16 is explicitly an unsourced proposed isolation check requiring review. No runtime, compatibility or restore tests have passed in this drafting run.
@@ -31,7 +32,7 @@ The local supervisor enforces the absolute deadline, monotonic timer, request ac
 ## Resume / next action
 1. Read this tracker and the live [board](board.json), then inspect the linked PR and handoff.
 2. Reuse source revisions and evidence; treat every unaccepted PR as a proposal.
-3. Review MAP-003's corrected native output against every finding; update the existing draft PR #6 only after the packet passes the handoff gate, then release the claim and choose one independent ready task.
+3. Review MAP-004's full native packet; submit as a draft when its handoff gate passes, release its claim and choose one next independent ready task. For diagnosed repairable errors, queue exact feedback through the bounded correction procedure.
 4. On diagnosed repairable errors, provide exact feedback through the bounded repair command. After two correction rounds, six task attempts, or an unrecoverable issue, checkpoint/block/release and stop.
 5. At the original 16:41:46 UTC hard stop, checkpoint and disable the heartbeat. No extension.
 
@@ -40,3 +41,5 @@ The local resume file is `outputs/hermes-production/COORDINATOR.md`, with `PROGR
 The map remains incomplete. Later work still needs independent review, reconciliation of accepted specifications and targeted verification before the map can be used as an executable build blueprint.
 
 Private tooling archive: runner, dispatcher, guard checks and coordinator instructions are saved in Eve Cloud under `operations/hermes-production/`. No runtime state or keys are archived. The original stop and correction findings remain in Git history. The existing ledger is preserved; it is not reset on resume. MAP-004 through MAP-015 remain subject to their live board state.
+
+Recovery validation: **21 offline guard/repair tests passed**, and the real MAP-003 first repair completed successfully. Prior files, claim/submission history and all request attempts were preserved. Repairs are coordinated feedback loops, not a guarantee that model errors are detected or that specifications are independently accepted.
