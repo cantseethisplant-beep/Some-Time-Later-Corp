@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-30T23:08:31.424364+00:00
-Local automatic drafting/critique/submission loop active; review drafts independently.
+Updated: 2026-10-30T23:22:01.835904+00:00
+One task needs independent correction; local loop continues only independent ready tasks.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T01:43:35.061152+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 69
+Conservative run attempts so far: 74
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -25,7 +25,7 @@ Conservative run attempts so far: 69
 - MAP-013: blocked — no submitted PR
 - MAP-014: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/12
 - MAP-015: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/13
-- MAP-016: ready — no submitted PR
+- MAP-016: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
