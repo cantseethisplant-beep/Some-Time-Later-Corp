@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 42,
+  "board_revision": 43,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -904,7 +904,7 @@
     {
       "id": "MAP-016",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -994,7 +994,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
+        "worker_id": "hermes-laptop-map-016-auto-20261030",
+        "claimed_at": "2026-10-30T23:08:33.684367+00:00",
+        "last_activity_at": "2026-10-30T23:08:33.684367+00:00",
+        "released_at": null,
+        "branch": "hermes/map-016-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -1287,6 +1297,12 @@
       "task_id": "MAP-015",
       "date": "2026-10-30T23:08:29.719692+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-016",
+      "date": "2026-10-30T23:08:33.684367+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
