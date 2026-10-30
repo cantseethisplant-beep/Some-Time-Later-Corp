@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 4,
+  "board_revision": 5,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -502,7 +502,7 @@
       "title": "Synthetic user-mediated AI handoff test",
       "kind": "workflow-test",
       "synthetic": true,
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -539,13 +539,38 @@
         "token": "claim-HANDOFF-20261030010201-hcxga6xw1dly70tpoyvd9l",
         "worker_id": "simulated-offline-ai-handoff-20261030010201",
         "claimed_at": "2026-10-30T01:02:40Z",
-        "last_activity_at": "2026-10-30T01:02:40Z",
-        "released_at": null,
+        "last_activity_at": "2026-10-30T01:05:01Z",
+        "released_at": "2026-10-30T01:05:01Z",
         "branch": "test/handoff-20261030010201",
         "input_revision": "fd38109fe7c0a8713a85d284460a8d8a264ebcd0",
         "request_issue": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/1"
       },
-      "submission": null,
+      "submission": {
+        "id": "HANDOFF-20261030010201-submission",
+        "issue_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/2",
+        "packet_revision": 2,
+        "part_comment_urls": [
+          "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/2#issuecomment-6512331970",
+          "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/2#issuecomment-6512341138"
+        ],
+        "output_commit": "da8bb22d7e2bb213da1b8c7cba517614f8d78578",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/3",
+        "submitted_at": "2026-10-30T01:05:01Z",
+        "checks": {
+          "request_not_claim": true,
+          "claim_saved_verified": true,
+          "stale_sha_rejected": true,
+          "stale_error": "CONFLICT",
+          "duplicate_task_rejected": "not-ready",
+          "second_task_same_worker_rejected": "worker-already-active",
+          "wrong_token_rejected": true,
+          "incomplete_packet_held": true,
+          "multipart_assembled": true,
+          "utf8_file_exact_on_branch": true,
+          "review_pr_opened": true
+        },
+        "review_status": "awaiting-project-owner; synthetic test only"
+      },
       "accepted_revision": null
     }
   ],
@@ -603,6 +628,12 @@
       "worker_id": "simulated-offline-ai-handoff-20261030010201",
       "date": "2026-10-30T01:02:40Z",
       "note": "Coordinator verified request and supplied immutable synthetic input before granting test claim."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "TEST-HANDOFF-20261030010201",
+      "date": "2026-10-30T01:05:01Z",
+      "note": "Synthetic copy-paste test complete through draft PR #3. Verified complete payload; producer claim explicitly released; acceptance pending."
     }
   ]
 }
