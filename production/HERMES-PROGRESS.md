@@ -1,5 +1,7 @@
 # Hermes production — resume here
 
+**Automatic Codex check-ins disabled by the user to conserve limit.** The 15-minute heartbeat has been deleted. Hermes may finish its current MAP-004 correction locally, then wait; no automatic submission or next-task claim will occur. The existing 40-minute coordinator-absence stop and original hard deadline remain enabled. Resume through explicit manual coordination; do not recreate the heartbeat without a new user request. Older run details below are historical.
+
 Updated: 30 October 2026, 02:19 UTC.
 
 **RUN RESUMED with user authorisation:** MAP-003 was corrected in the first bounded repair round; Hermes is correcting MAP-004 using the existing free allowance; the user confirmed that the run should continue unattended toward the blueprint. The original deadline and request ledger are unchanged. The 15-minute coordinator heartbeat has been restored.
