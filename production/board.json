@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 35,
+  "board_revision": 36,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -685,7 +685,7 @@
     {
       "id": "MAP-013",
       "title": "Define cloud scope and spending guardrails",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -710,7 +710,17 @@
         "Describe outcomes for budget exhaustion, failed provisioning and abandoned resources as requirements.",
         "List decisions/evidence needed before provisioning; no cloud account connection, purchases or credential creation."
       ],
-      "claim": null,
+      "claim": {
+        "token": "l_L_N3IJ_PBbJgjxA3sn8XMTk4CPTNwJ",
+        "worker_id": "hermes-laptop-map-013-auto-20261030",
+        "claimed_at": "2026-10-30T22:48:35.886576+00:00",
+        "last_activity_at": "2026-10-30T22:48:35.886576+00:00",
+        "released_at": null,
+        "branch": "hermes/map-013-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -1096,6 +1106,12 @@
       "task_id": "MAP-012",
       "date": "2026-10-30T21:05:31.669932+00:00",
       "note": "Task preparation failed; exact diagnostic preserved in state/dispatch-errors"
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-013",
+      "date": "2026-10-30T22:48:35.886576+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
