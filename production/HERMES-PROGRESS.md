@@ -1,3 +1,19 @@
+# Hermes production — completion-based goal
+
+**Latest user instruction:** progress toward a reasonably usable blueprint for a later build, for as long as needed. The fixed 16:41 stop has been removed. queue_completion mode renews operational leases between model calls without resetting the request ledger or free-only budgets. No recurring Codex checks are enabled.
+
+**Current blocker: local GitHub setup is still missing, and the local worker is not running.** START-HERMES.cmd now accepts the restricted token through hidden local input and starts one worker automatically after successful setup. The Codex connector is separate and is not exported to Hermes. Automatic approval review previously blocked opening the setup UI; the user must complete that local authentication step.
+
+Current scope: approved independent MAP-004..MAP-015 drafts, automated criticism, at most two corrections, draft PRs and explicit claim release. Exhausted repairable drafts are preserved/blocked while other independent tasks continue. Access, scope, quota and missing-input problems stop the loop. Unaccepted drafts never become inputs to dependent work. Finishing the eligible queue leads to a review checkpoint, not automatic acceptance or a completed-blueprint claim.
+
+Usable blueprint target: follow [the build-map coverage and completion gate](../docs/map/INDEX.md) and [production acceptance rules](../docs/PRODUCTION.md): consistent requirements/interfaces/roles/data and architecture, exact upstream versions/licences and applicable evidence, resolved hosting/recovery/rollout decisions, an ordered build sequence and acceptance matrix, with no hidden build-blocking unknowns. Later reconciliation, decisions and scoped verification must become explicit tasks rather than invented evidence.
+
+48 guard/lease/start checks passed. Existing inference ledger remains **18**; no request-budget reset. MAP-001..003 are draft PRs #4/#5/#6. MAP-004's corrected native draft and successful automated critique are saved locally; independent review and publication remain pending.
+
+---
+
+## Historical checkpoints (earlier timing and runtime states are superseded)
+
 # Hermes production — local automation handoff
 
 **Current mode:** the user requested a local automatic drafting/critique/correction/submission loop to avoid recurring Codex check-ins. The local coordinator is running on the existing MAP-004 claim; its native critic found two remaining state/example inconsistencies, automatically queued correction round 2, and then returned submit_draft with no remaining findings. The exact corrected result is saved locally; publishing still awaits local authentication. No new claim is made without an atomic public-board update.
