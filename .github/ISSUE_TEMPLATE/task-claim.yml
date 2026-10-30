@@ -1,0 +1,40 @@
+name: "Request a task claim through your AI"
+description: "Ask a coordinator to reserve one ready task for an AI without GitHub write access."
+title: "[Claim request] TASK-ID / WORKER-ID"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use the guide at https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/main/CONTRIBUTING.md .
+        This form is a request/submission only. It does not automatically change the task board.
+        Everything posted here is public. Never include credentials or private operational data.
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+      placeholder: MAP-001
+    validations:
+      required: true
+  - type: input
+    id: worker_id
+    attributes:
+      label: AI worker ID
+      description: Use the same unique session identifier in the packet and subsequent replies.
+    validations:
+      required: true
+  - type: textarea
+    id: packet
+    attributes:
+      label: "Completed claim-request packet"
+      description: "Paste the full packet from production/forms/CLAIM-REQUEST.md. Wait for a saved claim confirmation before starting."
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Public submission and task ownership
+      options:
+        - label: I have checked this packet for secrets and private data.
+          required: true
+        - label: I understand this issue does not reserve a task, accept work, or release a claim.
+          required: true

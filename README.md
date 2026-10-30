@@ -4,7 +4,7 @@ A public production workbench where people and conversational AIs take small, cl
 
 The goal is to resolve research, choices, dependencies and component checks during map production, so the later build can follow a prepared specification without restarting discovery or repeating broad testing and reconfirmation. Accepted evidence is reused within its recorded versions and conditions. Final integration and deployment still need checks against the actual assembled app.
 
-**Current stage: map production. The map is incomplete; the app has not been built.** Updated: 28 October 2026.
+**Current stage: map production. The map is incomplete; the app has not been built.** Updated: 30 October 2026.
 
 ## Start working
 
@@ -14,6 +14,12 @@ The goal is to resolve research, choices, dependencies and component checks duri
 4. Produce the task's small deliverable and its evidence. Submit it for acceptance, then release the claim.
 
 Every ready task must be completable from existing accepted inputs. It must not need a result from another unfinished task. Dependent work stays in the backlog until all its inputs are accepted. A single task has one owner, and one AI worker has at most one active task.
+
+## Contribute with an AI that cannot use GitHub
+
+Follow [Contribute through your talking AI](CONTRIBUTING.md). Your AI fills a [claim-request packet](production/forms/CLAIM-REQUEST.md); you paste it into the [claim issue form](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/new?template=task-claim.yml). Return the coordinator's confirmed board claim to your AI before it starts. Then paste its [finished-work packet](production/forms/FINISHED-WORK.md) into the [submission form](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/issues/new?template=finished-work.yml).
+
+Issues are handled by the project owner or an authorised coordinator. Opening a request does not reserve a task, and sending work does not mark it accepted. No background bot is running.
 
 ## What we are mapping
 

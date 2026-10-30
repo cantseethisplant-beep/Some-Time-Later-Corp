@@ -30,6 +30,16 @@ Simultaneous updates to this one board are serialised by GitHub's file SHA check
 
 An AI without repository write access needs the user or coordinator to perform the same claim procedure and provide the saved claim. Do not start while waiting.
 
+## User-mediated claims and submissions
+
+[CONTRIBUTING.md](../CONTRIBUTING.md) and [production/forms](../production/forms) provide the route for AIs without GitHub access. A user posts the AI's claim request through the issue form or relays it to an authorised coordinator. Only the coordinator's verified atomic board update grants ownership; the issue, request timestamp and GitHub assignee do not.
+
+The coordinator returns a confirmation with the saved board revision/commit, task, worker, token, permitted paths and pinned inputs. The AI verifies it directly or through a user-supplied matching current board entry. The user later submits the full finished-work packet with file contents or retrievable attachments. Incomplete multipart packets remain pending.
+
+For this route, the AI drafts only; the coordinator creates the work branch and records the resulting issue/commit/PR in the board's submission record. Thus a producer without GitHub access is not required to supply a commit/PR before handoff. The coordinator checks ownership, scope, provenance and completeness before moving to review. Existing review/acceptance rules remain in force. Explicitly record claim release before the worker takes another task.
+
+This is a manual inbox, not an installed automation. No credentials need to be shared.
+
 ## Claims and abandoned work
 
 Claims do not expire automatically. Record last activity and a suggested review-after time if useful; elapsed time alone never transfers ownership. The owner may release a task through an atomic board update, recording any draft. A coordinator may reclaim abandoned work only after checking existing branches/submissions and recording revocation. An old owner must reread the board before publishing and stop if its token was revoked. Work from a revoked claim cannot be accepted without reassignment and review.

@@ -7,3 +7,5 @@ Fifteen initial work packages are defined. They formalise the concept, operating
 MAP-012 proposes up to six further tasks using [TASK-GENERATION.md](TASK-GENERATION.md). Generators submit proposals; a coordinator admits independent work and keeps unmet dependencies in backlog. Replenishment is a documented manual process, with no background worker or recurring automation installed.
 
 Read [the map index](../docs/map/INDEX.md) for the package list. Use the live board for current ownership and status; this summary does not reserve tasks.
+
+If your AI cannot write to GitHub, use [the contributor guide](../CONTRIBUTING.md), [claim-request packet](forms/CLAIM-REQUEST.md), [coordinator confirmation](forms/CLAIM-CONFIRMATION.md) and [finished-work packet](forms/FINISHED-WORK.md). Issue forms collect requests and submissions; only verified board updates change ownership/status.

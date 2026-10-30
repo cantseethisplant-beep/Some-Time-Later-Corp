@@ -8,7 +8,9 @@ Read README.md, docs/PRODUCTION.md, docs/map/INDEX.md and the live production/bo
 
 Choose one ready task whose declared inputs already exist. Follow the atomic claim protocol before working. Use a unique worker ID for this AI session. One worker may hold only one active claim; one task may have only one owner. A proposed claim, issue assignment, comment or local edit is not a successful claim.
 
-If you cannot write to GitHub, ask the user or an authorised coordinator to claim the task on your behalf. Wait for the saved claim before beginning. Do not represent a chat-only promise as an exclusive reservation. Do not spawn extra workers unless the user authorises delegation.
+If you cannot write to GitHub, follow [CONTRIBUTING.md](CONTRIBUTING.md). Fill [CLAIM-REQUEST.md](production/forms/CLAIM-REQUEST.md), tell the user exactly where to paste it, and wait for the coordinator's saved claim confirmation before beginning. Ask the user to paste current instructions/inputs if you cannot read them. Do not represent a chat-only promise or issue as an exclusive reservation. Do not spawn extra workers unless the user authorises delegation.
+
+When the task is ready for review, fill [FINISHED-WORK.md](production/forms/FINISHED-WORK.md) with the full proposed files, input revisions, checks and limits. Ask the user to paste it into the linked submission issue form and return any coordinator response. Do not claim to have created a branch, pull request, board update or acceptance when you have not. The coordinator handles GitHub integration and explicit claim release for this route.
 
 Write only the task's permitted output paths. Keep shared index/decision edits for coordinator integration. Submit a small result with evidence, checks, unresolved items and provenance. Follow the handoff and acceptance rules in docs/PRODUCTION.md.
 
