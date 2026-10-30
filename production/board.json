@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 23,
+  "board_revision": 24,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -431,7 +431,7 @@
     {
       "id": "MAP-008",
       "title": "Define controller outage behaviour",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -456,7 +456,17 @@
         "Cover reconnect, stale status, pending commands and prevention of duplicate execution as requirements.",
         "Identify later failure exercises and unresolved hosting decisions; claim no demonstrated resilience."
       ],
-      "claim": null,
+      "claim": {
+        "token": "yI4VbatMdBiDFjhnFvoD1dnb3p0UcHAH",
+        "worker_id": "hermes-laptop-map-008-auto-20261030",
+        "claimed_at": "2026-10-30T20:03:48.125029+00:00",
+        "last_activity_at": "2026-10-30T20:03:48.125029+00:00",
+        "released_at": null,
+        "branch": "hermes/map-008-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -941,6 +951,12 @@
       "task_id": "MAP-007",
       "date": "2026-10-30T20:03:44.089304+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-008",
+      "date": "2026-10-30T20:03:48.125029+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
