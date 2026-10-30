@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 21,
+  "board_revision": 22,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -381,7 +381,7 @@
     {
       "id": "MAP-007",
       "title": "Define scheduling and time semantics",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -406,7 +406,17 @@
         "Separate a permitted movement window from a promise of successful automatic migration.",
         "Provide boundary examples and policy questions, without selecting a scheduling library or inventing defaults."
       ],
-      "claim": null,
+      "claim": {
+        "token": "a4n4n2Pv_EirmdO3NWXwk2Lh7vTQFvnC",
+        "worker_id": "hermes-laptop-map-007-auto-20261030",
+        "claimed_at": "2026-10-30T19:59:18.717033+00:00",
+        "last_activity_at": "2026-10-30T19:59:18.717033+00:00",
+        "released_at": null,
+        "branch": "hermes/map-007-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -911,6 +921,12 @@
       "task_id": "MAP-006",
       "date": "2026-10-30T19:59:15.046488+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-007",
+      "date": "2026-10-30T19:59:18.717033+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
