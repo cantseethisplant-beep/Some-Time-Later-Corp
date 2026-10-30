@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "board_revision": 2,
-  "updated_on": "2026-10-28",
+  "board_revision": 3,
+  "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
   "claim_update": "GitHub Contents API compare-and-swap with current file SHA",
@@ -496,6 +496,41 @@
       "claim": null,
       "submission": null,
       "accepted_revision": null
+    },
+    {
+      "id": "TEST-HANDOFF-20261030010201",
+      "title": "Synthetic user-mediated AI handoff test",
+      "kind": "workflow-test",
+      "synthetic": true,
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "fd38109fe7c0a8713a85d284460a8d8a264ebcd0",
+          "paths": [
+            "CONTRIBUTING.md",
+            "production/forms/CLAIM-REQUEST.md",
+            "production/forms/CLAIM-CONFIRMATION.md",
+            "production/forms/FINISHED-WORK.md"
+          ],
+          "evidence_type": "published workflow under test"
+        }
+      ],
+      "output_paths": [
+        "production/test-results/handoff-20261030010201/fixture.md"
+      ],
+      "scope": "Produce only the exact synthetic fixture supplied through the claim confirmation. Test user-relayed packets, preserve complete UTF-8 Markdown content and submit for review. This is not a map specification or app implementation.",
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "acceptance": [
+        "User-relayed claim is saved and verified before simulated offline production.",
+        "Incomplete/wrong-token packets do not advance the board.",
+        "Complete file is transferred exactly into a coordinator branch and review PR.",
+        "Only this synthetic task changes; real map tasks remain unchanged."
+      ],
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null
     }
   ],
   "backlog": [
@@ -539,6 +574,12 @@
       "event": "queue-expanded",
       "date": "2026-10-28",
       "note": "User requested more tasks and task generation. Added MAP-006 through MAP-015, including one bounded generator. No existing task or claim changed."
+    },
+    {
+      "event": "test-task-added",
+      "date": "2026-10-30",
+      "task_id": "TEST-HANDOFF-20261030010201",
+      "note": "User requested end-to-end copy-and-paste workflow test. Synthetic fixture only; normal map tasks unchanged."
     }
   ]
 }
