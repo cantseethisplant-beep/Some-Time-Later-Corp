@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 19,
+  "board_revision": 20,
   "updated_on": "2026-10-30",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -331,7 +331,7 @@
     {
       "id": "MAP-006",
       "title": "Define operation status and failure reporting",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -356,7 +356,17 @@
         "Include timeout/unknown outcome and retry/idempotency requirements; never infer success from launch alone.",
         "Use synthetic cases and flag undecided policy; do not redefine the backup-specific contract owned by MAP-004."
       ],
-      "claim": null,
+      "claim": {
+        "token": "zxzrthNOKK6AdaKuutgp_np92e-uMkl1",
+        "worker_id": "hermes-laptop-map-006-auto-20261030",
+        "claimed_at": "2026-10-30T19:51:28.795959+00:00",
+        "last_activity_at": "2026-10-30T19:51:28.795959+00:00",
+        "released_at": null,
+        "branch": "hermes/map-006-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null
     },
@@ -881,6 +891,12 @@
       "task_id": "MAP-005",
       "date": "2026-10-30T19:39:08.107749+00:00",
       "note": "Task preparation failed; inspect scope/repair budgets"
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-006",
+      "date": "2026-10-30T19:51:28.795959+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
