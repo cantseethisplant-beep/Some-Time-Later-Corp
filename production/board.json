@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 58,
+  "board_revision": 59,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1441,7 +1441,7 @@
     {
       "id": "MAP-020",
       "title": "Unify data model across catalogue entries, offers, and assignments",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -1533,7 +1533,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "z0RRTsbPyFu6Cn-MU9HLHoPU3eNGGYDq",
+        "worker_id": "hermes-laptop-map-020-auto-20261030",
+        "claimed_at": "2026-10-31T01:27:37.723142+00:00",
+        "last_activity_at": "2026-10-31T01:27:37.723142+00:00",
+        "released_at": null,
+        "branch": "hermes/map-020-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -1922,6 +1932,12 @@
       "task_id": "MAP-020",
       "date": "2026-10-31T01:27:35.303074+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-020",
+      "date": "2026-10-31T01:27:37.723142+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
