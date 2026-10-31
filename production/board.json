@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 48,
+  "board_revision": 49,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1077,6 +1077,110 @@
           "coordinator": "guarded local serial coordinator; no Codex heartbeat"
         }
       ]
+    },
+    {
+      "id": "MAP-017",
+      "title": "Consolidate and clarify requirement modalities and open decisions",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        },
+        {
+          "revision": "c6cc2de20805455eb55c0343394d01225ff41ffd",
+          "paths": [
+            "docs/map/specs/requirements.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-001"
+        },
+        {
+          "revision": "3585afed129ad2694660fcee8cfd982092551117",
+          "paths": [
+            "docs/map/specs/permissions.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-002"
+        },
+        {
+          "revision": "0e60848ccbfa295169422eab063f1b81023b390e",
+          "paths": [
+            "docs/map/specs/hosting-assignment.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-003"
+        },
+        {
+          "revision": "ccf0957af0d80fe4608fc08b06b02408b485b1ca",
+          "paths": [
+            "docs/map/specs/backup-recovery.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-004"
+        },
+        {
+          "revision": "96464d45c5c79db31a82bcb9cf13a1b1b65fb141",
+          "paths": [
+            "docs/map/specs/catalogue-entry.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-005"
+        },
+        {
+          "revision": "111a5832102570811dd0af21fffd16a70413febc",
+          "paths": [
+            "docs/map/specs/operations.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-006"
+        },
+        {
+          "revision": "9f330ee125a04bdd6f5df1338b38c93ff2fe0162",
+          "paths": [
+            "docs/map/specs/scheduling.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-007"
+        },
+        {
+          "revision": "119bb89f6decab9c887e0e99bde38e7d6b1a6744",
+          "paths": [
+            "docs/map/specs/evidence-record.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-011"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/loop-map-017-followup.md"
+      ],
+      "scope": "Consolidate REQ-01 through REQ-17 as an unaccepted requirement proposal with required/proposed/open distinctions. Preserve REQ-16 as an unsourced proposal and the baseline reference recorded for REQ-17. Enumerate the open decisions from DECISION-GUIDE.md and TRUST-AND-RECOVERY.md, mark them unresolved and link their source sections. Do not resolve an owner choice or require a future owner citation to complete this drafting task. Preserve may/should/must modalities.\nReview/reconciliation proposal only. Do not treat completed draft references as accepted requirements. Preserve unresolved choices, evidence limits and exact source provenance. No external research, commands or implementation.",
+      "acceptance": [
+        "Unified requirement table with status column (required/proposed/open decision) for all 17 entries",
+        "Every open decision is recorded as unresolved with a pinned source section and rationale; no future owner decision or citation is required to complete this task.",
+        "Modality preserved for each requirement without collapsing may, should, must",
+        "Source provenance for every requirement entry",
+        "No unsupported inferences or invented evidence",
+        "Explicitly distinguish baseline intent, proposed design, completed unaccepted reference drafts and genuinely verified evidence."
+      ],
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null,
+      "loop_policy": 1,
+      "loop_kind": "followup",
+      "loop_cycle": 1,
+      "loop_area": "requirements",
+      "loop_key": "gap-key-requirements-001"
     }
   ],
   "backlog": [
@@ -1398,6 +1502,12 @@
       "task_id": "MAP-016",
       "date": "2026-10-31T01:00:26.937543+00:00",
       "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
+    },
+    {
+      "event": "autonomous-follow-up-admitted",
+      "task_id": "MAP-017",
+      "date": "2026-10-31T01:01:09.325885+00:00",
+      "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
     }
   ]
 }
