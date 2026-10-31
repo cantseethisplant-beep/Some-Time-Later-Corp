@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 89,
+  "board_revision": 90,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2671,7 +2671,7 @@
     {
       "id": "MAP-028",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -2829,14 +2829,22 @@
         "token": "my6oEfO3Sp1XsbNosY4Ev1W27bxhKMYv",
         "worker_id": "hermes-laptop-map-028-auto-20261030",
         "claimed_at": "2026-10-31T08:59:59.229008+00:00",
-        "last_activity_at": "2026-10-31T08:59:59.229008+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T09:17:56.386060+00:00",
+        "released_at": "2026-10-31T09:17:56.386060+00:00",
         "branch": "hermes/map-028-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "8d80c461561bbd14264dc383ee4bad1628f81b81",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/23",
+        "submitted_at": "2026-10-31T09:17:56.386060+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "audit",
@@ -3410,6 +3418,12 @@
       "task_id": "MAP-028",
       "date": "2026-10-31T08:59:59.229008+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-028",
+      "date": "2026-10-31T09:17:56.386060+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
