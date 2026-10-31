@@ -1,3 +1,20 @@
+# Current strategy: fixed candidate blueprint assembly
+
+Owner instruction, 31 October 2026: fix MAP-030, stop repeated global audits and assemble a usable review package from completed work without recurring Codex check-ins. RUN.json blueprint_loop.strategy=assemble_candidate selects blueprint_assembly.py. This section supersedes older audit/replenishment instructions below for this run.
+
+Four stages, each allocated once under a durable manifest and board CAS: build sequence/requirement traceability; component/data/interface map; acceptance/evidence/source-pin/decision matrix; consolidated candidate blueprint. Stages 1–3 share frozen completed inputs in state/assembly-inputs.json. Stage 4 also reads only completed, released assembly parts. A blocked part stays blocked, gets no fresh request allowance, and is listed explicitly rather than consumed as an input. Other independent parts may continue. The source freeze includes the latest completed audit for gap context only; its queue proposals are historical and are ignored by this strategy.
+
+Track BLUEPRINT-ASSEMBLY.md, BLUEPRINT-LOOP.md, state/blueprint-loop.json, public production/HERMES-PROGRESS.md and linked draft PRs. BLUEPRINT-CANDIDATE.md is written from the published final draft once available. Completion stops with an explicit review handoff; a failed final part stops as incomplete. No further general audit/generator cycle is created. Draft usefulness is not verified build readiness: exact owner decisions and missing upstream/version/licence/component/restore evidence remain explicit prerequisites.
+
+The original run/SQLite ledger, 800 total and daily caps, 100-account-request reserve, six requests and two document correction rounds per task, live-zero-price model routes and STOP/access/security gates remain enforced. No paid fallback, independent acceptance, merge, app implementation/deployment or recurring Codex schedule is added.
+
+MAP-030 coordinator correction: pinned MAP-015 release-lifecycle.md @ 1cd788bd77c027a6808c3c4179784a77d8ca1efe was added to operations and build-and-acceptance coverage as unaccepted release/rollback/checklist context. Coverage statuses were unchanged; no checklist item is claimed performed or accepted. Native critic revision findings were retained and no further native request was spent. Draft PR #24 awaits independent project review.
+
+Verification: 126 checks pass, including exact four-stage completion, no duplicate allocation, frozen source reuse, completed-part-only synthesis, blocked-part exclusion, missing remote source failure, stage-contract identity and truthful incomplete/final handoffs.
+
+
+## Earlier policy history
+
 # User-authorised autonomous blueprint drafting loop
 
 Authorised 30 October 2026: keep drafting beyond MAP-015 without recurring Codex checks. The local coordinator audits coverage, admits up to six independent follow-ups per batch, re-audits completed drafts and assembles a candidate blueprint with explicit remaining blockers.
