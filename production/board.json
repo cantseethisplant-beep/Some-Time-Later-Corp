@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 79,
+  "board_revision": 80,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2194,7 +2194,7 @@
     {
       "id": "MAP-025",
       "title": "Resolve the unsourced REQ-16 rollout row in the unified requirements table",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -2323,7 +2323,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "WmOnWoMk1Qn89G5H8geWGC20izI-WV89",
+        "worker_id": "hermes-laptop-map-025-auto-20261030",
+        "claimed_at": "2026-10-31T08:43:01.269122+00:00",
+        "last_activity_at": "2026-10-31T08:43:01.269122+00:00",
+        "released_at": null,
+        "branch": "hermes/map-025-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -2838,6 +2848,12 @@
       "task_id": "MAP-025",
       "date": "2026-10-31T08:42:58.598495+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-025",
+      "date": "2026-10-31T08:43:01.269122+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
