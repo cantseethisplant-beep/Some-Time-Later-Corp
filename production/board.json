@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 90,
+  "board_revision": 91,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2851,6 +2851,172 @@
       "loop_cycle": 4,
       "loop_area": null,
       "loop_key": null
+    },
+    {
+      "id": "MAP-029",
+      "title": "Propose baseline acceptance matrix structure and source-pin inventory from supplied sources",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        },
+        {
+          "revision": "c6cc2de20805455eb55c0343394d01225ff41ffd",
+          "paths": [
+            "docs/map/specs/requirements.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-001"
+        },
+        {
+          "revision": "3585afed129ad2694660fcee8cfd982092551117",
+          "paths": [
+            "docs/map/specs/permissions.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-002"
+        },
+        {
+          "revision": "0e60848ccbfa295169422eab063f1b81023b390e",
+          "paths": [
+            "docs/map/specs/hosting-assignment.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-003"
+        },
+        {
+          "revision": "ccf0957af0d80fe4608fc08b06b02408b485b1ca",
+          "paths": [
+            "docs/map/specs/backup-recovery.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-004"
+        },
+        {
+          "revision": "96464d45c5c79db31a82bcb9cf13a1b1b65fb141",
+          "paths": [
+            "docs/map/specs/catalogue-entry.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-005"
+        },
+        {
+          "revision": "111a5832102570811dd0af21fffd16a70413febc",
+          "paths": [
+            "docs/map/specs/operations.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-006"
+        },
+        {
+          "revision": "9f330ee125a04bdd6f5df1338b38c93ff2fe0162",
+          "paths": [
+            "docs/map/specs/scheduling.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-007"
+        },
+        {
+          "revision": "119bb89f6decab9c887e0e99bde38e7d6b1a6744",
+          "paths": [
+            "docs/map/specs/evidence-record.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-011"
+        },
+        {
+          "revision": "39981db00918b363bc50f33cdb2dfe2dec22d210",
+          "paths": [
+            "docs/map/specs/node-lifecycle.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-014"
+        },
+        {
+          "revision": "1cd788bd77c027a6808c3c4179784a77d8ca1efe",
+          "paths": [
+            "docs/map/specs/release-lifecycle.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-015"
+        },
+        {
+          "revision": "552d40b359af110eb85e67f58b774de80f2b5cf8",
+          "paths": [
+            "docs/map/specs/loop-map-017-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-017"
+        },
+        {
+          "revision": "41c48febc50f58304a164ebc4abe174e891193ee",
+          "paths": [
+            "docs/map/specs/loop-map-019-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-019"
+        },
+        {
+          "revision": "810cc1f9ad0dc411977f3d37ba8b37e6e1980359",
+          "paths": [
+            "docs/map/specs/loop-map-023-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-023"
+        },
+        {
+          "revision": "57dfe172304d5fcf2f19a98f3c16ccbd57131442",
+          "paths": [
+            "docs/map/specs/loop-map-025-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-025"
+        },
+        {
+          "revision": "d45c7a945523ca05447cf8f9757b171fd319b5da",
+          "paths": [
+            "docs/map/specs/loop-map-026-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-026"
+        },
+        {
+          "revision": "6b4aa91aebf4c07de0a9c239ad0b07eb0f6da2de",
+          "paths": [
+            "docs/map/specs/loop-map-027-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-027"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/loop-map-029-followup.md"
+      ],
+      "scope": "Draft a non-binding acceptance matrix outline from supplied text only: rows for each of the 13 coverage areas with status (draft-complete, gap, blocked), the blocking condition or missing decision, the source revisions supporting the row, and whether a runtime test or owner decision is required before acceptance. Include source pins for all four baseline inputs at revision 792b158838aa5214d0156690d24e21e780de542e and each unaccepted draft revision. Mark unresolved owner decisions (controller operator and funding, CEO succession and emergency recovery, volunteer-host workload policy, OS/runtime/cloud provider, cloud spending limits, RTO/RPO targets, offline-host withdrawal, data-reader consent, product licence) as acceptance preconditions, not resolved items. Do not certify build readiness, implementation, deployment, or any tested capability.\nReview/reconciliation proposal only. Do not treat completed draft references as accepted requirements. Preserve unresolved choices, evidence limits and exact source provenance. No external research, commands or implementation.",
+      "acceptance": [
+        "Every matrix row cites at least one supplied file path and revision as its evidence bound.",
+        "A second observable check confirms no row claims a verified test, accepted requirement, or selected stack/provider/licence; all such items remain listed as unresolved preconditions.",
+        "The structure is independently checkable against the supplied inputs without external research or runtime measurement.",
+        "Explicitly distinguish baseline intent, proposed design, completed unaccepted reference drafts and genuinely verified evidence."
+      ],
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null,
+      "loop_policy": 1,
+      "loop_kind": "followup",
+      "loop_cycle": 4,
+      "loop_area": "build-and-acceptance",
+      "loop_key": "gap-key-build-and-acceptance-001"
     }
   ],
   "backlog": [
@@ -3424,6 +3590,12 @@
       "task_id": "MAP-028",
       "date": "2026-10-31T09:17:56.386060+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "autonomous-follow-up-admitted",
+      "task_id": "MAP-029",
+      "date": "2026-10-31T09:18:11.381104+00:00",
+      "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
     }
   ]
 }
