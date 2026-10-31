@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T01:27:24.825747+00:00
-Local automatic drafting/critique/submission loop active; review drafts independently.
+Updated: 2026-10-31T01:37:00.498318+00:00
+One task needs independent correction; local loop continues only independent ready tasks.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T06:14:21.797674+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 91
+Conservative run attempts so far: 97
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -29,6 +29,7 @@ Conservative run attempts so far: 91
 - MAP-017: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/15
 - MAP-018: blocked — no submitted PR
 - MAP-019: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/16
+- MAP-020: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -38,7 +39,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: working; cycle: 1; next: MAP-019
+Loop status: working; cycle: 1; next: MAP-020
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
