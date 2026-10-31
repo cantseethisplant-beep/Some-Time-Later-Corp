@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T00:57:36.648161+00:00
-Gap audit exhausted its bounded task attempts; no blind generator chain
+Updated: 2026-10-31T00:57:42.527077+00:00
+MAP-016 format recovery complete; same claim and budgets, native automated review in progress. Coordinator-rendered report and exact original-response provenance retained.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T01:43:35.061152+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -35,5 +35,5 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: needs_attention; cycle: 1; next: MAP-016
+Loop status: automated_review; cycle: 1; next: MAP-016
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
