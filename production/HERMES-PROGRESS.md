@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T08:46:30.352874+00:00
+Updated: 2026-10-31T08:51:10.409893+00:00
 Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 118
+Conservative run attempts so far: 120
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -35,6 +35,7 @@ Conservative run attempts so far: 118
 - MAP-023: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/18
 - MAP-024: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/19
 - MAP-025: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/20
+- MAP-026: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/21
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -44,7 +45,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: working; cycle: 3; next: MAP-025
+Loop status: working; cycle: 3; next: MAP-026
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
