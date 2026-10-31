@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 106,
+  "board_revision": 107,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3623,7 +3623,7 @@
     {
       "id": "MAP-033",
       "title": "Acceptance matrix, source pins and decision register",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -3788,8 +3788,8 @@
         "token": "7SUrhLEhIBFVctJuZ2ZAfCXVkoVRdP9I",
         "worker_id": "hermes-laptop-map-033-auto-20261030",
         "claimed_at": "2026-10-31T23:27:03.492178+00:00",
-        "last_activity_at": "2026-10-31T23:27:03.492178+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T23:34:15.967900+00:00",
+        "released_at": "2026-10-31T23:34:15.967900+00:00",
         "branch": "hermes/map-033-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -3803,7 +3803,8 @@
       "loop_area": "build-and-acceptance",
       "loop_key": "candidate-assembly-v1-stage-3",
       "assembly_version": 1,
-      "assembly_step": 3
+      "assembly_step": 3,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The draft covers all 13 areas with AM- check IDs, an 18-row immutable source inventory, MAP-015 release/rollback stages and Verification Checklist treated strictly as unaccepted candidate context, explicit backup-creation versus restore-exercise separation, and an OD-01 to OD-14 decision register with no check marked passed. It is, however, packaged as a JSON wrapper (task_id, status, files[], handoff_markdown) instead of the required plain-text delivery of exactly one BEGIN FILE section and one BEGIN HANDOFF section with no outer code fences or JSON wrapper, and the handoff itself claims that structure was delivered when it is not. Reformat only; the substantive content is consistent with t"
     }
   ],
   "backlog": [
@@ -4473,6 +4474,12 @@
       "task_id": "MAP-033",
       "date": "2026-10-31T23:27:03.492178+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-033",
+      "date": "2026-10-31T23:34:15.967900+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The draft covers all 13 areas with AM- check IDs, an 18-row immutable source inventory, MAP-015 release/rollback stages and Verification Checklist treated strictly as unaccepted candidate context, explicit backup-creation versus restore-exercise separation, and an OD-01 to OD-14 decision register with no check marked passed. It is, however, packaged as a JSON wrapper (task_id, status, files[], handoff_markdown) instead of the required plain-text delivery of exactly one BEGIN FILE section and one BEGIN HANDOFF section with no outer code fences or JSON wrapper, and the handoff itself claims that structure was delivered when it is not. Reformat only; the substantive content is consistent with t"
     }
   ]
 }
