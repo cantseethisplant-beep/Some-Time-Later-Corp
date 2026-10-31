@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T08:22:00.994898+00:00
-Recovered MAP-022 keeps coordination-only statuses in assessment text; source_tasks contains only supplied documents. Final native critique running, with the same request cap.
+Updated: 2026-10-31T08:23:51.357397+00:00
+One task needs independent correction; local loop continues only independent ready tasks.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -31,7 +31,7 @@ Conservative run attempts so far: 109
 - MAP-019: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/16
 - MAP-020: blocked — no submitted PR
 - MAP-021: blocked — no submitted PR
-- MAP-022: claimed — no submitted PR
+- MAP-022: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
