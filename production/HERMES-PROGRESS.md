@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T09:52:57.422709+00:00
-Gap audit exhausted its bounded task attempts; no blind generator chain
+Updated: 2026-10-31T23:09:08.916929+00:00
+MAP-030 corrected and submitted as disclosed coordinator-reviewed draft PR #24; no native recheck or acceptance. Hermes owns MAP-031, stage 1 of the fixed four-part candidate assembly. No further global audit cycles; source freeze and existing free-only limits preserved. 126 checks pass.
 
-Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
+Stop mode: **queue_completion**; current session lease: 2026-11-01T04:06:44.020269+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 142
+Conservative run attempts so far: 143
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -39,7 +39,8 @@ Conservative run attempts so far: 142
 - MAP-027: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/22
 - MAP-028: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/23
 - MAP-029: blocked — no submitted PR
-- MAP-030: blocked — no submitted PR
+- MAP-030: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/24
+- MAP-031: claimed — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -47,22 +48,18 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 
 ## Autonomous blueprint follow-ups
-After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
+Fixed candidate assembly: build sequence → architecture/data/interfaces → acceptance/evidence matrix → consolidated candidate. No further global audits. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: needs_attention; cycle: 5; next: MAP-030
+Loop status: assembling_candidate; cycle: 5; next: MAP-031
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
-- Controller operator and funding: who operates and pays for the central controller is an open question in docs/DECISION-GUIDE.md with no answer in any supplied input; owner decision required.
-- CEO identity, delegation, succession, and emergency recovery: exact rules remain design decisions in docs/TRUST-AND-RECOVERY.md and docs/DECISION-GUIDE.md; succession must not silently grant access to historical secrets.
-- Volunteer-host workload policy: which workloads are acceptable on volunteer hosts versus trusted infrastructure is unresolved in docs/DECISION-GUIDE.md and docs/TRUST-AND-RECOVERY.md.
-- Pilot stack and provider: operating systems, deployment runtime, and cloud provider are unselected; Cloudflare is discussed only as an optional component; provider selection and feature suitability are unverified (docs/DECISION-GUIDE.md, docs/TRUST-AND-RECOVERY.md).
-- Cloud spending limits: enforcement mechanism and over-capacity behaviour are open questions in docs/DECISION-GUIDE.md; MAP-013 is blocked on the coordination board (native Hermes child failed; inspect local scrubbed log).
-- Recovery time and data-loss targets: acceptable RTO/RPO per application are open questions in docs/DECISION-GUIDE.md; required before a restore task can judge copy acceptability.
-- Hardware-owner offline withdrawal: withdrawal procedure when the machine is already offline is an open question in docs/DECISION-GUIDE.md; revocation mechanics for offline hosts are not specified.
-- Data-reader consent: who may read each type of corporation data and how consent is documented is an open question in docs/DECISION-GUIDE.md.
-- Product licensing and distribution model: no reuse licence has been selected (README.md, docs/DECISION-GUIDE.md).
-- Upstream technical verification: no upstream identity, version, licence, dependency, or cost is verified in any supplied input; candidate names (Wanderer, Alliance Auth, AA Buyback, Indy Hub, AA Structures) are historical planning context only.
-- Restore evidence: no backup or restore test has been performed or claimed; MAP-004 Section 8 states no restore test was performed; restore_verified remains unverified across all drafts (MAP-027 audit).
-- Controller outage behaviour: no controller architecture, fencing, state-handling, or outage test procedure exists in supplied text; MAP-008 is blocked on the coordination board with modality contradictions unresolved between baseline intent and task-imposed proposals.
-- No accepted field registry or cross-schema data model: mapping between MAP-003, MAP-005, and related drafts remains a drafting proposal, not accepted evidence; the related unification gap is tracked by blocked MAP-020 on the coordination board only (document not supplied).
+- No upstream identity, version or licence verified for any catalogue candidate (Wanderer, Alliance Auth, AA Buyback, Indy Hub, AA Structures, CorpTools); a GitHub listing alone proves none of these.
+- Genuinely verified evidence is empty: no component, integration, restore or cost test exists in the supplied inputs and none is claimed.
+- Owner decisions unresolved: controller operator and pay (OD-01); CEO identity, delegation, succession and emergency recovery (OD-02/OD-10); volunteer-host workload acceptability (OD-03); OS, deployment runtime and cloud provider (OD-04); cloud spending-limit enforcement and over-capacity behaviour (OD-05); recovery time and data-loss targets per application (OD-06); hardware-owner withdrawal while offline (OD-07); data-reader consent documentation (OD-08); product licensing and distribution model (OD-09); decryption authority separate from deployment, who may decrypt (OD-11); automatic failover evidence (OD-13); retention and exact assignment times (OD-14).
+- Automatic failover is not assumed and requires its own evidence (OD-13); Cloudflare is discussed only as an optional access and backup component, not a complete deployment manager, and provider selection and feature suitability remain unverified.
+- No supply-versus-demand host measurements, verified restore exercises, or cloud cost figures exist; these are not repaired by inventing facts.
+- Board state and file SHAs were not independently verified; no GitHub, terminal, network or delegation tools are available.
+- Assembly 1 MAP-031: ready — not submitted 
+
+Local package index: BLUEPRINT-ASSEMBLY.md; consolidated copy: BLUEPRINT-CANDIDATE.md when published.
