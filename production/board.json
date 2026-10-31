@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 97,
+  "board_revision": 98,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3032,7 +3032,7 @@
     {
       "id": "MAP-030",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -3190,14 +3190,43 @@
         "token": "8JE_h9ZeyD6q5FcRFR4U_fKXbt-qb3jy",
         "worker_id": "hermes-laptop-map-030-auto-20261030",
         "claimed_at": "2026-10-31T09:37:11.795449+00:00",
-        "last_activity_at": "2026-10-31T23:06:44.630338+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T23:06:56.823154+00:00",
+        "released_at": "2026-10-31T23:06:56.823154+00:00",
         "branch": "hermes/map-030-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "4e3dec35f8da85e6fb2668550fe592368a31fc22",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/24",
+        "submitted_at": "2026-10-31T23:06:56.823154+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-030",
+          "reviewer": "Codex coordinator — current user-authorised correction",
+          "at": "2026-10-31T23:06:44.071913+00:00",
+          "native_critic_decision": "revise",
+          "native_critic_draft_sha256": "1969ff770cb2324500288caea27d44fd359709b1d70adb0fb7c5ae421732c7c1",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Verified pinned MAP-015 at 1cd788bd77c027a6808c3c4179784a77d8ca1efe includes release lifecycle, dependency/schema migration recording, backup prerequisites, rollback limits and Verification Checklist.",
+            "Added MAP-015 as an unaccepted source reference in operations and build-and-acceptance assessments; retained all original area statuses and no acceptance/performed-evidence claim.",
+            "Declared audit schema validates; original native critic and pre-correction packet are preserved. The new fixed assembly policy consumes existing completed work and ignores audit queue proposals rather than repeatedly generating audits."
+          ],
+          "checks": [
+            "All 13 areas present and declared JSON schema valid",
+            "Source references point to supplied immutable inputs",
+            "Area statuses unchanged; checklist stays unaccepted/not-performed",
+            "No request/correction reset, additional Hermes inference, native recheck, acceptance or merge"
+          ],
+          "corrected_payload_sha256": "9e6aa65da17f3b251f74082ac4a48dcdca66cddc0193aa064d1051259722cdf4"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "audit",
@@ -3833,6 +3862,12 @@
       "task_id": "MAP-030",
       "date": "2026-10-31T23:06:44.630338+00:00",
       "note": "User requested correction and candidate assembly. Added omitted supplied MAP-015 context; no area status promotion, further inference, counter reset or acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-030",
+      "date": "2026-10-31T23:06:56.823154+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
