@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T01:53:54.779161+00:00
-Gap audit exhausted its bounded task attempts; no blind generator chain
+Updated: 2026-10-31T08:17:23.859717+00:00
+MAP-022 saved audit recovered; pinned coordination-only references separated from supplied document evidence. Native review running under the unchanged request cap.
 
-Stop mode: **queue_completion**; current session lease: 2026-10-31T06:14:21.797674+00:00
+Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 107
+Conservative run attempts so far: 108
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -31,7 +31,7 @@ Conservative run attempts so far: 107
 - MAP-019: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/16
 - MAP-020: blocked — no submitted PR
 - MAP-021: blocked — no submitted PR
-- MAP-022: blocked — no submitted PR
+- MAP-022: claimed — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -41,7 +41,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: needs_attention; cycle: 2; next: MAP-022
+Loop status: automated_review; cycle: 2; next: MAP-022
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
