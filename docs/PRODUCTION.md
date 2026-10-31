@@ -80,3 +80,14 @@ Native Hermes proposes a structured gap report; deterministic code restricts adm
 After useful drafting is exhausted, assemble a candidate blueprint with component/data/interface map, ordered build steps, acceptance matrix, source pins and exact blockers. Do not call it accepted or build-ready. Missing owner decisions, upstream identity/version/licence verification, compatibility/resource/restore evidence or access must be reported accurately. These are not repaired by inventing facts. Independent acceptance, required technical evidence and a frozen revision still govern the completion gate.
 
 Progress: production/HERMES-PROGRESS.md and production/handoffs/MAP-000-local-auto.md. Local resume: BLUEPRINT-LOOP.md, AUTONOMOUS-HANDOFF.md and state/blueprint-loop.json. Explicit STOP and all access/security/budget gates remain effective. No app implementation or deployment is authorised by this loop.
+
+
+## Current owner instruction: assemble the candidate blueprint (31 October 2026)
+
+The owner requested correction of MAP-030, fewer repeated audits, and a usable candidate blueprint assembled from completed work without more Codex check-ins. This replaces further global audit/generator cycles for this local Hermes run.
+
+The coordinator now executes a finite four-stage package: (1) build sequence and requirement traceability, (2) component/data/interface map, (3) acceptance/evidence matrix with source pins and open decisions, (4) consolidated candidate blueprint and review handoff. Stages 1–3 use the same frozen immutable completed submissions and baseline; stage 4 also reads only completed, released assembly parts. A blocked/unfinished part is listed explicitly and is never consumed as evidence. Existing topics are consolidated rather than repeatedly audited or redrafted as new gap tasks. Older audit task proposals are historical context and are not admitted by this assembly strategy.
+
+All sources remain labelled with their actual evidence status. The package is a candidate for review, not automatically accepted, merged, deployed or certified build-ready. Genuine owner choices and missing upstream/component/restore evidence stay as precise prerequisites. The local coordinator produces BLUEPRINT-ASSEMBLY.md and, once the final draft is published, BLUEPRINT-CANDIDATE.md. Public HERMES-PROGRESS.md links all stage PRs. Completion or a bounded final-stage failure stops this finite package with an explicit handoff; it does not restart a general audit loop.
+
+The existing run ID, SQLite request ledger, 800 total/daily attempt ceilings, 100-account-request reserve, six requests and two correction rounds per task, live zero-price routes and STOP/access/security gates remain unchanged. A failed part cannot acquire a fresh budget by restarting its stage. No paid fallback or recurring Codex heartbeat is added.
