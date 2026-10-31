@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T23:09:08.916929+00:00
-MAP-030 corrected and submitted as disclosed coordinator-reviewed draft PR #24; no native recheck or acceptance. Hermes owns MAP-031, stage 1 of the fixed four-part candidate assembly. No further global audit cycles; source freeze and existing free-only limits preserved. 126 checks pass.
+Updated: 2026-10-31T23:17:59.548805+00:00
+Bounded provider retry deferred; no correction or inference budget reset.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-01T04:06:44.020269+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 143
+Conservative run attempts so far: 148
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -40,7 +40,7 @@ Conservative run attempts so far: 143
 - MAP-028: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/23
 - MAP-029: blocked — no submitted PR
 - MAP-030: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/24
-- MAP-031: claimed — no submitted PR
+- MAP-031: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
