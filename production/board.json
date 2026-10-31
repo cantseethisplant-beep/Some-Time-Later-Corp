@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 45,
+  "board_revision": 46,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -904,7 +904,7 @@
     {
       "id": "MAP-016",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -998,8 +998,8 @@
         "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
         "worker_id": "hermes-laptop-map-016-auto-20261030",
         "claimed_at": "2026-10-30T23:08:33.684367+00:00",
-        "last_activity_at": "2026-10-31T00:53:16.843388+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T00:57:29.117856+00:00",
+        "released_at": "2026-10-31T00:57:29.117856+00:00",
         "branch": "hermes/map-016-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1012,7 +1012,7 @@
       "loop_cycle": 1,
       "loop_area": null,
       "loop_key": null,
-      "blocked_reason": null,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: Draft blueprint audit requires revision for schema compliance and source evidence accuracy",
       "claim_history": [
         {
           "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
@@ -1329,6 +1329,12 @@
       "task_id": "MAP-016",
       "date": "2026-10-31T00:53:16.843388+00:00",
       "note": "Complete schema-valid native response recovered deterministically; same task/claim/request ledger and correction rounds. One remaining critic request required; no regeneration."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-016",
+      "date": "2026-10-31T00:57:29.117856+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: Draft blueprint audit requires revision for schema compliance and source evidence accuracy"
     }
   ]
 }
