@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 100,
+  "board_revision": 101,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3251,7 +3251,7 @@
     {
       "id": "MAP-031",
       "title": "Build sequence and requirement traceability",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -3416,8 +3416,8 @@
         "token": "6n-ezmmYu0pMIOWQKI8maOCMRB7vNG1W",
         "worker_id": "hermes-laptop-map-031-auto-20261030",
         "claimed_at": "2026-10-31T23:07:35.054116+00:00",
-        "last_activity_at": "2026-10-31T23:07:35.054116+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T23:17:57.475777+00:00",
+        "released_at": "2026-10-31T23:17:57.475777+00:00",
         "branch": "hermes/map-031-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -3431,7 +3431,8 @@
       "loop_area": "build-and-acceptance",
       "loop_key": "candidate-assembly-v1-stage-1",
       "assembly_version": 1,
-      "assembly_step": 1
+      "assembly_step": 1,
+      "blocked_reason": "Task inference budget exhausted; saved work retained"
     }
   ],
   "backlog": [
@@ -4065,6 +4066,12 @@
       "task_id": "MAP-031",
       "date": "2026-10-31T23:07:35.054116+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-031",
+      "date": "2026-10-31T23:17:57.475777+00:00",
+      "note": "Task inference budget exhausted; saved work retained"
     }
   ]
 }
