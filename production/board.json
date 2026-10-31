@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 95,
+  "board_revision": 96,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3032,7 +3032,7 @@
     {
       "id": "MAP-030",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -3190,8 +3190,8 @@
         "token": "8JE_h9ZeyD6q5FcRFR4U_fKXbt-qb3jy",
         "worker_id": "hermes-laptop-map-030-auto-20261030",
         "claimed_at": "2026-10-31T09:37:11.795449+00:00",
-        "last_activity_at": "2026-10-31T09:37:11.795449+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T09:52:47.491121+00:00",
+        "released_at": "2026-10-31T09:52:47.491121+00:00",
         "branch": "hermes/map-030-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -3203,7 +3203,8 @@
       "loop_kind": "audit",
       "loop_cycle": 5,
       "loop_area": null,
-      "loop_key": null
+      "loop_key": null,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The MAP-030 draft JSON validates against the required schema: all 13 coverage areas are present with status/assessment/source_tasks, six follow-up tasks are proposed with citations and two observable checks each, external_research_required and runtime_tests_required are false everywhere, source_tasks reference only supplied inputs, baseline/proposal modality and unresolved decisions are preserved, and no area is accepted or called build-ready. One correctable omission: the supplied input MAP-015 (docs/map/specs/release-lifecycle.md @ 1cd788bd), covering release lifecycle stages, dependency/schema-migration recording, backup prerequisites, limits of rollback, and a section 10 verification che"
     }
   ],
   "backlog": [
@@ -3807,6 +3808,12 @@
       "task_id": "MAP-030",
       "date": "2026-10-31T09:37:11.795449+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-030",
+      "date": "2026-10-31T09:52:47.491121+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The MAP-030 draft JSON validates against the required schema: all 13 coverage areas are present with status/assessment/source_tasks, six follow-up tasks are proposed with citations and two observable checks each, external_research_required and runtime_tests_required are false everywhere, source_tasks reference only supplied inputs, baseline/proposal modality and unresolved decisions are preserved, and no area is accepted or called build-ready. One correctable omission: the supplied input MAP-015 (docs/map/specs/release-lifecycle.md @ 1cd788bd), covering release lifecycle stages, dependency/schema-migration recording, backup prerequisites, limits of rollback, and a section 10 verification che"
     }
   ]
 }
