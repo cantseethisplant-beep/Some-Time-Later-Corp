@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T01:02:17.523279+00:00
-MAP-016 repaired and submitted as draft PR #14 after disclosed Codex coordinator correction/review; native critic findings retained, no native recheck and no acceptance. Hermes now owns MAP-017 under the free-only local loop. Output-format recovery, canonical audit rendering and stale-critic-context fixes installed; 112 checks pass.
+Updated: 2026-10-31T01:11:47.667923+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T01:43:35.061152+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 76
+Conservative run attempts so far: 81
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -26,7 +26,7 @@ Conservative run attempts so far: 76
 - MAP-014: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/12
 - MAP-015: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/13
 - MAP-016: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/14
-- MAP-017: claimed — no submitted PR
+- MAP-017: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/15
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
