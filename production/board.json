@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 68,
+  "board_revision": 69,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1671,7 +1671,7 @@
     {
       "id": "MAP-022",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -1797,8 +1797,8 @@
         "token": "WChDPxiFFykefqJOVhHprzReypYsEkoT",
         "worker_id": "hermes-laptop-map-022-auto-20261030",
         "claimed_at": "2026-10-31T01:46:15.188655+00:00",
-        "last_activity_at": "2026-10-31T08:18:59.618255+00:00",
-        "released_at": "2026-10-31T08:18:59.618255+00:00",
+        "last_activity_at": "2026-10-31T08:20:41.234465+00:00",
+        "released_at": null,
         "branch": "hermes/map-022-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1811,7 +1811,7 @@
       "loop_cycle": 2,
       "loop_area": null,
       "loop_key": null,
-      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: MAP-022 audit covers all 13 areas with accurate, precisely cited source revisions and correctly leaves tasks empty because no non-duplicative supplied-text follow-up is independently executable; however, production/proposals/blueprint-002.json adds a non-schema `coordination_tasks` field to four coverage objects (data-model, interfaces, controller, costs), deviating from the coverage shape of exactly area, status, assessment, source_tasks. The same task references already appear in the assessment text and the top-level blockers, so the field is redundant and must be removed for schema conformance.",
+      "blocked_reason": null,
       "claim_history": [
         {
           "token": "WChDPxiFFykefqJOVhHprzReypYsEkoT",
@@ -1819,6 +1819,17 @@
           "claimed_at": "2026-10-31T01:46:15.188655+00:00",
           "last_activity_at": "2026-10-31T01:53:45.958827+00:00",
           "released_at": "2026-10-31T01:53:45.958827+00:00",
+          "branch": "hermes/map-022-auto-20261030",
+          "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "run": "eve-blueprint-20261030",
+          "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+        },
+        {
+          "token": "WChDPxiFFykefqJOVhHprzReypYsEkoT",
+          "worker_id": "hermes-laptop-map-022-auto-20261030",
+          "claimed_at": "2026-10-31T01:46:15.188655+00:00",
+          "last_activity_at": "2026-10-31T08:18:59.618255+00:00",
+          "released_at": "2026-10-31T08:18:59.618255+00:00",
           "branch": "hermes/map-022-auto-20261030",
           "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
           "run": "eve-blueprint-20261030",
@@ -2266,6 +2277,12 @@
       "task_id": "MAP-022",
       "date": "2026-10-31T08:18:59.618255+00:00",
       "note": "Bounded draft corrections exhausted; preserve for independent correction: MAP-022 audit covers all 13 areas with accurate, precisely cited source revisions and correctly leaves tasks empty because no non-duplicative supplied-text follow-up is independently executable; however, production/proposals/blueprint-002.json adds a non-schema `coordination_tasks` field to four coverage objects (data-model, interfaces, controller, costs), deviating from the coverage shape of exactly area, status, assessment, source_tasks. The same task references already appear in the assessment text and the top-level blockers, so the field is redundant and must be removed for schema conformance."
+    },
+    {
+      "event": "schema-format-recovered",
+      "task_id": "MAP-022",
+      "date": "2026-10-31T08:20:41.234465+00:00",
+      "note": "Coordination-only references retained in existing assessment text; no extra JSON fields, no new facts or generation. Final native critic request remains within original cap."
     }
   ]
 }
