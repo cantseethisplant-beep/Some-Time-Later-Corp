@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 92,
+  "board_revision": 93,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2855,7 +2855,7 @@
     {
       "id": "MAP-029",
       "title": "Propose baseline acceptance matrix structure and source-pin inventory from supplied sources",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -3013,8 +3013,8 @@
         "token": "tvHTEG4e--8gmTAHa0T6F1jjGeCUqjBm",
         "worker_id": "hermes-laptop-map-029-auto-20261030",
         "claimed_at": "2026-10-31T09:18:14.275458+00:00",
-        "last_activity_at": "2026-10-31T09:18:14.275458+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T09:31:31.744198+00:00",
+        "released_at": "2026-10-31T09:31:31.744198+00:00",
         "branch": "hermes/map-029-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -3026,7 +3026,8 @@
       "loop_kind": "followup",
       "loop_cycle": 4,
       "loop_area": "build-and-acceptance",
-      "loop_key": "gap-key-build-and-acceptance-001"
+      "loop_key": "gap-key-build-and-acceptance-001",
+      "blocked_reason": "Task inference budget exhausted; saved work retained"
     }
   ],
   "backlog": [
@@ -3612,6 +3613,12 @@
       "task_id": "MAP-029",
       "date": "2026-10-31T09:18:14.275458+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-029",
+      "date": "2026-10-31T09:31:31.744198+00:00",
+      "note": "Task inference budget exhausted; saved work retained"
     }
   ]
 }
