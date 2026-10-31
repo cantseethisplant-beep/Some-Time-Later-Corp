@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T08:23:57.520046+00:00
-Gap audit exhausted its bounded task attempts; no blind generator chain
+Updated: 2026-10-31T08:27:19.961121+00:00
+MAP-022 corrected and submitted as draft PR #17 with disclosed Codex coordinator review; native revision findings retained, no native recheck or acceptance. Hermes has claimed MAP-023 to reconcile node approval with restore-proof requirements. Schema-preserving coordination-reference recovery installed; 117 checks pass; original free-only limits unchanged.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 109
+Conservative run attempts so far: 110
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -31,7 +31,8 @@ Conservative run attempts so far: 109
 - MAP-019: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/16
 - MAP-020: blocked — no submitted PR
 - MAP-021: blocked — no submitted PR
-- MAP-022: blocked — no submitted PR
+- MAP-022: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/17
+- MAP-023: claimed — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -41,13 +42,14 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: needs_attention; cycle: 2; next: MAP-022
+Loop status: working; cycle: 2; next: MAP-023
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
-- Owner decisions required for 11 open decisions across DECISION-GUIDE.md and TRUST-AND-RECOVERY.md (CEO succession, emergency access, delegation rules, volunteer-host workload classification, OS/runtime/cloud provider selection, spending-limit enforcement, recovery targets, owner withdrawal procedure, data-reader consent, licensing, product distribution model)
-- No component-tested or integration-tested evidence exists across any area; all evidence at user-intent baseline
-- No working app, supported deployment, or measured restore exists in repository
-- 12 of 13 areas are gap status; 1 area (build-and-acceptance) is blocked
-- Candidate software compatibility unverified; names only as historical planning context
-- Catalogue promotion requires new upstream documentation review and owner decisions; the supplied-text automatic worker cannot establish those facts or promote evidence states.
+- MAP-008 controller outage behaviour: not a MAP-022 input; blocked; baseline-vs-proposed modality contradictions remain (COO-02 baseline intent vs section 3.1 hard requirement; COO-05 proposed vs section 4.3 prohibition; unlabeled per-application recording mandate). Bounded corrections exhausted; preserved for independent correction.
+- MAP-013 cloud scope and spending guardrails: not a MAP-022 input; blocked (native Hermes child failed; inspect local scrubbed log). No spend-limit enforcement, cost measurement, capacity-exceedance behaviour, or provider selection derivable from MAP-022 inputs.
+- MAP-020 unified data model: not a MAP-022 input; blocked on gap-key-data-model-001 (expiry duplication items 3/8 vs claimed seven-item list; Retention misattributes MAP-003 offer schema vs section 4 assignment-only retention; wrong relationship note).
+- MAP-021 minimal interface contract: not a MAP-022 input; blocked on gap-key-interfaces-001 (IA-02 proposed logging fields mislabelled as baseline should; IA-01 MAP-003-proposed validity conditions mislabelled as baseline-resolved deploy gates).
+- MAP-016 prior audit task: status review per coordination snapshot; output paths not confirmed as reused or superseded by MAP-022 outputs; no input document supplied for it.
+- Owner decisions unresolved across baseline (OD-01 through OD-14): controller operator/payer; CEO identity/delegation/succession/emergency recovery; volunteer-host workload policy; OS/runtime/cloud provider; spending-limit enforcement; RTO/RPO targets; offline withdrawal mechanics; data-reader consent; product licence/distribution. None may be fabricated.
+- Build-and-acceptance: no supplied input defining acceptance records, source-pin validity conditions, frozen map revision, or completion-gate evidence; cannot be accepted or declared build-ready.
