@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 83,
+  "board_revision": 84,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2353,7 +2353,7 @@
     {
       "id": "MAP-026",
       "title": "Reconcile the node enrolment gate with restore-proof evidence (MAP-014 section 5 vs MAP-004 sections 5 and 8)",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -2486,14 +2486,22 @@
         "token": "OqNmIC62FDpVKmLN6gx6J0xbrhGd4fpr",
         "worker_id": "hermes-laptop-map-026-auto-20261030",
         "claimed_at": "2026-10-31T08:46:44.011711+00:00",
-        "last_activity_at": "2026-10-31T08:46:44.011711+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T08:51:08.009928+00:00",
+        "released_at": "2026-10-31T08:51:08.009928+00:00",
         "branch": "hermes/map-026-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "d45c7a945523ca05447cf8f9757b171fd319b5da",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/21",
+        "submitted_at": "2026-10-31T08:51:08.009928+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "followup",
@@ -3031,6 +3039,12 @@
       "task_id": "MAP-026",
       "date": "2026-10-31T08:46:44.011711+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-026",
+      "date": "2026-10-31T08:51:08.009928+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
