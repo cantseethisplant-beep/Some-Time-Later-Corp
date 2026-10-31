@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T23:34:18.395086+00:00
-One task needs independent correction; local loop continues only independent ready tasks.
+Updated: 2026-10-31T23:43:02.871036+00:00
+Bounded provider retry deferred; no correction or inference budget reset.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-01T04:06:44.020269+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 160
+Conservative run attempts so far: 166
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -43,6 +43,7 @@ Conservative run attempts so far: 160
 - MAP-031: blocked — no submitted PR
 - MAP-032: blocked — no submitted PR
 - MAP-033: blocked — no submitted PR
+- MAP-034: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -52,7 +53,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 Fixed candidate assembly: build sequence → architecture/data/interfaces → acceptance/evidence matrix → consolidated candidate. No further global audits. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: assembling_candidate; cycle: 5; next: MAP-033
+Loop status: assembling_candidate; cycle: 5; next: MAP-034
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
@@ -64,6 +65,7 @@ Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 - Board state and file SHAs were not independently verified; no GitHub, terminal, network or delegation tools are available.
 - Assembly 1 MAP-031: blocked — not submitted 
 - Assembly 2 MAP-032: blocked — not submitted 
-- Assembly 3 MAP-033: ready — not submitted 
+- Assembly 3 MAP-033: blocked — not submitted 
+- Assembly 4 MAP-034: ready — not submitted 
 
 Local package index: BLUEPRINT-ASSEMBLY.md; consolidated copy: BLUEPRINT-CANDIDATE.md when published.
