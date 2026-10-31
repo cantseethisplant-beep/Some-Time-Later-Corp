@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 47,
+  "board_revision": 48,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -904,7 +904,7 @@
     {
       "id": "MAP-016",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -998,14 +998,54 @@
         "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
         "worker_id": "hermes-laptop-map-016-auto-20261030",
         "claimed_at": "2026-10-30T23:08:33.684367+00:00",
-        "last_activity_at": "2026-10-31T01:00:15.145408+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T01:00:26.937543+00:00",
+        "released_at": "2026-10-31T01:00:26.937543+00:00",
         "branch": "hermes/map-016-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "ce965aa9881f9a5a318697cc4c5b7f6969d183b1",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/14",
+        "submitted_at": "2026-10-31T01:00:26.937543+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-016",
+          "reviewer": "Codex coordinator — current user-authorised correction",
+          "at": "2026-10-31T01:00:14.841761+00:00",
+          "native_critic_decision": "revise",
+          "native_critic_draft_sha256": "c5f0703be93652a6b74011edbcc8f6f0d07e0c85dc9abfe89977aab56454211a",
+          "findings_adjudicated": [
+            "Output schema: blueprint_loop.validate_plan passes all declared output fields; board claim/status/loop metadata are not fields of this output-file schema. The native schema finding was inapplicable.",
+            "REQ-17 provenance corrected against the pinned MAP-001 source table; REQ-16 remains an unsourced proposal. No upstream technical verification claimed.",
+            "Requirements follow-up now requires only a source-linked unresolved-decision register, never an unavailable owner decision or future citation.",
+            "Catalogue promotion proposal is absent from the corrected packet and its unavailable research is an explicit blocker. The critic referred to obsolete correction material; future critic context excludes those old drafts."
+          ],
+          "checks": [
+            "Declared audit schema valid",
+            "All 13 unique coverage areas present",
+            "Every source task is in the supplied immutable input set",
+            "Five supplied-text planning/reconciliation proposals only",
+            "Original response/critic preserved; no request/correction reset",
+            "Exact GitHub readback required before claim release"
+          ],
+          "independent_acceptance": false,
+          "native_rechecked": false,
+          "remaining_blockers": [
+            "Owner decisions required for 11 open decisions across DECISION-GUIDE.md and TRUST-AND-RECOVERY.md (CEO succession, emergency access, delegation rules, volunteer-host workload classification, OS/runtime/cloud provider selection, spending-limit enforcement, recovery targets, owner withdrawal procedure, data-reader consent, licensing, product distribution model)",
+            "No component-tested or integration-tested evidence exists across any area; all evidence at user-intent baseline",
+            "No working app, supported deployment, or measured restore exists in repository",
+            "12 of 13 areas are gap status; 1 area (build-and-acceptance) is blocked",
+            "Candidate software compatibility unverified; names only as historical planning context",
+            "Catalogue promotion requires new upstream documentation review and owner decisions; the supplied-text automatic worker cannot establish those facts or promote evidence states."
+          ],
+          "corrected_payload_sha256": "f28cba8cfd8f8c9e4fe010b43cb7e5c5bcab801b05f472270e991a7959626590"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "audit",
@@ -1352,6 +1392,12 @@
       "task_id": "MAP-016",
       "date": "2026-10-31T01:00:15.145408+00:00",
       "note": "User requested MAP-016 repair. Corrected completed packet for a disclosed draft handoff after native request cap; no more inference, no acceptance, counters unchanged."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-016",
+      "date": "2026-10-31T01:00:26.937543+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
