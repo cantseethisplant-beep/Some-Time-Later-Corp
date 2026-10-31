@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 72,
+  "board_revision": 73,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1878,6 +1878,140 @@
           "coordinator": "guarded local serial coordinator; no Codex heartbeat"
         }
       ]
+    },
+    {
+      "id": "MAP-023",
+      "title": "Reconcile node approval and restore-proof requirements",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        },
+        {
+          "revision": "c6cc2de20805455eb55c0343394d01225ff41ffd",
+          "paths": [
+            "docs/map/specs/requirements.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-001"
+        },
+        {
+          "revision": "3585afed129ad2694660fcee8cfd982092551117",
+          "paths": [
+            "docs/map/specs/permissions.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-002"
+        },
+        {
+          "revision": "0e60848ccbfa295169422eab063f1b81023b390e",
+          "paths": [
+            "docs/map/specs/hosting-assignment.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-003"
+        },
+        {
+          "revision": "ccf0957af0d80fe4608fc08b06b02408b485b1ca",
+          "paths": [
+            "docs/map/specs/backup-recovery.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-004"
+        },
+        {
+          "revision": "96464d45c5c79db31a82bcb9cf13a1b1b65fb141",
+          "paths": [
+            "docs/map/specs/catalogue-entry.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-005"
+        },
+        {
+          "revision": "111a5832102570811dd0af21fffd16a70413febc",
+          "paths": [
+            "docs/map/specs/operations.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-006"
+        },
+        {
+          "revision": "9f330ee125a04bdd6f5df1338b38c93ff2fe0162",
+          "paths": [
+            "docs/map/specs/scheduling.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-007"
+        },
+        {
+          "revision": "119bb89f6decab9c887e0e99bde38e7d6b1a6744",
+          "paths": [
+            "docs/map/specs/evidence-record.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-011"
+        },
+        {
+          "revision": "39981db00918b363bc50f33cdb2dfe2dec22d210",
+          "paths": [
+            "docs/map/specs/node-lifecycle.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-014"
+        },
+        {
+          "revision": "1cd788bd77c027a6808c3c4179784a77d8ca1efe",
+          "paths": [
+            "docs/map/specs/release-lifecycle.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-015"
+        },
+        {
+          "revision": "552d40b359af110eb85e67f58b774de80f2b5cf8",
+          "paths": [
+            "docs/map/specs/loop-map-017-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-017"
+        },
+        {
+          "revision": "41c48febc50f58304a164ebc4abe174e891193ee",
+          "paths": [
+            "docs/map/specs/loop-map-019-followup.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-019"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/loop-map-023-followup.md"
+      ],
+      "scope": "Write a review-only reconciliation note for MAP-014 section 5 and MAP-004 sections 5 and 8, grounded in the supplied TRUST-AND-RECOVERY baseline. Quote the conflicting passages and provide proposed replacement wording for MAP-014 section 5 that separates node enrolment/approval, assignment readiness and demonstrated recoverability. The baseline requires a restore exercise to prove recoverability but does not prescribe it as a node-enrolment gate. Label any proposed restore-before-approval policy as proposed, not baseline-mandated; leave owner policy unresolved. Preserve backup integrity versus restore verification and distinguish a desired test from performed evidence. Do not edit original drafts, choose policy, implement software or claim a test was performed.\nReview/reconciliation proposal only. Do not treat completed draft references as accepted requirements. Preserve unresolved choices, evidence limits and exact source provenance. No external research, commands or implementation.",
+      "acceptance": [
+        "Cite the exact supplied revisions and sections for MAP-014, MAP-004 and TRUST-AND-RECOVERY, with a comparison of baseline intent and the disputed approval gate.",
+        "Provide proposed replacement wording and a source/modality crosswalk: restore-before-node-approval is either explicitly proposed or removed as a claimed baseline gate, while the restore-exercise requirement for proof of recoverability remains intact.",
+        "Keep node enrolment, assignment authorisation, backup integrity and demonstrated recoverability distinct; report all test evidence as unverified/not performed and leave owner policy decisions unresolved.",
+        "Explicitly distinguish baseline intent, proposed design, completed unaccepted reference drafts and genuinely verified evidence."
+      ],
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null,
+      "loop_policy": 1,
+      "loop_kind": "followup",
+      "loop_cycle": 2,
+      "loop_area": "node-security",
+      "loop_key": "node-approval-restore-proof-boundary"
     }
   ],
   "backlog": [
@@ -2343,6 +2477,12 @@
       "task_id": "MAP-022",
       "date": "2026-10-31T08:26:09.672128+00:00",
       "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
+    },
+    {
+      "event": "autonomous-follow-up-admitted",
+      "task_id": "MAP-023",
+      "date": "2026-10-31T08:26:49.467942+00:00",
+      "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
     }
   ]
 }
