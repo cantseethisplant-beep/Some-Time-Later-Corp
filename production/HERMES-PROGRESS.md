@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T09:17:58.406546+00:00
-Local automatic drafting/critique/submission loop active; review drafts independently.
+Updated: 2026-10-31T09:31:33.579291+00:00
+Bounded provider retry deferred; no correction or inference budget reset.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 130
+Conservative run attempts so far: 136
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -38,6 +38,7 @@ Conservative run attempts so far: 130
 - MAP-026: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/21
 - MAP-027: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/22
 - MAP-028: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/23
+- MAP-029: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -47,13 +48,20 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 After MAP-015: gap audit → up to six independent follow-ups → re-audit → candidate blueprint and exact blockers. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: working; cycle: 4; next: MAP-028
+Loop status: working; cycle: 4; next: MAP-029
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
-- Owner decisions required (baseline open questions, answered by no supplied draft): who operates and pays for the central controller; CEO identity, delegation, succession and emergency recovery; which workloads are acceptable on volunteer hosts versus trusted infrastructure; pilot OS, deployment runtime and cloud provider; cloud spending-limit enforcement and over-capacity behaviour; acceptable recovery time and data-loss targets per application; hardware-owner withdrawal including when the machine is offline; who may read each corporation data type and how consent is documented; product licensing and distribution model. Pinned to docs/DECISION-GUIDE.md 'Questions still open' and docs/TRUST-AND-RECOVERY.md at revision 792b158838aa5214d0156690d24e21e780de542e.
-- No upstream identity, version, licence, dependency, or cost is verified for any candidate application (Wanderer, Alliance Auth, AA Buyback, Indy Hub, AA Structures, CorpTools are historical planning context only, per docs/DECISION-GUIDE.md and docs/CONCEPT.md).
-- No restore test exists in the supplied inputs: MAP-004, MAP-011 and MAP-019 all state no restore was performed and restore_exercise/restore_verified remain 'not performed'; recovery acceptability cannot be judged.
-- No measured resources, measured data-loss window, or selected deployment target/runtime exist; estimates are not treated as measurements (docs/DECISION-GUIDE.md catalogue entry requirements).
-- No supplied draft covers data-model (MAP-020), interfaces (MAP-021), controller (MAP-008), or costs (MAP-013); those tasks appear on the coordination board as blocked and their drafts are unavailable, so no drafting can proceed from supplied text.
-- Nothing in this audit certifies acceptance, merge, implementation, deployment, or build-readiness; the completion gate is not met and no frozen map revision exists.
+- Controller operator and funding: who operates and pays for the central controller is an open question in docs/DECISION-GUIDE.md with no answer in any supplied input; owner decision required.
+- CEO identity, delegation, succession, and emergency recovery: exact rules remain design decisions in docs/TRUST-AND-RECOVERY.md and docs/DECISION-GUIDE.md; succession must not silently grant access to historical secrets.
+- Volunteer-host workload policy: which workloads are acceptable on volunteer hosts versus trusted infrastructure is unresolved in docs/DECISION-GUIDE.md and docs/TRUST-AND-RECOVERY.md.
+- Pilot stack and provider: operating systems, deployment runtime, and cloud provider are unselected; Cloudflare is discussed only as an optional component; provider selection and feature suitability are unverified (docs/DECISION-GUIDE.md, docs/TRUST-AND-RECOVERY.md).
+- Cloud spending limits: enforcement mechanism and over-capacity behaviour are open questions in docs/DECISION-GUIDE.md; MAP-013 is blocked on the coordination board (native Hermes child failed; inspect local scrubbed log).
+- Recovery time and data-loss targets: acceptable RTO/RPO per application are open questions in docs/DECISION-GUIDE.md; required before a restore task can judge copy acceptability.
+- Hardware-owner offline withdrawal: withdrawal procedure when the machine is already offline is an open question in docs/DECISION-GUIDE.md; revocation mechanics for offline hosts are not specified.
+- Data-reader consent: who may read each type of corporation data and how consent is documented is an open question in docs/DECISION-GUIDE.md.
+- Product licensing and distribution model: no reuse licence has been selected (README.md, docs/DECISION-GUIDE.md).
+- Upstream technical verification: no upstream identity, version, licence, dependency, or cost is verified in any supplied input; candidate names (Wanderer, Alliance Auth, AA Buyback, Indy Hub, AA Structures) are historical planning context only.
+- Restore evidence: no backup or restore test has been performed or claimed; MAP-004 Section 8 states no restore test was performed; restore_verified remains unverified across all drafts (MAP-027 audit).
+- Controller outage behaviour: no controller architecture, fencing, state-handling, or outage test procedure exists in supplied text; MAP-008 is blocked on the coordination board with modality contradictions unresolved between baseline intent and task-imposed proposals.
+- No accepted field registry or cross-schema data model: mapping between MAP-003, MAP-005, and related drafts remains a drafting proposal, not accepted evidence; the related unification gap is tracked by blocked MAP-020 on the coordination board only (document not supplied).
