@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 71,
+  "board_revision": 72,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1671,7 +1671,7 @@
     {
       "id": "MAP-022",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -1797,14 +1797,45 @@
         "token": "WChDPxiFFykefqJOVhHprzReypYsEkoT",
         "worker_id": "hermes-laptop-map-022-auto-20261030",
         "claimed_at": "2026-10-31T01:46:15.188655+00:00",
-        "last_activity_at": "2026-10-31T08:25:58.070264+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T08:26:09.672128+00:00",
+        "released_at": "2026-10-31T08:26:09.672128+00:00",
         "branch": "hermes/map-022-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "ae3d68448e8f329e136d327283ba0c055f0cdb5d",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/17",
+        "submitted_at": "2026-10-31T08:26:09.672128+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-022",
+          "reviewer": "Codex coordinator — user-requested repair",
+          "at": "2026-10-31T08:25:57.701803+00:00",
+          "native_critic_decision": "revise",
+          "native_critic_draft_sha256": "7625fbf520d7a482fb1a54bed8342cb93a1783806bcc1b2d43389118c426f7eb",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Native critic identified the unsupported empty-task assertion. Coordinator verified MAP-014 39981db00918b363bc50f33cdb2dfe2dec22d210 section 5 against MAP-004 ccf0957af0d80fe4608fc08b06b02408b485b1ca section 5 and the pinned TRUST-AND-RECOVERY baseline.",
+            "Added node-approval-restore-proof-boundary as a bounded drafting/reconciliation task; no new research, owner decision or runtime evidence is required to draft the note. It will not modify original drafts or invent a completed test.",
+            "Changed node-security/recovery coverage to gap, recalculated summary counts and removed the false no-executable-follow-up blocker. Other evidence and owner-decision blockers remain.",
+            "Board-only references are labelled coordination status in existing assessment text; no extra output fields or promotion of blocked drafts to source evidence."
+          ],
+          "checks": [
+            "All 13 coverage areas and declared output schema validated",
+            "All source_tasks identify supplied immutable completed drafts",
+            "New task is independent supplied-text work with observable checks and no implementation",
+            "Native critic findings and pre-correction packet preserved",
+            "No counter reset, native recheck, project acceptance or merge"
+          ],
+          "corrected_payload_sha256": "85756c1e9e54f9c9a680e6b2aa84294392f887f35d24c69395357ef58baedb53"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "audit",
@@ -2306,6 +2337,12 @@
       "task_id": "MAP-022",
       "date": "2026-10-31T08:25:58.070264+00:00",
       "note": "User requested recovery. Corrected audit using verified native critic finding; one independently executable follow-up added. Disclosed coordinator review only, no further inference or acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-022",
+      "date": "2026-10-31T08:26:09.672128+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
