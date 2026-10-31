@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 59,
+  "board_revision": 60,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1441,7 +1441,7 @@
     {
       "id": "MAP-020",
       "title": "Unify data model across catalogue entries, offers, and assignments",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -1537,8 +1537,8 @@
         "token": "z0RRTsbPyFu6Cn-MU9HLHoPU3eNGGYDq",
         "worker_id": "hermes-laptop-map-020-auto-20261030",
         "claimed_at": "2026-10-31T01:27:37.723142+00:00",
-        "last_activity_at": "2026-10-31T01:27:37.723142+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T01:36:58.545301+00:00",
+        "released_at": "2026-10-31T01:36:58.545301+00:00",
         "branch": "hermes/map-020-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1550,7 +1550,8 @@
       "loop_kind": "followup",
       "loop_cycle": 1,
       "loop_area": "data-model",
-      "loop_key": "gap-key-data-model-001"
+      "loop_key": "gap-key-data-model-001",
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The draft correctly preserves baseline/proposed distinctions, modality markers (required/proposed/optional/unresolved), and source provenance, and its cross-reference matrix attempts full coverage of the §4 field inventory. Two correctable defects were found: §6 lists the expiry redundancy twice (items 3 and 8 are identical), contradicting the claimed consolidated seven-item list, and the §5 Retention row wrongly attributes retention to the MAP-003 offer schema when §4 assigns retention only to MAP-003 hosting assignments (the relationship note 'Appears twice at assignment level' is also wrong). No inputs are missing; both issues are fixable from the supplied text."
     }
   ],
   "backlog": [
@@ -1938,6 +1939,12 @@
       "task_id": "MAP-020",
       "date": "2026-10-31T01:27:37.723142+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-020",
+      "date": "2026-10-31T01:36:58.545301+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The draft correctly preserves baseline/proposed distinctions, modality markers (required/proposed/optional/unresolved), and source provenance, and its cross-reference matrix attempts full coverage of the §4 field inventory. Two correctable defects were found: §6 lists the expiry redundancy twice (items 3 and 8 are identical), contradicting the claimed consolidated seven-item list, and the §5 Retention row wrongly attributes retention to the MAP-003 offer schema when §4 assigns retention only to MAP-003 hosting assignments (the relationship note 'Appears twice at assignment level' is also wrong). No inputs are missing; both issues are fixable from the supplied text."
     }
   ]
 }
