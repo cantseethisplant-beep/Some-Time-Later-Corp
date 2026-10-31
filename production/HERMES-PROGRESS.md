@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T23:43:02.871036+00:00
-Bounded provider retry deferred; no correction or inference budget reset.
+Updated: 2026-10-31T23:43:11.570876+00:00
+Fixed candidate assembly finished. Review the linked package and explicit blocked parts/owner decisions/evidence needs; no further automatic global audits, acceptance or merge.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-01T04:06:44.020269+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -53,7 +53,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 Fixed candidate assembly: build sequence → architecture/data/interfaces → acceptance/evidence matrix → consolidated candidate. No further global audits. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: assembling_candidate; cycle: 5; next: MAP-034
+Loop status: candidate_incomplete_needs_attention; cycle: 5; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
@@ -66,6 +66,6 @@ Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 - Assembly 1 MAP-031: blocked — not submitted 
 - Assembly 2 MAP-032: blocked — not submitted 
 - Assembly 3 MAP-033: blocked — not submitted 
-- Assembly 4 MAP-034: ready — not submitted 
+- Assembly 4 MAP-034: blocked — not submitted 
 
 Local package index: BLUEPRINT-ASSEMBLY.md; consolidated copy: BLUEPRINT-CANDIDATE.md when published.
