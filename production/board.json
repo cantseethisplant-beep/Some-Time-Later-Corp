@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 65,
+  "board_revision": 66,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1671,7 +1671,7 @@
     {
       "id": "MAP-022",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -1797,8 +1797,8 @@
         "token": "WChDPxiFFykefqJOVhHprzReypYsEkoT",
         "worker_id": "hermes-laptop-map-022-auto-20261030",
         "claimed_at": "2026-10-31T01:46:15.188655+00:00",
-        "last_activity_at": "2026-10-31T01:46:15.188655+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T01:53:45.958827+00:00",
+        "released_at": "2026-10-31T01:53:45.958827+00:00",
         "branch": "hermes/map-022-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1810,7 +1810,8 @@
       "loop_kind": "audit",
       "loop_cycle": 2,
       "loop_area": null,
-      "loop_key": null
+      "loop_key": null,
+      "blocked_reason": "Invalid output after two document corrections; best drafts retained"
     }
   ],
   "backlog": [
@@ -2234,6 +2235,12 @@
       "task_id": "MAP-022",
       "date": "2026-10-31T01:46:15.188655+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-022",
+      "date": "2026-10-31T01:53:45.958827+00:00",
+      "note": "Invalid output after two document corrections; best drafts retained"
     }
   ]
 }
