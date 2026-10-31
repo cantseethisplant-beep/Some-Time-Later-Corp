@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 82,
+  "board_revision": 83,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -2353,7 +2353,7 @@
     {
       "id": "MAP-026",
       "title": "Reconcile the node enrolment gate with restore-proof evidence (MAP-014 section 5 vs MAP-004 sections 5 and 8)",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -2482,7 +2482,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "OqNmIC62FDpVKmLN6gx6J0xbrhGd4fpr",
+        "worker_id": "hermes-laptop-map-026-auto-20261030",
+        "claimed_at": "2026-10-31T08:46:44.011711+00:00",
+        "last_activity_at": "2026-10-31T08:46:44.011711+00:00",
+        "released_at": null,
+        "branch": "hermes/map-026-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -3015,6 +3025,12 @@
       "task_id": "MAP-026",
       "date": "2026-10-31T08:46:41.495096+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-026",
+      "date": "2026-10-31T08:46:44.011711+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
