@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 51,
+  "board_revision": 52,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1199,6 +1199,111 @@
       "loop_cycle": 1,
       "loop_area": "requirements",
       "loop_key": "gap-key-requirements-001"
+    },
+    {
+      "id": "MAP-018",
+      "title": "Formalize role authority boundaries and resolve explicit unresolved decisions",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "paths": [
+            "README.md",
+            "docs/CONCEPT.md",
+            "docs/DECISION-GUIDE.md",
+            "docs/TRUST-AND-RECOVERY.md"
+          ],
+          "evidence_type": "user-intent baseline; no upstream technical verification"
+        },
+        {
+          "revision": "c6cc2de20805455eb55c0343394d01225ff41ffd",
+          "paths": [
+            "docs/map/specs/requirements.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-001"
+        },
+        {
+          "revision": "3585afed129ad2694660fcee8cfd982092551117",
+          "paths": [
+            "docs/map/specs/permissions.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-002"
+        },
+        {
+          "revision": "0e60848ccbfa295169422eab063f1b81023b390e",
+          "paths": [
+            "docs/map/specs/hosting-assignment.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-003"
+        },
+        {
+          "revision": "ccf0957af0d80fe4608fc08b06b02408b485b1ca",
+          "paths": [
+            "docs/map/specs/backup-recovery.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-004"
+        },
+        {
+          "revision": "96464d45c5c79db31a82bcb9cf13a1b1b65fb141",
+          "paths": [
+            "docs/map/specs/catalogue-entry.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-005"
+        },
+        {
+          "revision": "111a5832102570811dd0af21fffd16a70413febc",
+          "paths": [
+            "docs/map/specs/operations.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-006"
+        },
+        {
+          "revision": "9f330ee125a04bdd6f5df1338b38c93ff2fe0162",
+          "paths": [
+            "docs/map/specs/scheduling.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-007"
+        },
+        {
+          "revision": "119bb89f6decab9c887e0e99bde38e7d6b1a6744",
+          "paths": [
+            "docs/map/specs/evidence-record.md"
+          ],
+          "evidence_type": "UNACCEPTED COMPLETED DRAFT FOR REVIEW ONLY; not requirements or technical evidence",
+          "source_task": "MAP-011"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/loop-map-018-followup.md"
+      ],
+      "scope": "Finalize the five-role authority matrix from MAP-002 with explicit rules for CEO succession, emergency access, and delegation scope; separate deployment authority from decryption backup permission as a formal policy; document which workloads are acceptable on volunteer hosts versus trusted infrastructure with owner consent basis.\nReview/reconciliation proposal only. Do not treat completed draft references as accepted requirements. Preserve unresolved choices, evidence limits and exact source provenance. No external research, commands or implementation.",
+      "acceptance": [
+        "Complete authority matrix with all role/action entries populated",
+        "CEO succession rules explicitly documented (not assumed)",
+        "Emergency access policy with authorized actors and conditions",
+        "Delegation scope rules with explicit bounds",
+        "Workload classification: volunteer-host vs trusted infrastructure with consent basis",
+        "No mandates from unresolved policies in examples",
+        "Explicitly distinguish baseline intent, proposed design, completed unaccepted reference drafts and genuinely verified evidence."
+      ],
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null,
+      "loop_policy": 1,
+      "loop_kind": "followup",
+      "loop_cycle": 1,
+      "loop_area": "roles",
+      "loop_key": "gap-key-roles-001"
     }
   ],
   "backlog": [
@@ -1538,6 +1643,12 @@
       "task_id": "MAP-017",
       "date": "2026-10-31T01:11:45.904799+00:00",
       "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
+    },
+    {
+      "event": "autonomous-follow-up-admitted",
+      "task_id": "MAP-018",
+      "date": "2026-10-31T01:11:57.175780+00:00",
+      "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
     }
   ]
 }
