@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T08:27:19.961121+00:00
-MAP-022 corrected and submitted as draft PR #17 with disclosed Codex coordinator review; native revision findings retained, no native recheck or acceptance. Hermes has claimed MAP-023 to reconcile node approval with restore-proof requirements. Schema-preserving coordination-reference recovery installed; 117 checks pass; original free-only limits unchanged.
+Updated: 2026-10-31T08:31:38.674724+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-10-31T13:16:05.404524+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 110
+Conservative run attempts so far: 111
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -32,7 +32,7 @@ Conservative run attempts so far: 110
 - MAP-020: blocked — no submitted PR
 - MAP-021: blocked — no submitted PR
 - MAP-022: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/17
-- MAP-023: claimed — no submitted PR
+- MAP-023: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/18
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
