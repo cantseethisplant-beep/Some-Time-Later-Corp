@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 62,
+  "board_revision": 63,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1556,7 +1556,7 @@
     {
       "id": "MAP-021",
       "title": "Define minimal interface contract from stated intent",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -1652,8 +1652,8 @@
         "token": "tD6rFbfgh6Dl7GHhjFjRYVG1nKXoK-XO",
         "worker_id": "hermes-laptop-map-021-auto-20261030",
         "claimed_at": "2026-10-31T01:37:12.729784+00:00",
-        "last_activity_at": "2026-10-31T01:37:12.729784+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-10-31T01:45:59.162967+00:00",
+        "released_at": "2026-10-31T01:45:59.162967+00:00",
         "branch": "hermes/map-021-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1665,7 +1665,8 @@
       "loop_kind": "followup",
       "loop_cycle": 1,
       "loop_area": "interfaces",
-      "loop_key": "gap-key-interfaces-001"
+      "loop_key": "gap-key-interfaces-001",
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The draft satisfies the MAP-021 structure five interface aspects, resolved/unresolved markings, explicit unresolved list, evidence-class separation, no implementation choices but has two modality/citation issues to fix before review: IA-02 presents proposed logging fields source, target, time as baseline should-modality intent when baseline only supports same-procedure should and record-completion-or-failure must; IA-01 treats MAP-003-proposed validity conditions expired offer and missing-field mechanics as baseline-resolved deploy gates while flagging only the backup-policy reference as proposed."
     }
   ],
   "backlog": [
@@ -2071,6 +2072,12 @@
       "task_id": "MAP-021",
       "date": "2026-10-31T01:37:12.729784+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-021",
+      "date": "2026-10-31T01:45:59.162967+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The draft satisfies the MAP-021 structure five interface aspects, resolved/unresolved markings, explicit unresolved list, evidence-class separation, no implementation choices but has two modality/citation issues to fix before review: IA-02 presents proposed logging fields source, target, time as baseline should-modality intent when baseline only supports same-procedure should and record-completion-or-failure must; IA-01 treats MAP-003-proposed validity conditions expired offer and missing-field mechanics as baseline-resolved deploy gates while flagging only the backup-policy reference as proposed."
     }
   ]
 }
