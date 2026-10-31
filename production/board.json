@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "board_revision": 44,
-  "updated_on": "2026-10-30",
+  "board_revision": 45,
+  "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
   "claim_update": "GitHub Contents API compare-and-swap with current file SHA",
@@ -904,7 +904,7 @@
     {
       "id": "MAP-016",
       "title": "Audit blueprint coverage and propose bounded follow-ups",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -998,8 +998,8 @@
         "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
         "worker_id": "hermes-laptop-map-016-auto-20261030",
         "claimed_at": "2026-10-30T23:08:33.684367+00:00",
-        "last_activity_at": "2026-10-30T23:21:59.867571+00:00",
-        "released_at": "2026-10-30T23:21:59.867571+00:00",
+        "last_activity_at": "2026-10-31T00:53:16.843388+00:00",
+        "released_at": null,
         "branch": "hermes/map-016-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -1012,7 +1012,20 @@
       "loop_cycle": 1,
       "loop_area": null,
       "loop_key": null,
-      "blocked_reason": "Invalid output after two document corrections; best drafts retained"
+      "blocked_reason": null,
+      "claim_history": [
+        {
+          "token": "2nZMBU0_1Y8wfh_25rxiIHc3MtW9jClW",
+          "worker_id": "hermes-laptop-map-016-auto-20261030",
+          "claimed_at": "2026-10-30T23:08:33.684367+00:00",
+          "last_activity_at": "2026-10-30T23:21:59.867571+00:00",
+          "released_at": "2026-10-30T23:21:59.867571+00:00",
+          "branch": "hermes/map-016-auto-20261030",
+          "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "run": "eve-blueprint-20261030",
+          "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+        }
+      ]
     }
   ],
   "backlog": [
@@ -1310,6 +1323,12 @@
       "task_id": "MAP-016",
       "date": "2026-10-30T23:21:59.867571+00:00",
       "note": "Invalid output after two document corrections; best drafts retained"
+    },
+    {
+      "event": "format-recovered-claim-resumed",
+      "task_id": "MAP-016",
+      "date": "2026-10-31T00:53:16.843388+00:00",
+      "note": "Complete schema-valid native response recovered deterministically; same task/claim/request ledger and correction rounds. One remaining critic request required; no regeneration."
     }
   ]
 }
