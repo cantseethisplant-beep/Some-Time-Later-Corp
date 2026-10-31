@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 49,
+  "board_revision": 50,
   "updated_on": "2026-10-31",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -1081,7 +1081,7 @@
     {
       "id": "MAP-017",
       "title": "Consolidate and clarify requirement modalities and open decisions",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -1173,7 +1173,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "IHeI-Qd_a1LdC9d__nkdM20dqc6qLUH2",
+        "worker_id": "hermes-laptop-map-017-auto-20261030",
+        "claimed_at": "2026-10-31T01:01:12.384990+00:00",
+        "last_activity_at": "2026-10-31T01:01:12.384990+00:00",
+        "released_at": null,
+        "branch": "hermes/map-017-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -1508,6 +1518,12 @@
       "task_id": "MAP-017",
       "date": "2026-10-31T01:01:09.325885+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-017",
+      "date": "2026-10-31T01:01:12.384990+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
