@@ -1,3 +1,9 @@
+# Current owner direction: wormhole tool first
+
+Read [docs/map/WH-FIRST-BRIEF.md](/docs/map/WH-FIRST-BRIEF.md). The owner clarified that the app is primarily a WH mapping/intel/operations tool; cloud hosting is an addition. That brief takes precedence over older hosting-first descriptions below for new WH tasks. Study Pathfinder and EVE-WHMapper; exclude RIFT. Existing hosting drafts remain unaccepted optional background. Native Hermes may perform the finite WH draft/audit/repair sequence from pinned supplied sources; no automatic acceptance, merge or app implementation. Preserve all free-only, claim, security and request-budget gates.
+
+---
+
 # Production rules
 
 ## Purpose
