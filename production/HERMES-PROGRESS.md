@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-10-31T23:43:11.570876+00:00
-Fixed candidate assembly finished. Review the linked package and explicit blocked parts/owner decisions/evidence needs; no further automatic global audits, acceptance or merge.
+Updated: 2026-11-01T16:25:28.548960+00:00
+Recovered assembly drafts published as PRs #25–#28 with explicit coordinator review; original task budgets preserved. MAP-035 integrates newly published detailed parts, using only verified-zero-price free routes. Offline package: BLUEPRINT-PACKAGE/README.md. Critic delivery framing fixed; 139 checks pass; no repeated audit loop or Codex polling.
 
-Stop mode: **queue_completion**; current session lease: 2026-11-01T04:06:44.020269+00:00
+Stop mode: **queue_completion**; current session lease: 2026-11-01T21:17:04.037416+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 166
+Conservative run attempts so far: 168
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -40,10 +40,11 @@ Conservative run attempts so far: 166
 - MAP-028: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/23
 - MAP-029: blocked — no submitted PR
 - MAP-030: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/24
-- MAP-031: blocked — no submitted PR
-- MAP-032: blocked — no submitted PR
-- MAP-033: blocked — no submitted PR
-- MAP-034: blocked — no submitted PR
+- MAP-031: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/25
+- MAP-032: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/26
+- MAP-033: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27
+- MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28
+- MAP-035: claimed — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -53,7 +54,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 ## Autonomous blueprint follow-ups
 Fixed candidate assembly: build sequence → architecture/data/interfaces → acceptance/evidence matrix → consolidated candidate. No further global audits. Drafts remain unaccepted.
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: candidate_incomplete_needs_attention; cycle: 5; next: None
+Loop status: integrating_recovered_parts; cycle: 5; next: MAP-035
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ### Recorded blockers
@@ -63,9 +64,12 @@ Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 - Automatic failover is not assumed and requires its own evidence (OD-13); Cloudflare is discussed only as an optional access and backup component, not a complete deployment manager, and provider selection and feature suitability remain unverified.
 - No supply-versus-demand host measurements, verified restore exercises, or cloud cost figures exist; these are not repaired by inventing facts.
 - Board state and file SHAs were not independently verified; no GitHub, terminal, network or delegation tools are available.
-- Assembly 1 MAP-031: blocked — not submitted 
-- Assembly 2 MAP-032: blocked — not submitted 
-- Assembly 3 MAP-033: blocked — not submitted 
-- Assembly 4 MAP-034: blocked — not submitted 
+- Assembly 1 MAP-031: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/25 
+- Assembly 2 MAP-032: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/26 
+- Assembly 3 MAP-033: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27 
+- Assembly 4 MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28 
 
 Local package index: BLUEPRINT-ASSEMBLY.md; consolidated copy: BLUEPRINT-CANDIDATE.md when published.
+
+Recovered-source integration: MAP-035 — ready
+Local offline package: BLUEPRINT-PACKAGE/README.md.
