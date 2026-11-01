@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 132,
+  "board_revision": 133,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4521,7 +4521,7 @@
     {
       "id": "MAP-039",
       "title": "WH user workflows, routing uncertainty and operational test plan",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -4548,14 +4548,22 @@
         "token": "AUovQx_xjciXAj2lBFsmCOBk8aTJpwQI",
         "worker_id": "hermes-laptop-map-039-auto-20261030",
         "claimed_at": "2026-11-01T21:06:30.917108+00:00",
-        "last_activity_at": "2026-11-01T21:06:30.917108+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T21:10:21.662142+00:00",
+        "released_at": "2026-11-01T21:10:21.662142+00:00",
         "branch": "hermes/map-039-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "556f3f983f9b1d3b2b3acc20853bcfd18c797348",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31",
+        "submitted_at": "2026-11-01T21:10:21.662142+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-design",
@@ -5389,6 +5397,12 @@
       "task_id": "MAP-039",
       "date": "2026-11-01T21:06:30.917108+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-039",
+      "date": "2026-11-01T21:10:21.662142+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
