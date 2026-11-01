@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-01T16:25:28.548960+00:00
-Recovered assembly drafts published as PRs #25–#28 with explicit coordinator review; original task budgets preserved. MAP-035 integrates newly published detailed parts, using only verified-zero-price free routes. Offline package: BLUEPRINT-PACKAGE/README.md. Critic delivery framing fixed; 139 checks pass; no repeated audit loop or Codex polling.
+Updated: 2026-11-01T16:25:34.866234+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-01T21:17:04.037416+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -44,7 +44,7 @@ Conservative run attempts so far: 168
 - MAP-032: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/26
 - MAP-033: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27
 - MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28
-- MAP-035: claimed — no submitted PR
+- MAP-035: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/29
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
