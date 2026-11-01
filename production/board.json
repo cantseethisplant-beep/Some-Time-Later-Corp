@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "board_revision": 110,
-  "updated_on": "2026-10-31",
+  "board_revision": 111,
+  "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
   "claim_update": "GitHub Contents API compare-and-swap with current file SHA",
@@ -3251,7 +3251,7 @@
     {
       "id": "MAP-031",
       "title": "Build sequence and requirement traceability",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -3416,8 +3416,8 @@
         "token": "6n-ezmmYu0pMIOWQKI8maOCMRB7vNG1W",
         "worker_id": "hermes-laptop-map-031-auto-20261030",
         "claimed_at": "2026-10-31T23:07:35.054116+00:00",
-        "last_activity_at": "2026-10-31T23:17:57.475777+00:00",
-        "released_at": "2026-10-31T23:17:57.475777+00:00",
+        "last_activity_at": "2026-11-01T16:17:04.711080+00:00",
+        "released_at": null,
         "branch": "hermes/map-031-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
@@ -3432,7 +3432,20 @@
       "loop_key": "candidate-assembly-v1-stage-1",
       "assembly_version": 1,
       "assembly_step": 1,
-      "blocked_reason": "Task inference budget exhausted; saved work retained"
+      "blocked_reason": null,
+      "claim_history": [
+        {
+          "token": "6n-ezmmYu0pMIOWQKI8maOCMRB7vNG1W",
+          "worker_id": "hermes-laptop-map-031-auto-20261030",
+          "claimed_at": "2026-10-31T23:07:35.054116+00:00",
+          "last_activity_at": "2026-10-31T23:17:57.475777+00:00",
+          "released_at": "2026-10-31T23:17:57.475777+00:00",
+          "branch": "hermes/map-031-auto-20261030",
+          "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+          "run": "eve-blueprint-20261030",
+          "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+        }
+      ]
     },
     {
       "id": "MAP-032",
@@ -4684,6 +4697,12 @@
       "task_id": "MAP-034",
       "date": "2026-10-31T23:43:00.582596+00:00",
       "note": "Task inference budget exhausted; saved work retained"
+    },
+    {
+      "event": "coordinator-assembly-recovery",
+      "task_id": "MAP-031",
+      "date": "2026-11-01T16:17:04.711080+00:00",
+      "note": "User requested formatting/review repair. Preserved and checked latest complete native output; disclosed coordinator correction, no inference/counter reset/acceptance."
     }
   ]
 }
