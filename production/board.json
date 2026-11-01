@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 126,
+  "board_revision": 127,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4418,7 +4418,7 @@
     {
       "id": "MAP-037",
       "title": "WH data, API and concurrent map synchronization contract",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -4445,8 +4445,8 @@
         "token": "2hTRCIb7eal9xIbek9dILyhwCOK9f_9j",
         "worker_id": "hermes-laptop-map-037-auto-20261030",
         "claimed_at": "2026-11-01T20:55:25.858745+00:00",
-        "last_activity_at": "2026-11-01T20:55:25.858745+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T21:01:14.916006+00:00",
+        "released_at": "2026-11-01T21:01:14.916006+00:00",
         "branch": "hermes/map-037-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
@@ -4460,7 +4460,8 @@
       "loop_area": "build-and-acceptance",
       "loop_key": "wh-v1-stage-2",
       "wh_stage": 2,
-      "wh_version": 1
+      "wh_version": 1,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The draft is structurally complete, correctly labels all schema rules as proposed/unaccepted, keeps backup creation distinct from restore verification, and avoids inventing game constants. However it needs corrections before submission: upstream facts are cited by commit/path but not by exact line ranges as the contract requires; §7 mislabels a same-map signature rebinding as E_CROSS_MAP; the valid jump-evidence example references source/observedAt fields that belong to WH-D-Observation, not WH-D-JumpEvidence; the declared WH-API namespace (endpoint identifiers) is never concretely specified; and §2's no-ID-reuse rule points to §6, which does not address ID reuse. All are fixable from the su"
     }
   ],
   "backlog": [
@@ -5250,6 +5251,12 @@
       "task_id": "MAP-037",
       "date": "2026-11-01T20:55:25.858745+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-037",
+      "date": "2026-11-01T21:01:14.916006+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The draft is structurally complete, correctly labels all schema rules as proposed/unaccepted, keeps backup creation distinct from restore verification, and avoids inventing game constants. However it needs corrections before submission: upstream facts are cited by commit/path but not by exact line ranges as the contract requires; §7 mislabels a same-map signature rebinding as E_CROSS_MAP; the valid jump-evidence example references source/observedAt fields that belong to WH-D-Observation, not WH-D-JumpEvidence; the declared WH-API namespace (endpoint identifiers) is never concretely specified; and §2's no-ID-reuse rule points to §6, which does not address ID reuse. All are fixable from the su"
     }
   ]
 }
