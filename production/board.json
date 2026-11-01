@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 123,
+  "board_revision": 124,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4370,7 +4370,7 @@
     {
       "id": "MAP-036",
       "title": "Mapper reuse assessment and WH MVP requirements",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -4397,8 +4397,8 @@
         "token": "Xq1z5mJhIXTCLvXn6JuI4yxMtsZD4yyT",
         "worker_id": "hermes-laptop-map-036-auto-20261030",
         "claimed_at": "2026-11-01T20:48:46.374746+00:00",
-        "last_activity_at": "2026-11-01T20:48:46.374746+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T20:55:17.007605+00:00",
+        "released_at": "2026-11-01T20:55:17.007605+00:00",
         "branch": "hermes/map-036-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
@@ -4412,7 +4412,8 @@
       "loop_area": "build-and-acceptance",
       "loop_key": "wh-v1-stage-1",
       "wh_stage": 1,
-      "wh_version": 1
+      "wh_version": 1,
+      "blocked_reason": "Task inference budget exhausted; saved work retained"
     }
   ],
   "backlog": [
@@ -5184,6 +5185,12 @@
       "task_id": "MAP-036",
       "date": "2026-11-01T20:48:46.374746+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-036",
+      "date": "2026-11-01T20:55:17.007605+00:00",
+      "note": "Task inference budget exhausted; saved work retained"
     }
   ]
 }
