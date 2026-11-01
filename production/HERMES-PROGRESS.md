@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-01T21:10:24.060971+00:00
-Local automatic drafting/critique/submission loop active; review drafts independently.
+Updated: 2026-11-01T21:10:27.308997+00:00
+A prerequisite WH part is blocked or unfinished. Independent parts preserved; no replacement IDs or budget reset.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T01:48:36.070060+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -57,7 +57,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: drafting_wh_blueprint; cycle: 0; next: MAP-039
+Loop status: wh_blueprint_needs_attention; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ## WH-first blueprint production
@@ -67,3 +67,4 @@ Local final package: WH-BLUEPRINT-PACKAGE/README.md when complete. STOP, free qu
 - WH stage 1 MAP-036: blocked — not submitted
 - WH stage 2 MAP-037: blocked — not submitted
 - WH stage 3 MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
+- WH stage 4 MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
