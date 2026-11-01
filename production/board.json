@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 113,
+  "board_revision": 114,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3476,7 +3476,7 @@
     {
       "id": "MAP-032",
       "title": "Component, data and interface map",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -3641,14 +3641,41 @@
         "token": "gOs4Zm-oMNtqKhUBpYiPy_ckGKq9SU6f",
         "worker_id": "hermes-laptop-map-032-auto-20261030",
         "claimed_at": "2026-10-31T23:18:15.938312+00:00",
-        "last_activity_at": "2026-11-01T16:17:18.203190+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T16:19:34.359288+00:00",
+        "released_at": "2026-11-01T16:19:34.359288+00:00",
         "branch": "hermes/map-032-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "c426a685a2c40bd74a2a4db63acb645d3e210d85",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/26",
+        "submitted_at": "2026-11-01T16:19:34.359288+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-032",
+          "reviewer": "Codex coordinator — explicit user-requested assembly recovery",
+          "at": "2026-11-01T16:19:24.438932+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Added the proposed hardware-offer backup_policy_ref crosswalk verified against supplied MAP-003 section 3 field 9 and MAP-004; policy ownership/evidence remains separate",
+            "Verified latest native generation already distinguishes proposed storage split, node-state provenance and OD-01; word-count aim is not a mandatory rejection gate"
+          ],
+          "checks": [
+            "Original raw response identity/hash and complete file envelope verified",
+            "Latest native draft compared with prior critic findings",
+            "Supplied source pins preserved/expanded only on unique matches",
+            "No regeneration, task-budget reset, acceptance, merge, deployment or completed-test claim"
+          ],
+          "corrected_payload_sha256": "4fe2f4c47a7f0001df2921f48ed19854af9db23ad2a0ac9eda19ff1ad8b18c81"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "assembly",
@@ -4754,6 +4781,12 @@
       "task_id": "MAP-032",
       "date": "2026-11-01T16:17:18.203190+00:00",
       "note": "User requested formatting/review repair. Preserved and checked latest complete native output; disclosed coordinator correction, no inference/counter reset/acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-032",
+      "date": "2026-11-01T16:19:34.359288+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
