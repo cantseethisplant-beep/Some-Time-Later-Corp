@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-01T16:25:45.927507+00:00
-Recovered-source integration finished. Read the concrete package, then resolve only its listed owner/evidence prerequisites. No automatic acceptance, merge or further audit loop.
+Updated: 2026-11-01T16:28:31.539078+00:00
+MAP-035 consolidated candidate is published as draft PR #29 after native automated review with no findings. The recovered detailed parts are draft PRs #25–#27; historical MAP-034 is PR #28. Offline four-document package and SHA-256 manifest are available in BLUEPRINT-PACKAGE/README.md. Integration used two free requests; original assembly budgets unchanged; 139 checks pass. Worker stopped at the completed candidate review handoff, with owner/evidence prerequisites explicit and no automatic acceptance or audit loop.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-01T21:17:04.037416+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
