@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 111,
+  "board_revision": 112,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3251,7 +3251,7 @@
     {
       "id": "MAP-031",
       "title": "Build sequence and requirement traceability",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -3416,14 +3416,40 @@
         "token": "6n-ezmmYu0pMIOWQKI8maOCMRB7vNG1W",
         "worker_id": "hermes-laptop-map-031-auto-20261030",
         "claimed_at": "2026-10-31T23:07:35.054116+00:00",
-        "last_activity_at": "2026-11-01T16:17:04.711080+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T16:17:15.973743+00:00",
+        "released_at": "2026-11-01T16:17:15.973743+00:00",
         "branch": "hermes/map-031-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "f72e9b995af03cd88cc096c0146186595da33f0d",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/25",
+        "submitted_at": "2026-11-01T16:17:15.973743+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-031",
+          "reviewer": "Codex coordinator — explicit user-requested assembly recovery",
+          "at": "2026-11-01T16:17:04.067118+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Verified latest complete native generation already resolves REQ-16/B14 traceability, acceptance-stage naming and no-two-authoritative-writers wording; old critic reports predate those corrections"
+          ],
+          "checks": [
+            "Original raw response identity/hash and complete file envelope verified",
+            "Latest native draft compared with prior critic findings",
+            "Supplied source pins preserved/expanded only on unique matches",
+            "No regeneration, task-budget reset, acceptance, merge, deployment or completed-test claim"
+          ],
+          "corrected_payload_sha256": "6485d7c848354afcbfcda85634f101b03e842bc92b830bf4cd7bb8f9836300f8"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "assembly",
@@ -4703,6 +4729,12 @@
       "task_id": "MAP-031",
       "date": "2026-11-01T16:17:04.711080+00:00",
       "note": "User requested formatting/review repair. Preserved and checked latest complete native output; disclosed coordinator correction, no inference/counter reset/acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-031",
+      "date": "2026-11-01T16:17:15.973743+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
