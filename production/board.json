@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 122,
+  "board_revision": 123,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4370,7 +4370,7 @@
     {
       "id": "MAP-036",
       "title": "Mapper reuse assessment and WH MVP requirements",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4393,7 +4393,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "Xq1z5mJhIXTCLvXn6JuI4yxMtsZD4yyT",
+        "worker_id": "hermes-laptop-map-036-auto-20261030",
+        "claimed_at": "2026-11-01T20:48:46.374746+00:00",
+        "last_activity_at": "2026-11-01T20:48:46.374746+00:00",
+        "released_at": null,
+        "branch": "hermes/map-036-auto-20261030",
+        "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -5168,6 +5178,12 @@
       "task_id": "MAP-036",
       "date": "2026-11-01T20:48:43.466819+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-036",
+      "date": "2026-11-01T20:48:46.374746+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
