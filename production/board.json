@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 119,
+  "board_revision": 120,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4153,7 +4153,7 @@
     {
       "id": "MAP-035",
       "title": "Integrate recovered assembly parts into the candidate blueprint",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4338,7 +4338,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "auii1-co33kpqdngkHSYIHahXenMgr3E",
+        "worker_id": "hermes-laptop-map-035-auto-20261030",
+        "claimed_at": "2026-11-01T16:22:45.093971+00:00",
+        "last_activity_at": "2026-11-01T16:22:45.093971+00:00",
+        "released_at": null,
+        "branch": "hermes/map-035-auto-20261030",
+        "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -5095,6 +5105,12 @@
       "task_id": "MAP-035",
       "date": "2026-11-01T16:22:41.185303+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-035",
+      "date": "2026-11-01T16:22:45.093971+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
