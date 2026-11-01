@@ -1,13 +1,13 @@
 # Hermes production — resume here
 
-Updated: 2026-11-01T20:49:36.811419+00:00
-Hermes is working on the WH-first blueprint: MAP-036 reuse/MVP assessment. Pinned Pathfinder and EVE-WHMapper research supplied; seven finite design/assembly/audit/correction stages, with bounded automatic repairs. Earlier hosting drafts are optional background.
+Updated: 2026-11-01T20:55:19.120458+00:00
+Bounded provider retry deferred; no correction or inference budget reset.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T01:48:36.070060+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 169
+Conservative run attempts so far: 174
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -45,7 +45,7 @@ Conservative run attempts so far: 169
 - MAP-033: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27
 - MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28
 - MAP-035: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/29
-- MAP-036: claimed — no submitted PR
+- MAP-036: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
