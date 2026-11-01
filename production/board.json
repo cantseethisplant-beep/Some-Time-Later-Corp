@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 128,
+  "board_revision": 129,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4466,7 +4466,7 @@
     {
       "id": "MAP-038",
       "title": "WH identity, access, privacy and threat model",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4489,7 +4489,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "jGjSYnuCBETTKhZqtiz0pPqg5Vc8vxyp",
+        "worker_id": "hermes-laptop-map-038-auto-20261030",
+        "claimed_at": "2026-11-01T21:01:24.250092+00:00",
+        "last_activity_at": "2026-11-01T21:01:24.250092+00:00",
+        "released_at": null,
+        "branch": "hermes/map-038-auto-20261030",
+        "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -5300,6 +5310,12 @@
       "task_id": "MAP-038",
       "date": "2026-11-01T21:01:21.298345+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-038",
+      "date": "2026-11-01T21:01:24.250092+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
