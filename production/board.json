@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 117,
+  "board_revision": 118,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3928,7 +3928,7 @@
     {
       "id": "MAP-034",
       "title": "Consolidated candidate blueprint and review handoff",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -4093,14 +4093,40 @@
         "token": "jNPV0gA99Hnkzv9MDuIhg1CE2Vxssj-W",
         "worker_id": "hermes-laptop-map-034-auto-20261030",
         "claimed_at": "2026-10-31T23:34:34.535837+00:00",
-        "last_activity_at": "2026-11-01T16:19:49.749775+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T16:20:01.014166+00:00",
+        "released_at": "2026-11-01T16:20:01.014166+00:00",
         "branch": "hermes/map-034-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "6ba192741d0b12e5b7cfdc5fd280d626219e63f9",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28",
+        "submitted_at": "2026-11-01T16:20:01.014166+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-034",
+          "reviewer": "Codex coordinator — explicit user-requested assembly recovery",
+          "at": "2026-11-01T16:19:49.330514+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Verified latest native title, REQ-03 action, REQ-04 proposed gate and evidence labels; marked missing-part statements as historical input-snapshot context and linked newly published parts without pretending the native task consumed them"
+          ],
+          "checks": [
+            "Original raw response identity/hash and complete file envelope verified",
+            "Latest native draft compared with prior critic findings",
+            "Supplied source pins preserved/expanded only on unique matches",
+            "No regeneration, task-budget reset, acceptance, merge, deployment or completed-test claim"
+          ],
+          "corrected_payload_sha256": "938a5ca10a1115d9390b67d448e92b9036128c41394235a72d6ba0128575684e"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "candidate",
@@ -4858,6 +4884,12 @@
       "task_id": "MAP-034",
       "date": "2026-11-01T16:19:49.749775+00:00",
       "note": "User requested formatting/review repair. Preserved and checked latest complete native output; disclosed coordinator correction, no inference/counter reset/acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-034",
+      "date": "2026-11-01T16:20:01.014166+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
