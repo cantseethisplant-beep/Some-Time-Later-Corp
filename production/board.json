@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 115,
+  "board_revision": 116,
   "updated_on": "2026-11-01",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -3702,7 +3702,7 @@
     {
       "id": "MAP-033",
       "title": "Acceptance matrix, source pins and decision register",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -3867,14 +3867,41 @@
         "token": "7SUrhLEhIBFVctJuZ2ZAfCXVkoVRdP9I",
         "worker_id": "hermes-laptop-map-033-auto-20261030",
         "claimed_at": "2026-10-31T23:27:03.492178+00:00",
-        "last_activity_at": "2026-11-01T16:19:36.818524+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-01T16:19:47.462952+00:00",
+        "released_at": "2026-11-01T16:19:47.462952+00:00",
         "branch": "hermes/map-033-auto-20261030",
         "input_revision": "792b158838aa5214d0156690d24e21e780de542e",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "90c954ddeb85b66508c668039244791a689ce629",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27",
+        "submitted_at": "2026-11-01T16:19:47.462952+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-033",
+          "reviewer": "Codex coordinator — explicit user-requested assembly recovery",
+          "at": "2026-11-01T16:19:36.154971+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Expanded only uniquely matching abbreviated source pins to their supplied full immutable SHAs",
+            "Original wire response has complete file/handoff sections. Critic JSON-wrapper rejection was caused by coordinator serialization, now fixed; substantive matrix and decision register retained with no performed checks or acceptance"
+          ],
+          "checks": [
+            "Original raw response identity/hash and complete file envelope verified",
+            "Latest native draft compared with prior critic findings",
+            "Supplied source pins preserved/expanded only on unique matches",
+            "No regeneration, task-budget reset, acceptance, merge, deployment or completed-test claim"
+          ],
+          "corrected_payload_sha256": "6052cdb78f2707319630c22dabefa191c53435d52a955028e4b22aec8301961a"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "assembly",
@@ -4806,6 +4833,12 @@
       "task_id": "MAP-033",
       "date": "2026-11-01T16:19:36.818524+00:00",
       "note": "User requested formatting/review repair. Preserved and checked latest complete native output; disclosed coordinator correction, no inference/counter reset/acceptance."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-033",
+      "date": "2026-11-01T16:19:47.462952+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
