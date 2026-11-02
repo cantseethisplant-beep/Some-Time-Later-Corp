@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 166,
+  "board_revision": 167,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5266,7 +5266,7 @@
     {
       "id": "MAP-047",
       "title": "Research signature, mass and observation evidence boundaries",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -5309,14 +5309,22 @@
         "token": "ciT5VQIEJ0fn61E0kIlW1e_A0-KSYK_7",
         "worker_id": "hermes-laptop-map-047-auto-20261030",
         "claimed_at": "2026-11-02T16:34:27.451693+00:00",
-        "last_activity_at": "2026-11-02T16:34:27.451693+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T16:39:51.787876+00:00",
+        "released_at": "2026-11-02T16:39:51.787876+00:00",
         "branch": "hermes/map-047-auto-20261030",
         "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41",
+        "submitted_at": "2026-11-02T16:39:51.787876+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-research",
@@ -6355,6 +6363,12 @@
       "task_id": "MAP-047",
       "date": "2026-11-02T16:34:27.451693+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-047",
+      "date": "2026-11-02T16:39:51.787876+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
