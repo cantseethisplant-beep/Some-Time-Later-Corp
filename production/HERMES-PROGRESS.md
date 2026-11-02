@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T16:00:19.345103+00:00
+Updated: 2026-11-02T16:05:23.302812+00:00
 Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 222
+Conservative run attempts so far: 225
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -52,6 +52,7 @@ Conservative run attempts so far: 222
 - MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
 - MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
 - MAP-043: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37
+- MAP-044: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -60,10 +61,11 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: researching; cycle: 0; next: MAP-043
+Loop status: researching; cycle: 0; next: MAP-044
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ## Local primary-source research
 Six independent reports, then an evidence register and proposed amendments. No server used; completed blueprint remains unchanged; no facts automatically accepted or locked.
 Ten total free attempts and four corrections per admitted research task; original 800 run/daily caps and 100-account reserve preserved.
 Local resume: WH-RESEARCH.md, state/wh-research.json and WH-RESEARCH-PACKAGE when finished.
+- Research 1 MAP-043: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37
