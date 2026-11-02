@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 143,
+  "board_revision": 144,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4656,7 +4656,7 @@
     {
       "id": "MAP-040",
       "title": "Assemble WH blueprint candidate from completed parts",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -4715,14 +4715,22 @@
         "token": "jxyT_2O_5yqMJkqznwtEWgkveLOcVj7l",
         "worker_id": "hermes-laptop-map-040-auto-20261030",
         "claimed_at": "2026-11-02T08:14:38.681085+00:00",
-        "last_activity_at": "2026-11-02T08:14:38.681085+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T08:21:17.701527+00:00",
+        "released_at": "2026-11-02T08:21:17.701527+00:00",
         "branch": "hermes/map-040-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "3b106a956ed936af87f80ffcc293741ebf9303bc",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34",
+        "submitted_at": "2026-11-02T08:21:17.701527+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-design",
@@ -5622,6 +5630,12 @@
       "task_id": "MAP-040",
       "date": "2026-11-02T08:14:38.681085+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-040",
+      "date": "2026-11-02T08:21:17.701527+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
