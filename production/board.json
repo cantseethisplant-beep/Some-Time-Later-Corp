@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 136,
+  "board_revision": 137,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4431,7 +4431,7 @@
     {
       "id": "MAP-037",
       "title": "WH data, API and concurrent map synchronization contract",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -4458,8 +4458,8 @@
         "token": "2hTRCIb7eal9xIbek9dILyhwCOK9f_9j",
         "worker_id": "hermes-laptop-map-037-auto-20261030",
         "claimed_at": "2026-11-01T20:55:25.858745+00:00",
-        "last_activity_at": "2026-11-02T07:58:50.684085+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T08:09:46.937726+00:00",
+        "released_at": "2026-11-02T08:09:46.937726+00:00",
         "branch": "hermes/map-037-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
@@ -4474,7 +4474,7 @@
       "loop_key": "wh-v1-stage-2",
       "wh_stage": 2,
       "wh_version": 1,
-      "blocked_reason": null,
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: Section 7's invalid WH-API-02 JumpEvidence create example omits idempotencyKey, which Section 5 requires for mutations, so the example cannot cleanly isolate the shipMass E_INVALID_PAYLOAD check; add idempotencyKey to that request.",
       "claim_history": [
         {
           "token": "2hTRCIb7eal9xIbek9dILyhwCOK9f_9j",
@@ -5447,6 +5447,12 @@
       "task_id": "MAP-037",
       "date": "2026-11-02T07:58:50.684085+00:00",
       "note": "Same saved claim/task and spent ledger; coordinator correction disclosed; fresh native review required under bounded WH recovery reserve."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-037",
+      "date": "2026-11-02T08:09:46.937726+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: Section 7's invalid WH-API-02 JumpEvidence create example omits idempotencyKey, which Section 5 requires for mutations, so the example cannot cleanly isolate the shipMass E_INVALID_PAYLOAD check; add idempotencyKey to that request."
     }
   ]
 }
