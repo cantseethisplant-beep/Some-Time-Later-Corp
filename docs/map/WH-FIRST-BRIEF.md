@@ -1,3 +1,9 @@
+# Logged mechanical example recovery
+
+The owner-authorised recovery also permits a narrowly checked, zero-inference correction when the current native critic's sole finding is a missing required idempotency key in the explicit negative-mass JumpEvidence JSON fixture. The worker validates the declared envelope, UUIDs and original fields, adds only a synthetic example key, preserves the deliberate negative mass, and records reproducible before/after hashes with the original native report. Other findings, permissions, source facts and schema choices are not repaired by this rule. Publication explicitly says the native critic did not recheck the corrected fixture; it remains an unaccepted draft. STOP, claim ownership and deadline gates still apply; exhausted model counters are never reset. MAP-036 is draft PR #32; MAP-037 is draft PR #33 and discloses this mechanical correction. Assembly continues from these completed released unaccepted references.
+
+---
+
 # Current WH recovery policy — 2 November 2026
 
 The owner requested recovery of MAP-036/037 and continued unattended WH blueprint drafting. Admitted WH tasks may use up to **10 total free model HTTP attempts and 4 total correction rounds**, counting all previously spent attempts/rounds. This replaces older six/two descriptions for WH tasks only. The original run ledger, 800 total/daily caps, 100-account-request reserve, live-zero-price allowlist, one-task claim, STOP/access/security gates and independent review boundaries remain unchanged. No paid fallback or Codex heartbeat.
