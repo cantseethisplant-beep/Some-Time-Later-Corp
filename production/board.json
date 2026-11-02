@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 174,
+  "board_revision": 175,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5410,7 +5410,7 @@
     {
       "id": "MAP-049",
       "title": "Assemble research evidence register and proposed blueprint amendments",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -5493,14 +5493,45 @@
         "token": "wCoru237NSqyruRQ6w4MP6cLMOPymoMx",
         "worker_id": "hermes-laptop-map-049-auto-20261030",
         "claimed_at": "2026-11-02T16:45:02.505518+00:00",
-        "last_activity_at": "2026-11-02T23:53:48.907339+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T23:54:00.915061+00:00",
+        "released_at": "2026-11-02T23:54:00.915061+00:00",
         "branch": "hermes/map-049-auto-20261030",
         "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "079c022f5fbfe04736177df793629acf8fc470fd",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/43",
+        "submitted_at": "2026-11-02T23:54:00.915061+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-049",
+          "reviewer": "Codex coordinator — explicit owner-requested research handoff completion",
+          "at": "2026-11-02T23:53:48.904832+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Normalized 35 entries to controlled evidence statuses and complete fields without fabricating observations",
+            "Added per-entry contradiction/validity notes and explicit cross-report/packet scope",
+            "Corrected source attribution for HTTP metadata; clarified access-token versus ID-token/client-auth algorithm metadata",
+            "Reconciled Composer-lock packet scope and per-report option labels; retained original reports and limitations"
+          ],
+          "checks": [
+            "All 35 evidence IDs present exactly once",
+            "Every entry has claim/source/scope/observed/status/contradictions/invalidation/affected fields",
+            "All status values use the four controlled labels; unknown evidence remains unresolved",
+            "All six source reports have immutable commits and are completed released drafts",
+            "HTTP metadata receipts checked against saved original public-source bytes",
+            "Cross-report lockfile scope, option naming and revocation/issuer distinctions explicitly reconciled"
+          ],
+          "corrected_payload_sha256": "bb84fdaf4ced705fa5213ba511409b5f4c70702e48f4bccc926ccc87f8bb813d"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-research",
@@ -6601,6 +6632,12 @@
       "task_id": "MAP-049",
       "date": "2026-11-02T23:53:48.907339+00:00",
       "note": "Saved research register normalized and source-scoped by Codex; no inference, ledger reset, independent acceptance or server access."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-049",
+      "date": "2026-11-02T23:54:00.915061+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
