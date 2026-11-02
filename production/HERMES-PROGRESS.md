@@ -1,13 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-01T21:10:27.308997+00:00
-A prerequisite WH part is blocked or unfinished. Independent parts preserved; no replacement IDs or budget reset.
+Updated: 2026-11-02T07:58:47.619723+00:00
+One task needs independent correction; local loop continues only independent ready tasks.
 
-Stop mode: **queue_completion**; current session lease: 2026-11-02T01:48:36.070060+00:00
+Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Six total inference attempts per production task including criticism; two correction rounds maximum; 800 run attempts including pilot; preserve 100 account requests.
-Conservative run attempts so far: 188
+Conservative run attempts so far: 191
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -59,6 +58,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
 Loop status: wh_blueprint_needs_attention; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
+WH recovery policy: up to ten total free HTTP attempts per task and four correction rounds, including all previous spent attempts/rounds. Run cap 800, daily free quota and 100-account-request reserve unchanged.
 
 ## WH-first blueprint production
 Current scope: [WH-first owner brief](../docs/map/WH-FIRST-BRIEF.md). Historical hosting packages are optional background.
