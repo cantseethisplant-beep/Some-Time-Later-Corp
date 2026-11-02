@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 157,
+  "board_revision": 158,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5050,7 +5050,7 @@
     {
       "id": "MAP-044",
       "title": "Research ESI location, ship, polling and rate-limit contracts",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -5093,14 +5093,22 @@
         "token": "10p0YubNKNwTWZaiZuGFmALdkcsXvOJT",
         "worker_id": "hermes-laptop-map-044-auto-20261030",
         "claimed_at": "2026-11-02T16:00:28.661128+00:00",
-        "last_activity_at": "2026-11-02T16:00:28.661128+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T16:05:20.934753+00:00",
+        "released_at": "2026-11-02T16:05:20.934753+00:00",
         "branch": "hermes/map-044-auto-20261030",
         "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38",
+        "submitted_at": "2026-11-02T16:05:20.934753+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-research",
@@ -6085,6 +6093,12 @@
       "task_id": "MAP-044",
       "date": "2026-11-02T16:00:28.661128+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-044",
+      "date": "2026-11-02T16:05:20.934753+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
