@@ -1,3 +1,11 @@
+# Current WH recovery policy — 2 November 2026
+
+The owner requested recovery of MAP-036/037 and continued unattended WH blueprint drafting. Admitted WH tasks may use up to **10 total free model HTTP attempts and 4 total correction rounds**, counting all previously spent attempts/rounds. This replaces older six/two descriptions for WH tasks only. The original run ledger, 800 total/daily caps, 100-account-request reserve, live-zero-price allowlist, one-task claim, STOP/access/security gates and independent review boundaries remain unchanged. No paid fallback or Codex heartbeat.
+
+Saved MAP-036/037 corrections preserve original native material and disclose coordinator edits. Each corrected draft needs a fresh native critic before submission. Repairs receive complete validated document text rather than an internal storage wrapper. The worker checks current findings, source citations, required fields/examples, operation IDs and ownership/error consistency, then continues the finite WH assembly/audit/correction pipeline. It reserves room for correction plus critique instead of spending a final request on an unreviewable redraft. Genuinely missing evidence, revoked access, STOP or exhausted bounds remain explicit blockers. Submission is never acceptance or build readiness.
+
+---
+
 # Wormhole-first blueprint brief
 
 Owner direction, 1 November 2026. Project creator: VelesPhylakos.
