@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T08:14:27.705820+00:00
+Updated: 2026-11-02T08:21:20.101422+00:00
 Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 197
+Conservative run attempts so far: 201
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -48,6 +48,7 @@ Conservative run attempts so far: 197
 - MAP-037: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33
 - MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
 - MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
+- MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -56,7 +57,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: wh_blueprint_needs_attention; cycle: 0; next: None
+Loop status: drafting_wh_blueprint; cycle: 0; next: MAP-040
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 WH recovery policy: up to ten total free HTTP attempts per task and four correction rounds, including all previous spent attempts/rounds. Run cap 800, daily free quota and 100-account-request reserve unchanged.
 
@@ -65,6 +66,6 @@ Current scope: [WH-first owner brief](../docs/map/WH-FIRST-BRIEF.md). Historical
 Seven finite stages: reuse/MVP, data/API, identity/privacy, workflows/tests, assembly, targeted integration audit, corrected final handoff. Each stage receives bounded native critique/repair. No repeated unchanged global audits.
 Local final package: WH-BLUEPRINT-PACKAGE/README.md when complete. STOP, free quota, original ledger and ownership gates remain enforced.
 - WH stage 1 MAP-036: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32
-- WH stage 2 MAP-037: blocked — not submitted
+- WH stage 2 MAP-037: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33
 - WH stage 3 MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
 - WH stage 4 MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
