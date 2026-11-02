@@ -1,9 +1,9 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T09:07:37.652088+00:00
-WH final draft or prerequisite needs independent recovery. All counters retained.
+Updated: 2026-11-02T13:10:18.109699+00:00
+WH blueprint, targeted audit and corrected builder handoff published as drafts. Read WH-BLUEPRINT-PACKAGE/README.md. Resolve listed owner/evidence blockers; no automatic acceptance, implementation or further audit loop.
 
-Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
+Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Conservative run attempts so far: 220
@@ -50,7 +50,7 @@ Conservative run attempts so far: 220
 - MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
 - MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 - MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
-- MAP-042: blocked — no submitted PR
+- MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -59,8 +59,10 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: wh_blueprint_needs_attention; cycle: 0; next: None
+Loop status: wh_candidate_ready_for_independent_review; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
+
+Candidate PR: https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
 WH recovery policy: up to ten total free HTTP attempts per task and four correction rounds, including all previous spent attempts/rounds. Run cap 800, daily free quota and 100-account-request reserve unchanged.
 
 ## WH-first blueprint production
@@ -73,4 +75,4 @@ Local final package: WH-BLUEPRINT-PACKAGE/README.md when complete. STOP, free qu
 - WH stage 4 MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
 - WH stage 5 MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 - WH stage 6 MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
-- WH stage 7 MAP-042: blocked — not submitted
+- WH stage 7 MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
