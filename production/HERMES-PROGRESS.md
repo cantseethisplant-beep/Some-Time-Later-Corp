@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T17:14:13.588008+00:00
-One task needs independent correction; local loop continues only independent ready tasks.
+Updated: 2026-11-02T17:14:19.137948+00:00
+Finite local research batch finished. Review reports and proposed amendments independently; completed blueprint unchanged, no server access or further automatic audit loop.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -66,7 +66,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: researching; cycle: 0; next: MAP-049
+Loop status: research_partial_needs_attention; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ## Local primary-source research
@@ -79,3 +79,4 @@ Local resume: WH-RESEARCH.md, state/wh-research.json and WH-RESEARCH-PACKAGE whe
 - Research 4 MAP-046: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40
 - Research 5 MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
 - Research 6 MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
+- Research 7 MAP-049: blocked — not submitted
