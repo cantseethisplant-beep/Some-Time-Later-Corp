@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T13:10:18.109699+00:00
-WH blueprint, targeted audit and corrected builder handoff published as drafts. Read WH-BLUEPRINT-PACKAGE/README.md. Resolve listed owner/evidence blockers; no automatic acceptance, implementation or further audit loop.
+Updated: 2026-11-02T15:57:40.355359+00:00
+Local Hermes primary-source research is running: MAP-043 investigates SSO, JWT, refresh and revocation evidence. Six independent reports plus one evidence-register handoff; no server access, paid fallback, fact locking or changes to the completed blueprint.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 220
+Conservative run attempts so far: 221
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -51,6 +51,7 @@ Conservative run attempts so far: 220
 - MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 - MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
 - MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
+- MAP-043: claimed — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -59,20 +60,10 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: wh_candidate_ready_for_independent_review; cycle: 0; next: None
+Loop status: researching; cycle: 0; next: MAP-043
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
-Candidate PR: https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
-WH recovery policy: up to ten total free HTTP attempts per task and four correction rounds, including all previous spent attempts/rounds. Run cap 800, daily free quota and 100-account-request reserve unchanged.
-
-## WH-first blueprint production
-Current scope: [WH-first owner brief](../docs/map/WH-FIRST-BRIEF.md). Historical hosting packages are optional background.
-Seven finite stages: reuse/MVP, data/API, identity/privacy, workflows/tests, assembly, targeted integration audit, corrected final handoff. Each stage receives bounded native critique/repair. No repeated unchanged global audits.
-Local final package: WH-BLUEPRINT-PACKAGE/README.md when complete. STOP, free quota, original ledger and ownership gates remain enforced.
-- WH stage 1 MAP-036: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32
-- WH stage 2 MAP-037: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33
-- WH stage 3 MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
-- WH stage 4 MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
-- WH stage 5 MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
-- WH stage 6 MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
-- WH stage 7 MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
+## Local primary-source research
+Six independent reports, then an evidence register and proposed amendments. No server used; completed blueprint remains unchanged; no facts automatically accepted or locked.
+Ten total free attempts and four corrections per admitted research task; original 800 run/daily caps and 100-account reserve preserved.
+Local resume: WH-RESEARCH.md, state/wh-research.json and WH-RESEARCH-PACKAGE when finished.
