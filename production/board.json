@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 145,
+  "board_revision": 146,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4743,7 +4743,7 @@
     {
       "id": "MAP-041",
       "title": "Targeted audit of assembled WH blueprint",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4806,7 +4806,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "PTQMM1YoHdS8kLRCsd97K_FJccPfsZHP",
+        "worker_id": "hermes-laptop-map-041-auto-20261030",
+        "claimed_at": "2026-11-02T08:21:29.097026+00:00",
+        "last_activity_at": "2026-11-02T08:21:29.097026+00:00",
+        "released_at": null,
+        "branch": "hermes/map-041-auto-20261030",
+        "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -5719,6 +5729,12 @@
       "task_id": "MAP-041",
       "date": "2026-11-02T08:21:26.036139+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-041",
+      "date": "2026-11-02T08:21:29.097026+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
