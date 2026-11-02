@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T08:12:15.106933+00:00
-A prerequisite WH part is blocked or unfinished. Independent parts preserved; no replacement IDs or budget reset.
+Updated: 2026-11-02T08:14:27.705820+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -45,7 +45,7 @@ Conservative run attempts so far: 197
 - MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28
 - MAP-035: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/29
 - MAP-036: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32
-- MAP-037: blocked — no submitted PR
+- MAP-037: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33
 - MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
 - MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
 
