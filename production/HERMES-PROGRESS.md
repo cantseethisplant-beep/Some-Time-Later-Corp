@@ -1,9 +1,9 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T17:14:19.137948+00:00
-Finite local research batch finished. Review reports and proposed amendments independently; completed blueprint unchanged, no server access or further automatic audit loop.
+Updated: 2026-11-02T23:54:06.082715+00:00
+Research handoff complete: all seven research tasks submitted as unaccepted drafts; MAP-049 corrected by Codex with full evidence-field/provenance checks. Blueprint reconciliation now authorised separately; no server used.
 
-Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
+Stop mode: **queue_completion**; current session lease: 2026-11-03T04:53:46.560977+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
 Conservative run attempts so far: 255
@@ -57,7 +57,7 @@ Conservative run attempts so far: 255
 - MAP-046: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40
 - MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
 - MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
-- MAP-049: blocked — no submitted PR
+- MAP-049: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/43
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -66,7 +66,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: research_partial_needs_attention; cycle: 0; next: None
+Loop status: research_ready_for_review; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ## Local primary-source research
@@ -79,4 +79,4 @@ Local resume: WH-RESEARCH.md, state/wh-research.json and WH-RESEARCH-PACKAGE whe
 - Research 4 MAP-046: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40
 - Research 5 MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
 - Research 6 MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
-- Research 7 MAP-049: blocked — not submitted
+- Research 7 MAP-049: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/43
