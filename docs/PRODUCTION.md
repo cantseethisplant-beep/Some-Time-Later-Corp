@@ -1,3 +1,9 @@
+# Current owner phase: local primary-source research
+
+The owner has authorised native Hermes to work on research and evidence gaps locally, keeping the server out of this project for now. Read docs/map/research/LOCAL-RESEARCH.md. This is a new bounded research phase after the completed WH blueprint package; it does not authorise rewriting or accepting that blueprint, locking facts permanently, implementing/deploying the app, using paid models, or accessing the server. A guarded local reader supplies freshly fetched pinned public primary sources; native Hermes analyses those packets with no network/shell/account tools. Six independent research reports are followed by one evidence-register/amendment handoff. Preserve one task claim, current-SHA CAS/readback, original ledger/caps/reserve, bounded ten-request/four-correction limits, STOP/access gates and independent review. Owner choices and runtime evidence remain distinct from researched source claims.
+
+---
+
 # Current WH recovery policy — 2 November 2026
 
 The owner requested recovery of MAP-036/037 and continued unattended WH blueprint drafting. Admitted WH tasks may use up to **10 total free model HTTP attempts and 4 total correction rounds**, counting all previously spent attempts/rounds. This replaces older six/two descriptions for WH tasks only. The original run ledger, 800 total/daily caps, 100-account-request reserve, live-zero-price allowlist, one-task claim, STOP/access/security gates and independent review boundaries remain unchanged. No paid fallback or Codex heartbeat.

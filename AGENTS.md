@@ -1,3 +1,9 @@
+# Current owner phase: local primary-source research
+
+The owner has authorised native Hermes to work on research and evidence gaps locally, keeping the server out of this project for now. Read docs/map/research/LOCAL-RESEARCH.md. This is a new bounded research phase after the completed WH blueprint package; it does not authorise rewriting or accepting that blueprint, locking facts permanently, implementing/deploying the app, using paid models, or accessing the server. A guarded local reader supplies freshly fetched pinned public primary sources; native Hermes analyses those packets with no network/shell/account tools. Six independent research reports are followed by one evidence-register/amendment handoff. Preserve one task claim, current-SHA CAS/readback, original ledger/caps/reserve, bounded ten-request/four-correction limits, STOP/access gates and independent review. Owner choices and runtime evidence remain distinct from researched source claims.
+
+---
+
 # Current owner direction: wormhole tool first
 
 Read [docs/map/WH-FIRST-BRIEF.md](/docs/map/WH-FIRST-BRIEF.md). The owner clarified that the app is primarily a WH mapping/intel/operations tool; cloud hosting is an addition. That brief takes precedence over older hosting-first descriptions below for new WH tasks. Study Pathfinder and EVE-WHMapper; exclude RIFT. Existing hosting drafts remain unaccepted optional background. Native Hermes may perform the finite WH draft/audit/repair sequence from pinned supplied sources; no automatic acceptance, merge or app implementation. Preserve all free-only, claim, security and request-budget gates.
