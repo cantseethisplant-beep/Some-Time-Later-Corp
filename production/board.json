@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 140,
+  "board_revision": 141,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4450,7 +4450,7 @@
     {
       "id": "MAP-037",
       "title": "WH data, API and concurrent map synchronization contract",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -4477,14 +4477,38 @@
         "token": "2hTRCIb7eal9xIbek9dILyhwCOK9f_9j",
         "worker_id": "hermes-laptop-map-037-auto-20261030",
         "claimed_at": "2026-11-01T20:55:25.858745+00:00",
-        "last_activity_at": "2026-11-02T08:14:12.175363+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T08:14:25.299473+00:00",
+        "released_at": "2026-11-02T08:14:25.299473+00:00",
         "branch": "hermes/map-037-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "fb2bb57a8f28f5362912f6c4a94d5845dbaabd2a",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33",
+        "submitted_at": "2026-11-02T08:14:25.299473+00:00",
+        "review_status": "native revision requested; narrow deterministic example repair; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "deterministic_correction": {
+          "task_id": "MAP-037",
+          "run": "eve-blueprint-20261030",
+          "rule": "wh-negative-mass-example-idempotency-v1",
+          "original_payload_sha256": "57f8015f9d0d8b499d88eb098d6fb778eeb6e4e95bcb5031675180c676f6a46f",
+          "corrected_payload_sha256": "c35aeaa6ae1e81dceb0e51a21e363a41cfb01599303b17e4f4edcf47358064e7",
+          "native_rechecked": false,
+          "accepted": false,
+          "checks": [
+            "sole current native finding matches allowlisted defect",
+            "declared mutation envelope requires key",
+            "UUIDs and JSON parsed",
+            "only synthetic idempotency key added; original fields and negative mass preserved"
+          ],
+          "at": "2026-11-02T08:14:15.483651+00:00"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-design",
@@ -5501,6 +5525,12 @@
       "task_id": "MAP-037",
       "date": "2026-11-02T08:14:12.175363+00:00",
       "note": "Same saved claim/task and spent ledger; coordinator correction disclosed; fresh native review required under bounded WH recovery reserve."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-037",
+      "date": "2026-11-02T08:14:25.299473+00:00",
+      "note": "Single allowlisted example-envelope finding corrected by reproducible deterministic JSON check; exact output readback; no native recheck, acceptance or merge."
     }
   ]
 }
