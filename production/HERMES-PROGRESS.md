@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T16:44:53.134284+00:00
-Local automatic drafting/critique/submission loop active; review drafts independently.
+Updated: 2026-11-02T17:14:13.588008+00:00
+One task needs independent correction; local loop continues only independent ready tasks.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 245
+Conservative run attempts so far: 255
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -57,6 +57,7 @@ Conservative run attempts so far: 245
 - MAP-046: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40
 - MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
 - MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
+- MAP-049: blocked — no submitted PR
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
@@ -65,7 +66,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: researching; cycle: 0; next: MAP-048
+Loop status: researching; cycle: 0; next: MAP-049
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 
 ## Local primary-source research
@@ -77,3 +78,4 @@ Local resume: WH-RESEARCH.md, state/wh-research.json and WH-RESEARCH-PACKAGE whe
 - Research 3 MAP-045: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39
 - Research 4 MAP-046: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40
 - Research 5 MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
+- Research 6 MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
