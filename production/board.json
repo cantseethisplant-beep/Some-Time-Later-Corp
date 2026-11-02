@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 162,
+  "board_revision": 163,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5194,7 +5194,7 @@
     {
       "id": "MAP-046",
       "title": "Research map access, bootstrap and membership behavior",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -5233,7 +5233,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "D1xzPxX1fmvevBZH4i-ipJ6G0Zt3j6qR",
+        "worker_id": "hermes-laptop-map-046-auto-20261030",
+        "claimed_at": "2026-11-02T16:24:41.140425+00:00",
+        "last_activity_at": "2026-11-02T16:24:41.140425+00:00",
+        "released_at": null,
+        "branch": "hermes/map-046-auto-20261030",
+        "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -6249,6 +6259,12 @@
       "task_id": "MAP-046",
       "date": "2026-11-02T16:24:37.726378+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-046",
+      "date": "2026-11-02T16:24:41.140425+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
