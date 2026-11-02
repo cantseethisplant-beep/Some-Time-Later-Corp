@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T15:57:40.355359+00:00
-Local Hermes primary-source research is running: MAP-043 investigates SSO, JWT, refresh and revocation evidence. Six independent reports plus one evidence-register handoff; no server access, paid fallback, fact locking or changes to the completed blueprint.
+Updated: 2026-11-02T16:00:19.345103+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T18:09:59.362689+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 221
+Conservative run attempts so far: 222
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -51,7 +51,7 @@ Conservative run attempts so far: 221
 - MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 - MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
 - MAP-042: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
-- MAP-043: claimed — no submitted PR
+- MAP-043: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
