@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 148,
+  "board_revision": 149,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4838,7 +4838,7 @@
     {
       "id": "MAP-042",
       "title": "Corrected WH blueprint and builder handoff",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4909,7 +4909,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "TX3VzJerc8iQMEYR6xAG_YRUNIegAWp4",
+        "worker_id": "hermes-laptop-map-042-auto-20261030",
+        "claimed_at": "2026-11-02T08:46:20.087550+00:00",
+        "last_activity_at": "2026-11-02T08:46:20.087550+00:00",
+        "released_at": null,
+        "branch": "hermes/map-042-auto-20261030",
+        "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -5840,6 +5850,12 @@
       "task_id": "MAP-042",
       "date": "2026-11-02T08:46:17.083978+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-042",
+      "date": "2026-11-02T08:46:20.087550+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
