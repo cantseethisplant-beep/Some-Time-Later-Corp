@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T09:07:33.880240+00:00
-One task needs independent correction; local loop continues only independent ready tasks.
+Updated: 2026-11-02T09:07:37.652088+00:00
+WH final draft or prerequisite needs independent recovery. All counters retained.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -59,7 +59,7 @@ The map is incomplete until independent review, reconciliation, required evidenc
 
 ## Autonomous blueprint follow-ups
 Policy: [user-authorised local loop](handoffs/MAP-000-local-auto.md). No recurring Codex polling.
-Loop status: drafting_wh_blueprint; cycle: 0; next: MAP-042
+Loop status: wh_blueprint_needs_attention; cycle: 0; next: None
 Local resume: BLUEPRINT-LOOP.md and state/blueprint-loop.json.
 WH recovery policy: up to ten total free HTTP attempts per task and four correction rounds, including all previous spent attempts/rounds. Run cap 800, daily free quota and 100-account-request reserve unchanged.
 
@@ -73,3 +73,4 @@ Local final package: WH-BLUEPRINT-PACKAGE/README.md when complete. STOP, free qu
 - WH stage 4 MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
 - WH stage 5 MAP-040: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
 - WH stage 6 MAP-041: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
+- WH stage 7 MAP-042: blocked — not submitted
