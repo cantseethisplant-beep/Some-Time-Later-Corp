@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 172,
+  "board_revision": 173,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5410,7 +5410,7 @@
     {
       "id": "MAP-049",
       "title": "Assemble research evidence register and proposed blueprint amendments",
-      "status": "claimed",
+      "status": "blocked",
       "depends_on": [],
       "inputs": [
         {
@@ -5493,8 +5493,8 @@
         "token": "wCoru237NSqyruRQ6w4MP6cLMOPymoMx",
         "worker_id": "hermes-laptop-map-049-auto-20261030",
         "claimed_at": "2026-11-02T16:45:02.505518+00:00",
-        "last_activity_at": "2026-11-02T16:45:02.505518+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T17:14:11.248955+00:00",
+        "released_at": "2026-11-02T17:14:11.248955+00:00",
         "branch": "hermes/map-049-auto-20261030",
         "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
         "run": "eve-blueprint-20261030",
@@ -5509,7 +5509,8 @@
       "loop_key": "wh-research-v1-7",
       "research_version": 1,
       "research_step": 7,
-      "research_input_fingerprint": "214dc413139b25e2049fd7d46e69d69addd0c9b2d894299d01fa500a7b1e9496"
+      "research_input_fingerprint": "214dc413139b25e2049fd7d46e69d69addd0c9b2d894299d01fa500a7b1e9496",
+      "blocked_reason": "Bounded draft corrections exhausted; preserve for independent correction: The MAP-049 draft consolidates the six unaccepted research reports into evidence register entries E01-E35 with proposed amendments A-01-A-13 and owner decisions OD-01-OD-14, but the evidence register does not conform to the required per-entry schema: multiple entries use non-controlled status labels (e.g., 'documented', 'inspected, unverified', 'proposed framing', 'unavailable evidence'), entry E10 is missing the mandatory Source field, entries E08/E13/E22/E24/E29 are missing Invalidation, entries E20/E25/E31/E34/E35 are missing Observed (and E31/E34/E35 also lack Invalidation), and no entry carries the mandatory Contradictions sub-field. These are schema/modality defects fixable from the su"
     }
   ],
   "backlog": [
@@ -6575,6 +6576,12 @@
       "task_id": "MAP-049",
       "date": "2026-11-02T16:45:02.505518+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "blocked-and-released",
+      "task_id": "MAP-049",
+      "date": "2026-11-02T17:14:11.248955+00:00",
+      "note": "Bounded draft corrections exhausted; preserve for independent correction: The MAP-049 draft consolidates the six unaccepted research reports into evidence register entries E01-E35 with proposed amendments A-01-A-13 and owner decisions OD-01-OD-14, but the evidence register does not conform to the required per-entry schema: multiple entries use non-controlled status labels (e.g., 'documented', 'inspected, unverified', 'proposed framing', 'unavailable evidence'), entry E10 is missing the mandatory Source field, entries E08/E13/E22/E24/E29 are missing Invalidation, entries E20/E25/E31/E34/E35 are missing Observed (and E31/E34/E35 also lack Invalidation), and no entry carries the mandatory Contradictions sub-field. These are schema/modality defects fixable from the su"
     }
   ]
 }
