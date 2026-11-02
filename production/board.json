@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 151,
+  "board_revision": 152,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4838,7 +4838,7 @@
     {
       "id": "MAP-042",
       "title": "Corrected WH blueprint and builder handoff",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -4913,14 +4913,45 @@
         "token": "TX3VzJerc8iQMEYR6xAG_YRUNIegAWp4",
         "worker_id": "hermes-laptop-map-042-auto-20261030",
         "claimed_at": "2026-11-02T08:46:20.087550+00:00",
-        "last_activity_at": "2026-11-02T13:10:00.246185+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T13:10:12.493448+00:00",
+        "released_at": "2026-11-02T13:10:12.493448+00:00",
         "branch": "hermes/map-042-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "6e023274d7cb692f36b132d980d5a335d4387897",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36",
+        "submitted_at": "2026-11-02T13:10:12.493448+00:00",
+        "review_status": "native revision requested; Codex coordinator corrected/reviewed; no native recheck; independent acceptance pending",
+        "accepted": false,
+        "native_hermes": true,
+        "coordinator_review": {
+          "task_id": "MAP-042",
+          "reviewer": "Codex coordinator — explicit owner-requested final WH blueprint completion",
+          "at": "2026-11-02T13:10:00.240658+00:00",
+          "native_critic_decision": "revise",
+          "native_rechecked": false,
+          "independent_acceptance": false,
+          "findings_adjudicated": [
+            "Corrected bootstrap/signature-length/access-default/opt-in decision references in sections 5, 11, 12 and 13 against the actual section 15 register; added stable OD identifiers.",
+            "Expanded abbreviated UUID examples; clarified proposed responses, tenant/map ownership, signature identity, exact error name and source-copy notice wording; added the missing MAP-040 source inventory row.",
+            "Added an explicit prerequisite-ordered build plan with baseline/bootstrap and early permission gates; separated offline local proposals from accepted server writes.",
+            "Added requirement-to-build/test traceability for all ten requirements, six missing observable check specifications, and scope notes for inherited security tests; no tests marked executed."
+          ],
+          "checks": [
+            "All 14 stable OD identifiers resolve and section-15 item pairs agree",
+            "All ten requirements map to build steps and observable checks",
+            "All 16 audit findings appear exactly once in disposition table",
+            "5 JSON examples parse; identifier fields are complete canonical UUIDs",
+            "Known bad decision/section/error references removed",
+            "Proposed design, independent acceptance and runtime-evidence boundaries preserved"
+          ],
+          "corrected_payload_sha256": "14a62974994b90aa68eb5c4396fcf139e15d3aa5408256180cf2c55d69934154"
+        }
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-design",
@@ -5882,6 +5913,12 @@
       "task_id": "MAP-042",
       "date": "2026-11-02T13:10:00.246185+00:00",
       "note": "Saved native final draft corrected/reviewed by Codex, with disclosed edits; original attempts/critics retained. Draft submission only."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-042",
+      "date": "2026-11-02T13:10:12.493448+00:00",
+      "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
     }
   ]
 }
