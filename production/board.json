@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 150,
+  "board_revision": 151,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4838,7 +4838,7 @@
     {
       "id": "MAP-042",
       "title": "Corrected WH blueprint and builder handoff",
-      "status": "blocked",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -4913,8 +4913,8 @@
         "token": "TX3VzJerc8iQMEYR6xAG_YRUNIegAWp4",
         "worker_id": "hermes-laptop-map-042-auto-20261030",
         "claimed_at": "2026-11-02T08:46:20.087550+00:00",
-        "last_activity_at": "2026-11-02T09:07:31.136514+00:00",
-        "released_at": "2026-11-02T09:07:31.136514+00:00",
+        "last_activity_at": "2026-11-02T13:10:00.246185+00:00",
+        "released_at": null,
         "branch": "hermes/map-042-auto-20261030",
         "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
         "run": "eve-blueprint-20261030",
@@ -4929,7 +4929,20 @@
       "loop_key": "wh-v1-stage-7",
       "wh_stage": 7,
       "wh_version": 1,
-      "blocked_reason": "Insufficient task budget for both correction and critique; best saved draft preserved without spending an unreviewable last request"
+      "blocked_reason": null,
+      "claim_history": [
+        {
+          "token": "TX3VzJerc8iQMEYR6xAG_YRUNIegAWp4",
+          "worker_id": "hermes-laptop-map-042-auto-20261030",
+          "claimed_at": "2026-11-02T08:46:20.087550+00:00",
+          "last_activity_at": "2026-11-02T09:07:31.136514+00:00",
+          "released_at": "2026-11-02T09:07:31.136514+00:00",
+          "branch": "hermes/map-042-auto-20261030",
+          "input_revision": "849978908daabe3d2a45f0e758625eedc4bdde30",
+          "run": "eve-blueprint-20261030",
+          "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+        }
+      ]
     }
   ],
   "backlog": [
@@ -5863,6 +5876,12 @@
       "task_id": "MAP-042",
       "date": "2026-11-02T09:07:31.136514+00:00",
       "note": "Insufficient task budget for both correction and critique; best saved draft preserved without spending an unreviewable last request"
+    },
+    {
+      "event": "owner-requested-final-wh-completion",
+      "task_id": "MAP-042",
+      "date": "2026-11-02T13:10:00.246185+00:00",
+      "note": "Saved native final draft corrected/reviewed by Codex, with disclosed edits; original attempts/critics retained. Draft submission only."
     }
   ]
 }
