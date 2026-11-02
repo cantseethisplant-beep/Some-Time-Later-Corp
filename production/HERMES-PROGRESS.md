@@ -1,12 +1,12 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T08:04:22.020421+00:00
-Hermes is running the owner-requested MAP-036/037 recovery with disclosed coordinator corrections, fresh native critiques and bounded automatic repairs; then it will continue WH blueprint assembly. Existing requests and rounds remain counted; no paid fallback or automatic acceptance.
+Updated: 2026-11-02T08:12:10.934055+00:00
+Local automatic drafting/critique/submission loop active; review drafts independently.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-02T12:54:01.864958+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
 Automated screening is not independent review. Nothing is automatically accepted or merged.
-Conservative run attempts so far: 193
+Conservative run attempts so far: 197
 
 ## Task state
 - MAP-001: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/4
@@ -44,8 +44,8 @@ Conservative run attempts so far: 193
 - MAP-033: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/27
 - MAP-034: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/28
 - MAP-035: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/29
-- MAP-036: blocked — no submitted PR
-- MAP-037: claimed — no submitted PR
+- MAP-036: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32
+- MAP-037: blocked — no submitted PR
 - MAP-038: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
 - MAP-039: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
 
