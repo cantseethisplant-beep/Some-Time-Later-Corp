@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 154,
+  "board_revision": 155,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -4978,7 +4978,7 @@
     {
       "id": "MAP-043",
       "title": "Research SSO, token validation and revocation evidence",
-      "status": "claimed",
+      "status": "review",
       "depends_on": [],
       "inputs": [
         {
@@ -5021,14 +5021,22 @@
         "token": "LPWHOLdu-b-lRQHtxIM_eAOtXBwqAKbE",
         "worker_id": "hermes-laptop-map-043-auto-20261030",
         "claimed_at": "2026-11-02T15:56:15.316562+00:00",
-        "last_activity_at": "2026-11-02T15:56:15.316562+00:00",
-        "released_at": null,
+        "last_activity_at": "2026-11-02T16:00:16.764422+00:00",
+        "released_at": "2026-11-02T16:00:16.764422+00:00",
         "branch": "hermes/map-043-auto-20261030",
         "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
         "run": "eve-blueprint-20261030",
         "coordinator": "guarded local serial coordinator; no Codex heartbeat"
       },
-      "submission": null,
+      "submission": {
+        "run": "eve-blueprint-20261030",
+        "output_commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "pull_request_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37",
+        "submitted_at": "2026-11-02T16:00:16.764422+00:00",
+        "review_status": "automated screening only; independent review pending",
+        "accepted": false,
+        "native_hermes": true
+      },
       "accepted_revision": null,
       "loop_policy": 1,
       "loop_kind": "wh-research",
@@ -5995,6 +6003,12 @@
       "task_id": "MAP-043",
       "date": "2026-11-02T15:56:15.316562+00:00",
       "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
+    },
+    {
+      "event": "submitted-for-review",
+      "task_id": "MAP-043",
+      "date": "2026-11-02T16:00:16.764422+00:00",
+      "note": "Guarded local coordinator exact readback; native critic only; claim released, no acceptance."
     }
   ]
 }
