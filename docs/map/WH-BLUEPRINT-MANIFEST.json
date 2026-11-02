@@ -1,0 +1,95 @@
+{
+  "run": "eve-blueprint-20261030",
+  "version": 1,
+  "accepted": false,
+  "build_ready": false,
+  "files": [
+    {
+      "task": "MAP-036",
+      "stage": 1,
+      "path": "docs/map/specs/loop-map-036-wh-design.md",
+      "commit": "abedc17bddc7f573f434f4dad78969471b9f3c9e",
+      "local": "01-MAP-036.md",
+      "sha256": "2408cdc213f7adec1cfbd31d5853f09c4fbcc024bef6483f03298d79e4c57465",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32"
+    },
+    {
+      "task": "MAP-037",
+      "stage": 2,
+      "path": "docs/map/specs/loop-map-037-wh-design.md",
+      "commit": "fb2bb57a8f28f5362912f6c4a94d5845dbaabd2a",
+      "local": "02-MAP-037.md",
+      "sha256": "459e7a3e16eef6a997a3e269069cacf8db566a171fbb05cededec48f41579851",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33"
+    },
+    {
+      "task": "MAP-038",
+      "stage": 3,
+      "path": "docs/map/specs/loop-map-038-wh-design.md",
+      "commit": "d68d560c9f6687f96bf82de8a980b13c385a7f2b",
+      "local": "03-MAP-038.md",
+      "sha256": "baaec2ba0474dd4e049b42befbcc302f5fa8652145172c6f82efcfdb01930a70",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30"
+    },
+    {
+      "task": "MAP-039",
+      "stage": 4,
+      "path": "docs/map/specs/loop-map-039-wh-design.md",
+      "commit": "556f3f983f9b1d3b2b3acc20853bcfd18c797348",
+      "local": "04-MAP-039.md",
+      "sha256": "dba71d8769cf47e87f7f6a21941303d29e0b8cf2e1d0bec2fc65591219434826",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31"
+    },
+    {
+      "task": "MAP-040",
+      "stage": 5,
+      "path": "docs/map/specs/loop-map-040-wh-design.md",
+      "commit": "3b106a956ed936af87f80ffcc293741ebf9303bc",
+      "local": "05-MAP-040.md",
+      "sha256": "3c620c58fcbbca2709ac1aa2414d0cc2e5a3430dd45676b70db012fa231c586c",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34"
+    },
+    {
+      "task": "MAP-041",
+      "stage": 6,
+      "path": "docs/map/specs/loop-map-041-wh-audit.md",
+      "commit": "fa913fc258b0b459e57499220ef31476a6f392bc",
+      "local": "06-MAP-041.md",
+      "sha256": "70a7d4591a5602a139b99f5f88b3cb0a7f38ffb5780292047a36ed5f3c1ec902",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35"
+    },
+    {
+      "task": "MAP-042",
+      "stage": 7,
+      "path": "docs/map/specs/loop-map-042-wh-design.md",
+      "commit": "6e023274d7cb692f36b132d980d5a335d4387897",
+      "local": "07-MAP-042.md",
+      "sha256": "063e7e3aca817557adae428effd98201cd5c20473929e85e416e7e17fe8ef5a3",
+      "draft_pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/map/WH-FIRST-BRIEF.md",
+      "commit": "849978908daabe3d2a45f0e758625eedc4bdde30",
+      "local": "evidence/WH-FIRST-BRIEF.md",
+      "sha256": "cf8406bf79897913cd3363e03309e26f696d6155fb4c8b8dcd640c47b6cb3194"
+    },
+    {
+      "path": "docs/map/research/pf-sources.md",
+      "commit": "849978908daabe3d2a45f0e758625eedc4bdde30",
+      "local": "evidence/pf-sources.md",
+      "sha256": "09e3e6cb2a089ccd8b3e695c6c578c88a05452d8d3dad4c3f9e918672515673b"
+    },
+    {
+      "path": "docs/map/research/wh-sources.md",
+      "commit": "849978908daabe3d2a45f0e758625eedc4bdde30",
+      "local": "evidence/wh-sources.md",
+      "sha256": "91d13c0b892fe17c91d0ff26007a1137a0047d067a671bcb7611b686aea552d4"
+    }
+  ],
+  "scope": "WH mapping/intel/operations first; cloud optional",
+  "completion": "Planning/review package complete; not independently accepted or implementation-ready",
+  "owner_evidence_entries": 14,
+  "coordinator_review": "MAP-042 corrected by Codex at explicit owner request; original native revision findings retained; no fresh native recheck"
+}

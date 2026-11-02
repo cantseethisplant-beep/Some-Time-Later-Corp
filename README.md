@@ -1,3 +1,9 @@
+# WH blueprint planning package — complete for review
+
+Start with the [WH blueprint guide](docs/map/WH-BLUEPRINT.md). All seven planning stages are published as drafts, including the [corrected consolidated blueprint](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36). The guide links exact revisions, source evidence, build order, tests and the OD-01..14 decision/evidence register. WH mapping/intel/operations is the core; cloud is optional. Completion means the planning package is assembled, not that the app is implemented, independently accepted or build-ready. No drafts were merged.
+
+---
+
 # Current owner direction: wormhole tool first
 
 Read [docs/map/WH-FIRST-BRIEF.md](/docs/map/WH-FIRST-BRIEF.md). The owner clarified that the app is primarily a WH mapping/intel/operations tool; cloud hosting is an addition. That brief takes precedence over older hosting-first descriptions below for new WH tasks. Study Pathfinder and EVE-WHMapper; exclude RIFT. Existing hosting drafts remain unaccepted optional background. Native Hermes may perform the finite WH draft/audit/repair sequence from pinned supplied sources; no automatic acceptance, merge or app implementation. Preserve all free-only, claim, security and request-budget gates.
