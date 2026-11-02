@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 156,
+  "board_revision": 157,
   "updated_on": "2026-11-02",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5050,7 +5050,7 @@
     {
       "id": "MAP-044",
       "title": "Research ESI location, ship, polling and rate-limit contracts",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -5089,7 +5089,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "10p0YubNKNwTWZaiZuGFmALdkcsXvOJT",
+        "worker_id": "hermes-laptop-map-044-auto-20261030",
+        "claimed_at": "2026-11-02T16:00:28.661128+00:00",
+        "last_activity_at": "2026-11-02T16:00:28.661128+00:00",
+        "released_at": null,
+        "branch": "hermes/map-044-auto-20261030",
+        "input_revision": "6e023274d7cb692f36b132d980d5a335d4387897",
+        "run": "eve-blueprint-20261030",
+        "coordinator": "guarded local serial coordinator; no Codex heartbeat"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -6069,6 +6079,12 @@
       "task_id": "MAP-044",
       "date": "2026-11-02T16:00:25.067302+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-044",
+      "date": "2026-11-02T16:00:28.661128+00:00",
+      "note": "Local free-only drafting/critique loop; immutable original deadline; no unaccepted inputs."
     }
   ]
 }
