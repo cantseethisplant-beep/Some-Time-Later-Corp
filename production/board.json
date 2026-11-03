@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 180,
+  "board_revision": 181,
   "updated_on": "2026-11-03",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5698,6 +5698,67 @@
       "loop_cycle": 300,
       "loop_area": "build-and-acceptance",
       "loop_key": "owner-whmapper-mods-v2"
+    },
+    {
+      "id": "MAP-051",
+      "title": "Resolve seven v2 blueprint gaps and freeze bounded v3 contracts",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+          "paths": [
+            "docs/map/specs/map-050-01-architecture.md",
+            "docs/map/specs/map-050-02-wh-tools.md",
+            "docs/map/specs/map-050-03-hosting.md",
+            "docs/map/specs/map-050-04-build-and-acceptance.md",
+            "docs/map/specs/map-050-05-oracle-cloudflare.md",
+            "docs/map/specs/map-050-06-integration-sources.md"
+          ],
+          "source_task": "MAP-050",
+          "evidence_type": "Completed released UNACCEPTED planning candidate for owner-authorised reconciliation, not accepted requirements"
+        },
+        {
+          "revision": "1c853a2c267494e8e2d9507214fb2d2ffe8573ed",
+          "paths": [
+            "docs/map/specs/loop-map-049-wh-research.md"
+          ],
+          "evidence_type": "Completed released unaccepted source-qualified research register"
+        },
+        {
+          "revision": "2a493fad9acec9a8e15b619f7943ae8b6e7f30da",
+          "repository": "pfh59/eve-whmapper",
+          "paths": [
+            "src/WHMapper/Services/EveMapper/EveMapperAccessHelper.cs",
+            "src/WHMapper/Models/Db/WHMapAccess.cs",
+            "src/WHMapper/Extensions/DatabaseExtensions.cs"
+          ],
+          "evidence_type": "Pinned primary code; source inspection only"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/map-051-00-start.md",
+        "docs/map/specs/map-051-01-access-and-consent.md",
+        "docs/map/specs/map-051-02-tools-contract.md",
+        "docs/map/specs/map-051-03-data-and-transactions.md",
+        "docs/map/specs/map-051-04-scan-and-future-scope.md",
+        "docs/map/specs/map-051-05-recovery-and-migrations.md",
+        "docs/map/specs/map-051-06-build-and-qualification.md",
+        "docs/map/specs/map-051-07-hosting-readonly.md",
+        "docs/map/specs/map-051-08-review-and-sources.md",
+        "docs/map/specs/map-051-09-contract-schema.md"
+      ],
+      "scope": "Owner asked to finish the seven gaps and reconcile until a usable blueprint without guessed behavior. Produce exact bounded P0 Tools and optional read-only Hosting contracts, access/consent/provenance/data/transactions/recovery/migration/API/fixtures, explicit later scope, acceptance gates and source provenance. Coordinator-authored documents; no native inference, implementation, deployment, account changes, purchase, server access, acceptance or merge. Select and disclose planning policies; never invent runtime/environment facts.",
+      "acceptance": [
+        "Every R01..R07 has a concrete disposition, specification and observable future checks.",
+        "Normative operations, schema, examples, state/permission/recovery behavior and release scope agree; targeted consistency checks and revision-bound packaging.",
+        "Runtime/component/account/licence/independent acceptance gates remain truthful; no general audit loop or paid calls."
+      ],
+      "external_research_required": true,
+      "runtime_tests_required": false,
+      "accepted_revision": null,
+      "submission": null,
+      "claim": null
     }
   ],
   "backlog": [
@@ -6811,6 +6872,12 @@
       "task_id": "MAP-050",
       "date": "2026-11-03T00:09:04.349062+00:00",
       "note": "Coordinator-authored module blueprint; exact source/output readback; claim released, no native inference, merge or independent acceptance."
+    },
+    {
+      "event": "admitted",
+      "task_id": "MAP-051",
+      "date": "2026-11-03T15:35:13.732522+00:00",
+      "note": "Explicit owner request for bounded seven-gap reconciliation; no native worker restart."
     }
   ]
 }
