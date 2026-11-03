@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 181,
+  "board_revision": 182,
   "updated_on": "2026-11-03",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5702,7 +5702,7 @@
     {
       "id": "MAP-051",
       "title": "Resolve seven v2 blueprint gaps and freeze bounded v3 contracts",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -5758,7 +5758,17 @@
       "runtime_tests_required": false,
       "accepted_revision": null,
       "submission": null,
-      "claim": null
+      "claim": {
+        "token": "kFqHEASbR1YVkIBJj5VNAdDTNAJa2Eh0",
+        "worker_id": "codex-blueprint-v3-20261103",
+        "claimed_at": "2026-11-03T15:35:15.984702+00:00",
+        "last_activity_at": "2026-11-03T15:35:15.984702+00:00",
+        "released_at": null,
+        "branch": "hermes/map-051-blueprint-v3",
+        "input_revision": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+        "run": "codex-document-reconciliation-20261103",
+        "coordinator": "Explicit owner-requested Codex document work; not native Hermes"
+      }
     }
   ],
   "backlog": [
@@ -6878,6 +6888,12 @@
       "task_id": "MAP-051",
       "date": "2026-11-03T15:35:13.732522+00:00",
       "note": "Explicit owner request for bounded seven-gap reconciliation; no native worker restart."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-051",
+      "date": "2026-11-03T15:35:15.984702+00:00",
+      "note": "Exclusive Codex contract reconciliation; no app code or native inference."
     }
   ]
 }
