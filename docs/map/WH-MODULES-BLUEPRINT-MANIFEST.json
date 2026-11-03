@@ -1,0 +1,286 @@
+{
+  "schema_version": 2,
+  "phase": "WHMapper two-module proposed build blueprint",
+  "base_repo": "pfh59/eve-whmapper",
+  "base_commit": "2a493fad9acec9a8e15b619f7943ae8b6e7f30da",
+  "publication": {
+    "task_id": "MAP-050",
+    "pr_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44",
+    "output_commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+    "status": "submitted_for_review",
+    "native_hermes": false,
+    "author_origin": "codex-coordinator",
+    "accepted": false,
+    "files": [
+      {
+        "name": "01-ARCHITECTURE.md",
+        "path": "docs/map/specs/map-050-01-architecture.md",
+        "sha256": "b6ee2a129d295f42b4acb34a2a04270aeeb0b90b4e388503b499450b22b97ab9"
+      },
+      {
+        "name": "02-WH-TOOLS.md",
+        "path": "docs/map/specs/map-050-02-wh-tools.md",
+        "sha256": "3b0ab333c9cbecbeab916d8685f9cf970cf2a1618abcf205fba0f2bef1b783b9"
+      },
+      {
+        "name": "03-HOSTING.md",
+        "path": "docs/map/specs/map-050-03-hosting.md",
+        "sha256": "592a84bb697051562a5eb260d688bda1821fbe088b408c8f36b7adab6d0f085e"
+      },
+      {
+        "name": "04-BUILD-AND-ACCEPTANCE.md",
+        "path": "docs/map/specs/map-050-04-build-and-acceptance.md",
+        "sha256": "7e0334923e8f5b420f1456cf08d951c0e4b706dff1608799b38219e7fbfdf568"
+      },
+      {
+        "name": "05-ORACLE-CLOUDFLARE.md",
+        "path": "docs/map/specs/map-050-05-oracle-cloudflare.md",
+        "sha256": "999ad93bdc04ba99f6d28a9c681b43510a0e1d322ac335400c6f2c69b33c5e00"
+      },
+      {
+        "name": "06-INTEGRATION-SOURCES.md",
+        "path": "docs/map/specs/map-050-06-integration-sources.md",
+        "sha256": "4471e4c159253b02fbf5ce01f277c3a6ae6e1d399f90edeba09398489ca73b6e"
+      }
+    ],
+    "inputs": [
+      {
+        "revision": "6e023274d7cb692f36b132d980d5a335d4387897",
+        "paths": [
+          "docs/map/specs/loop-map-042-wh-design.md"
+        ],
+        "evidence_type": "Historical completed unaccepted candidate; owner now favours two modules instead of new-app-first"
+      },
+      {
+        "revision": "1c853a2c267494e8e2d9507214fb2d2ffe8573ed",
+        "paths": [
+          "docs/map/specs/loop-map-049-wh-research.md"
+        ],
+        "source_task": "MAP-049",
+        "evidence_type": "Completed research register, Codex-normalized; source claims/proposals, not accepted facts or runtime evidence"
+      },
+      {
+        "revision": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+        "paths": [
+          "docs/map/research/NEXT-SOURCE-SNAPSHOT.json",
+          "docs/map/research/next-auth-sources.md",
+          "docs/map/research/next-esi-sources.md",
+          "docs/map/research/next-dependencies-sources.md",
+          "docs/map/research/next-access-sources.md",
+          "docs/map/research/next-observations-sources.md",
+          "docs/map/research/next-options-sources.md"
+        ],
+        "evidence_type": "Pinned primary-source/HTTP evidence with licence notices; not performed implementation tests"
+      },
+      {
+        "revision": "9ef8585addc52d9a42ed8997f7d5cdddad5cac55",
+        "paths": [
+          "docs/map/research/WHMAPPER-MODULE-INTEGRATION-SOURCES.md",
+          "docs/map/research/ORACLE-CLOUDFLARE-OPTION.md"
+        ],
+        "evidence_type": "Coordinator-inspected upstream registration/models and dated provider documentation; conditional deployment proposal"
+      }
+    ],
+    "checks": [
+      "Six documents present; base/integration/module/deployment scope explicit",
+      "All 9 build steps, 16 checks, 9 requirements and Tools/Hosting operation IDs defined and cross-references resolve",
+      "All OD/E evidence references resolve to the retained registers",
+      "Two JSON requests parse; mutation envelopes include idempotency and core IDs are integers/module IDs UUIDs",
+      "Nullable core-instance and lack of demonstrated plugin ABI are explicit",
+      "Cloud resources remain conditional; no app/cloud implementation or acceptance claimed"
+    ]
+  },
+  "modules": [
+    "wh-tools",
+    "hosting"
+  ],
+  "hosting_optional": true,
+  "oracle_cloudflare": "conditional pilot option, not provisioned/qualified",
+  "accepted": false,
+  "runtime_verified": false,
+  "implemented": false,
+  "server_accessed": false,
+  "files": [
+    {
+      "local": "blueprint/01-ARCHITECTURE.md",
+      "path": "docs/map/specs/map-050-01-architecture.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "b6ee2a129d295f42b4acb34a2a04270aeeb0b90b4e388503b499450b22b97ab9",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "blueprint/02-WH-TOOLS.md",
+      "path": "docs/map/specs/map-050-02-wh-tools.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "3b0ab333c9cbecbeab916d8685f9cf970cf2a1618abcf205fba0f2bef1b783b9",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "blueprint/03-HOSTING.md",
+      "path": "docs/map/specs/map-050-03-hosting.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "592a84bb697051562a5eb260d688bda1821fbe088b408c8f36b7adab6d0f085e",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "blueprint/04-BUILD-AND-ACCEPTANCE.md",
+      "path": "docs/map/specs/map-050-04-build-and-acceptance.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "7e0334923e8f5b420f1456cf08d951c0e4b706dff1608799b38219e7fbfdf568",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "blueprint/05-ORACLE-CLOUDFLARE.md",
+      "path": "docs/map/specs/map-050-05-oracle-cloudflare.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "999ad93bdc04ba99f6d28a9c681b43510a0e1d322ac335400c6f2c69b33c5e00",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "blueprint/06-INTEGRATION-SOURCES.md",
+      "path": "docs/map/specs/map-050-06-integration-sources.md",
+      "commit": "1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e",
+      "sha256": "4471e4c159253b02fbf5ce01f277c3a6ae6e1d399f90edeba09398489ca73b6e",
+      "kind": "coordinator-authored proposed blueprint",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44"
+    },
+    {
+      "local": "research/reports/MAP-043.md",
+      "path": "docs/map/specs/loop-map-043-wh-research.md",
+      "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+      "sha256": "5fa1e151ccf4750311dc71b92314f9559747fe8fe6916f8758e6d35b57dc3c4d",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+    },
+    {
+      "local": "research/reports/MAP-044.md",
+      "path": "docs/map/specs/loop-map-044-wh-research.md",
+      "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+      "sha256": "17402f35128270b099d801b8842dfcd00eaba5edc1fb23f49934863a2cc507ad",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+    },
+    {
+      "local": "research/reports/MAP-045.md",
+      "path": "docs/map/specs/loop-map-045-wh-research.md",
+      "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+      "sha256": "f3246b008260de76390a418618dca63d28bf436aa8b2b35cd490611288000e14",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+    },
+    {
+      "local": "research/reports/MAP-046.md",
+      "path": "docs/map/specs/loop-map-046-wh-research.md",
+      "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+      "sha256": "21080d7df1fb2a689d72a0349dea1f3f9da4ac5c3556889d9f7deca786d9cac8",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+    },
+    {
+      "local": "research/reports/MAP-047.md",
+      "path": "docs/map/specs/loop-map-047-wh-research.md",
+      "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+      "sha256": "e6ca24bfa0e4939ac951a26e3ca408c157ecc617201674a6cf1929e92cad4785",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+    },
+    {
+      "local": "research/reports/MAP-048.md",
+      "path": "docs/map/specs/loop-map-048-wh-research.md",
+      "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+      "sha256": "9494aeb9f2b1fd71e9f53de6f274244762e75c5b7f7b94585a3b70cd4413e2af",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+    },
+    {
+      "local": "research/reports/MAP-049.md",
+      "path": "docs/map/specs/loop-map-049-wh-research.md",
+      "commit": "1c853a2c267494e8e2d9507214fb2d2ffe8573ed",
+      "sha256": "65dfaf7699bb67bc1832ff10453b16eaa155edf70893849ec7b76f78b274f854",
+      "kind": "unaccepted research",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/43"
+    },
+    {
+      "local": "research/sources/auth.md",
+      "path": "docs/map/research/next-auth-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "23d6d694b05429d6d0a795501aa242b3931b1c36bad78cb8b27f83f2db96f261",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/esi.md",
+      "path": "docs/map/research/next-esi-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "9167213aa25c9a7b8fd30da83aa320752474e2c11f6028f3c30e07fc4c46ea6f",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/dependencies.md",
+      "path": "docs/map/research/next-dependencies-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "a916f70adb0e8304fc112f77238c750dfe8024eae274537610fe442495c02f35",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/access.md",
+      "path": "docs/map/research/next-access-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "e3a3a3de1da674817ed1c991b94fa71976b1e3e5a1bab5d97400f05efc1537f5",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/observations.md",
+      "path": "docs/map/research/next-observations-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "186868e60ebac891c0e9b9797510cc380ec0abe9f2fdf400580e497bd62ffe82",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/options.md",
+      "path": "docs/map/research/next-options-sources.md",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "41ceed47c29f6853c5bfbff677d3946b6aa8b748db75283a6136362e9bf59ed0",
+      "kind": "pinned primary source packet",
+      "pr": null
+    },
+    {
+      "local": "research/sources/source-snapshot.json",
+      "path": "docs/map/research/NEXT-SOURCE-SNAPSHOT.json",
+      "commit": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+      "sha256": "af265cb688ba8e2081656496da28c24bcb52c48355533e5c525b7a7c25985328",
+      "kind": "primary snapshot inventory",
+      "pr": null
+    },
+    {
+      "local": "research/EVIDENCE-REGISTER.json",
+      "sha256": "4e9b64bc2d38e4475ba5b50cd0bd326bd8e3899826f3c06134040c91ae47874a",
+      "kind": "coordinator-normalized derived register",
+      "derived_from": "1c853a2c267494e8e2d9507214fb2d2ffe8573ed"
+    },
+    {
+      "local": "research/README.md",
+      "sha256": "7cde1386dee3771c2898d289a5e30b0175a47b42b57e36dea7ec74c69c0f8c17",
+      "kind": "reading guide"
+    }
+  ],
+  "document_checks": [
+    "Six documents present; base/integration/module/deployment scope explicit",
+    "All 9 build steps, 16 checks, 9 requirements and Tools/Hosting operation IDs defined and cross-references resolve",
+    "All OD/E evidence references resolve to the retained registers",
+    "Two JSON requests parse; mutation envelopes include idempotency and core IDs are integers/module IDs UUIDs",
+    "Nullable core-instance and lack of demonstrated plugin ABI are explicit",
+    "Cloud resources remain conditional; no app/cloud implementation or acceptance claimed"
+  ],
+  "research_entries": 35,
+  "model_attempts_unchanged": 255
+}

@@ -1,33 +1,27 @@
-# WH blueprint — start here
+# WHMapper + WH Tools + optional Hosting — start here
 
-Completed planning/review candidate. Not accepted, implemented, runtime-tested or certified build-ready.
-Project: Some Time Later Corp / Eve Cloud. Creator: VelesPhylakos. Core: WH mapping/intel/operations; cloud hosting is optional.
+This is the owner-directed v2 planning/build proposal. It favours two mods to EVE-WHMapper rather than the older new-app-first approach. No app or cloud deployment has been built; independent review and the listed implementation/release gates remain.
 
 ## Reading order
 
-1. Read [the corrected consolidated blueprint](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/6e023274d7cb692f36b132d980d5a335d4387897/docs/map/specs/loop-map-042-wh-design.md), especially section 15 (OD-01..OD-14), section 9 (ordered build plan), section 7 (contracts), section 10 (tests/traceability), and section 12 (audit disposition).
-2. Read [the targeted integration audit](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/fa913fc258b0b459e57499220ef31476a6f392bc/docs/map/specs/loop-map-041-wh-audit.md) alongside the final disposition table. Original issues remain auditable; unresolved entries are not silently accepted.
-3. Use the four component documents below for detail. The final blueprint states proposed reconciliations where those independent drafts disagree.
-4. Use [package-manifest.json](WH-BLUEPRINT-MANIFEST.json) for immutable public commits and SHA-256; evidence/ includes the original pinned brief and both source packs with MIT notices. The evidence brief is the historical task-input snapshot, not the later operational recovery policy.
+1. [Architecture and scope](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-01-architecture.md): pinned base, exactly two modules, small maintained bridge, integer core IDs and UUID module records, trust/consent boundaries and OD decisions.
+2. [WH Tools](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-02-wh-tools.md): one useful evidence-stamped observation workflow first; reuse existing mapper features; uncertainty, conflict and sharing controls.
+3. [Hosting](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-03-hosting.md): optional/read-only first, separate owner/operator authority and bounded approvals; no hidden cloud commands or self-destruction.
+4. [Build and acceptance](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-04-build-and-acceptance.md): nine dependency-ordered steps, sixteen focused checks and requirement traceability. These are future checks, not passing app tests.
+5. [Oracle behind Cloudflare](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-05-oracle-cloudflare.md): conditional pilot origin, live account/quota/ARM/proxy/SSO/recovery qualification required. No promise of free guaranteed production capacity.
+6. [Integration sources](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/1fff5e1110d2bbfebed1d96a993aa6e5cfafd71e/docs/map/specs/map-050-06-integration-sources.md) and [completed research](research/RESEARCH-HANDOFF.md): exact source versions, 35 evidence records, limitations and licence notices.
 
-## Package contents
+## What changed
 
-- [1. MAP-036](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/abedc17bddc7f573f434f4dad78969471b9f3c9e/docs/map/specs/loop-map-036-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/32
-- [2. MAP-037](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/fb2bb57a8f28f5362912f6c4a94d5845dbaabd2a/docs/map/specs/loop-map-037-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/33
-- [3. MAP-038](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/d68d560c9f6687f96bf82de8a980b13c385a7f2b/docs/map/specs/loop-map-038-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/30
-- [4. MAP-039](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/556f3f983f9b1d3b2b3acc20853bcfd18c797348/docs/map/specs/loop-map-039-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/31
-- [5. MAP-040](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/3b106a956ed936af87f80ffcc293741ebf9303bc/docs/map/specs/loop-map-040-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/34
-- [6. MAP-041](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/fa913fc258b0b459e57499220ef31476a6f392bc/docs/map/specs/loop-map-041-wh-audit.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/35
-- [7. MAP-042](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/6e023274d7cb692f36b132d980d5a335d4387897/docs/map/specs/loop-map-042-wh-design.md) — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36
+The base is EVE-WHMapper at the manifest's immutable commit. Two separately versioned modules use a compile-time maintained integration patch; a supported hot plugin ABI has not been demonstrated. Core integer IDs remain intact; module records use UUIDs. Hosting stays optional even if Oracle hosts the app. Cloudflare remains the public midpoint; PostgreSQL/Redis remain private. Source facts, proposed policies and runtime evidence remain distinct.
 
-## What the next builder can do
+MAP-049 has a disclosed coordinator correction without native recheck; this v2 blueprint is Codex-authored from the owner's direction and source-reconciled native Hermes research. No native generation/approval is claimed for v2. Original v1 and research history remain available.
 
-Use B00 to record the stack, bootstrap and applicable access/consent choices. Follow B01 → B05 → B02/B03/B04 → B06 → B07 with the explicit prerequisites. Before identity/security prerequisites are resolved, use isolated synthetic fixtures only. Do not use real tokens or player data or deploy a partially protected service.
-Trace each WH-042-R requirement to its build steps and observable tests in section 10. Distinguish checking a specification from running an implementation test. Preserve source notices and verify only the precise upstream/dependency/API/runtime evidence required by the affected step.
-OD-01..14 identify concurrent-edit exception policy; stack; ESI contract/scopes; dependency licence/security review; asset/game-data terms; numerical uncertainty policies; token/revocation implementation; tested restore evidence; handler authorization evidence; initial-owner bootstrap; signature length; database engine; permission defaults; and opt-in/expiry choices. Several are future evidence tasks, not questions the owner can answer by declaration.
-After decisions/evidence are recorded, an independent reviewer must accept a frozen revision before treating the candidate as an agreed build baseline. No app implementation or deployment was performed by this planning run.
+## Next action
 
-## Review provenance
+Review this concrete proposal, then authorise the first implementation milestone if desired. Start with M-B00/M-B01 and an isolated synthetic fixture profile. Do not jump from a document to real cloud/player credentials or automated hosting effects. Before release, produce the exact locks/notices, authorization/consent/proxy/restore evidence, measured capacity and operator account/domain decisions named in the build plan. A future builder can use this package without repeating broad discovery; revalidate only changed or unresolved scoped evidence.
 
-MAP-036 passed a fresh native critic. MAP-037 has a disclosed narrowly checked example-key repair without native recheck. MAP-042 has explicit owner-requested Codex corrections/review without native recheck. All are draft proposals; original native reports and raw hashes are retained in the local worker history and correction details are disclosed in the PRs.
-The run used free-only Hermes routes. Completing this package spent zero further inference requests; original request counters are unchanged. No drafts were merged or independently accepted.
+manifest.json records immutable commits and SHA-256 for all pinned content. Old v1 remains historical; do not treat both designs as simultaneously authoritative. No server was used, no paid fallback or automated task loop remains, and no independent acceptance/merge occurred.
+
+
+[Exact-source manifest](WH-MODULES-BLUEPRINT-MANIFEST.json). Historical [v1 guide](WH-BLUEPRINT-V1.md) remains available; the owner's two-module direction supersedes its new-app-first recommendation.

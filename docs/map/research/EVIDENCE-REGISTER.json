@@ -1,0 +1,710 @@
+{
+  "schema_version": 1,
+  "run": "eve-blueprint-20261030",
+  "accepted": false,
+  "runtime_verified": false,
+  "entries": [
+    {
+      "id": "E01",
+      "claim": "EVE SSO is OAuth 2.0; scopes user-consented; client secret private; redirect URLs must match registration",
+      "source": "S1 docs/services/sso/index.md lines 1-221 (section-level Terms citation; exact Terms line range not supplied)",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 98b42d5, retrieved 2026-11-02T15:49:02Z",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "vendor doc change",
+      "affected": "OD-03, MAP-042 §11"
+    },
+    {
+      "id": "E02",
+      "claim": "PKCE: 32-byte random verifier, base64url; challenge = SHA256(verifier) base64url no padding, method S256; no client secret; endpoints login.eveonline.com/v2/oauth/{authorize,token}",
+      "source": "S1 snippets/sso/authorization-code-pkce.py lines 1-71",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 98b42d5, retrieved 2026-11-02T15:49:03Z",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "vendor doc change",
+      "affected": "OD-03"
+    },
+    {
+      "id": "E03",
+      "claim": "The supplied JWT sample selects JWKS key by kid/alg; jwt.decode verifies its issuer allowlist and EVE Online audience; the wrapper separately checks this client_id in aud. Metadata cache is 300 seconds in that sample. The sample contains a legacy-looking issuer string; discovery currently names https://login.eveonline.com. These are inspected/documented references, not a tested validator",
+      "source": "S1 validate-jwt-token.py lines 1-86 + index.md",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 98b42d5; snippets retrieved 2026-11-02T15:49:03Z; index.md retrieved 2026-11-02T15:49:02Z",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary + inspected snippet",
+      "contradictions": "Do not use OAuth discovery ID-token/client-auth HS256 fields as the access-token signing policy. Review issuer/key/algorithm policy for the actual token type; no snippet was executed",
+      "invalidation": "doc/key change",
+      "affected": "OD-03, OD-07"
+    },
+    {
+      "id": "E04",
+      "claim": "Refresh token long-lived, usable until user revokes application access; access token time-limited, replaced via refresh",
+      "source": "S1 index.md lines 1-221 pinned; Terms exact line range not supplied — section-level only",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 98b42d5, retrieved 2026-11-02T15:49:02Z",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "vendor policy change",
+      "affected": "OD-03, OD-14"
+    },
+    {
+      "id": "E05",
+      "claim": "OAuth discovery: revocation_endpoint https://login.eveonline.com/v2/oauth/revoke; auth methods client_secret_basic/post/jwt; code challenge S256 only; issuer https://login.eveonline.com",
+      "source": "S4 oauth discovery snapshot sha256 dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572, 813 B, fetched 2026-11-02T15:49:01Z",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-043 at 5b46475c3852fc61de308a8af10426e2625dcb78; no runtime measurement",
+      "status": "inspected-source",
+      "original_native_status": "public metadata snapshot, not called",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "endpoint rotation",
+      "affected": "OD-03, OD-07"
+    },
+    {
+      "id": "E06",
+      "claim": "EVE-WHMapper EveOnlineTokenProvider: in-memory ConcurrentDictionary keyed by AccountId; per-account SemaphoreSlim; IsTokenExpire 5-minute skew margin; refresh via refresh_token grant with Basic auth, rotates refresh token, Expiry = now + ExpiresIn; RevokeToken POSTs token_type_hint=refresh_token, clears cache only on success; no access-token revocation path",
+      "source": "S3 src/WHMapper/Services/EveOAuthProvider/Services/EVEOnlineTokenProvider.cs lines 1-162",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 2a493fad, retrieved 2026-11-02T15:49:03Z",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "Upstream remote refresh-token revocation and local logout/cache invalidation are distinct; failed remote revocation does not prove local logout. See section 4 item 3",
+      "invalidation": "upstream code change",
+      "affected": "OD-07, MAP-042 §11"
+    },
+    {
+      "id": "E07",
+      "claim": "Revocation failure leaves local cache intact: remote revocation ≠ guaranteed local logout; failed revocation leaves local/remote divergence",
+      "source": "S3 same file, lines 1-162",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 2a493fad, retrieved 2026-11-02T15:49:03Z",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "Upstream remote refresh-token revocation and local logout/cache invalidation are distinct; failed remote revocation does not prove local logout. See section 4 item 3",
+      "invalidation": "upstream code change",
+      "affected": "OD-07, OD-09"
+    },
+    {
+      "id": "E08",
+      "claim": "No consent-status API evidenced; player revokes consent at SSO at any time (docs)",
+      "source": "S1 index.md lines 1-221 pinned; Terms exact line range not supplied — section-level only",
+      "source_report": {
+        "task": "MAP-043",
+        "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+        "path": "docs/map/specs/loop-map-043-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+      },
+      "scope": "auth/SSO tokens",
+      "observed": "commit 98b42d5, retrieved 2026-11-02T15:49:02Z",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "Upstream remote refresh-token revocation and local logout/cache invalidation are distinct; failed remote revocation does not prove local logout. See section 4 item 3",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-14"
+    },
+    {
+      "id": "E09",
+      "claim": "Compatibility-date contract: X-Compatibility-Date or query param; oldest available date if unset; minimum bar via dev-blog; changes at 11:00 UTC; new date required for new/changed route params/types/removals",
+      "source": "S1 docs/services/esi/overview.md",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "commit 98b42d5; no per-file receipt timestamp supplied",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "new compatibility date or minimum-threshold change",
+      "affected": "OD-03"
+    },
+    {
+      "id": "E10",
+      "claim": "Snapshot reality: spec_info.version 2026-08-18, title \"EVE SKINR Ingenuity (ESI) - tranquility\"; receipts compatibility-dates sha256 7ac78423fb677a08e0edaac0c8fb71e3a70a6abb1e98071fddc45a4aad61e299 (208 B); openapi.json sha256 9a9a0f4af77216300e960cfd2576c9baac085a8170022e40c928c28622d80fc6 (614,672 B); oauth-authorization-server sha256 dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572 (813 B); fetched 2026-11-02T15:49:01Z",
+      "source": "S4 https://esi.evetech.net/meta/openapi.json?compatibility_date=2026-08-18; SHA-256 9a9a0f4af77216300e960cfd2576c9baac085a8170022e40c928c28622d80fc6; discovery SHA-256 dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00",
+      "status": "inspected-source",
+      "original_native_status": "inspected snapshot",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "re-fetch hash mismatch; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-03"
+    },
+    {
+      "id": "E11",
+      "claim": "Three location-family operations are in the documented char-location group: /characters/{character_id}/location (esi-location.read_location.v1, solar_system_id required, station_id/structure_id optional, event-based age 5s), /characters/{character_id}/online (read_online.v1, online required, age 60s), /characters/{character_id}/ship (read_ship_type.v1, ship_type_id/ship_item_id/ship_name required, TTL-based age 5s). /characters/{character_id}/corporationhistory is unauthenticated, age 86400, with no documented rate-limit extension — not part of char-location. At the documented 2-token cost per successful call, the char-location group (1200 max tokens per 15m window) implies an arithmetic ceiling of roughly 600 successful calls per window per bucket — derived arithmetic, not an upstream promise",
+      "source": "S4 https://esi.evetech.net/meta/openapi.json?compatibility_date=2026-08-18; SHA-256 9a9a0f4af77216300e960cfd2576c9baac085a8170022e40c928c28622d80fc6; discovery SHA-256 dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572; S1 rate-limiting.md at 98b42d5ac69fb9c57fbc688053d6ae48183dbd0d",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00",
+      "status": "inspected-source",
+      "original_native_status": "inspected",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "spec change under new date; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-03, OD-06"
+    },
+    {
+      "id": "E12",
+      "claim": "Rate limiting: floating window per (group, userID); 2XX=2 tokens, 3XX=1, 4XX=5, 5XX=0; headers X-Ratelimit-Remaining etc., Retry-After on 429",
+      "source": "S1 rate-limiting.md",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "commit 98b42d5; no per-file receipt timestamp supplied",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "header/extension change; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-03, OD-06"
+    },
+    {
+      "id": "E13",
+      "claim": "Legacy error limit: 100 non-2xx/3xx/min → 420 on all routes; headers mutually exclusive with bucket headers",
+      "source": "S1 rate-limiting.md",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "commit 98b42d5; no per-file receipt timestamp supplied",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-06"
+    },
+    {
+      "id": "E14",
+      "claim": "Caching: expires/last-modified/ETag; If-None-Match → 304; never poll before expires",
+      "source": "S1 best-practices.md",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "commit 98b42d5; no per-file receipt timestamp supplied",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-06"
+    },
+    {
+      "id": "E15",
+      "claim": "Jump-log: snapshot inventories no /characters/{character_id}/jump-log or equivalent; all_path_names includes /universe/system_jumps and killmails but no character-scoped jump-log. Negative claim limited to this snapshot; absence is not proof of absence from all CCP services",
+      "source": "S4 https://esi.evetech.net/meta/openapi.json?compatibility_date=2026-08-18; SHA-256 9a9a0f4af77216300e960cfd2576c9baac085a8170022e40c928c28622d80fc6; discovery SHA-256 dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572",
+      "source_report": {
+        "task": "MAP-044",
+        "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+        "path": "docs/map/specs/loop-map-044-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+      },
+      "scope": "ESI location/ship polling and rate limits",
+      "observed": "ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00",
+      "status": "inspected-source",
+      "original_native_status": "inspected + snapshot-limited negative",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "new paths under new date; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date",
+      "affected": "OD-03, jump-log requirement"
+    },
+    {
+      "id": "E16",
+      "claim": "Pathfinder composer.json: license MIT; php-64bit >=8.2; ext-pdo/openssl/curl/json/mbstring/ctype/gd/sodium \"*\"; prod deps include fatfree-core 3.9.*, f3-cortex dev-master#commit, f3-sheet 0.4.*, f3-cron 1.3.*, monolog ^3, firebase/php-jwt ^7, cache adapters, react packages; config.audit.ignore [\"PKSA-y2cr-5h3j-g3ys\"]; config.allow-plugins dealerdirect/phpcodesniffer-composer-installer",
+      "source": "S2 composer.json lines 1-80",
+      "source_report": {
+        "task": "MAP-045",
+        "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+        "path": "docs/map/specs/loop-map-045-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+      },
+      "scope": "Pathfinder/EVE-WHMapper dependencies and licences",
+      "observed": "commit 06af7d86, retrieved 2026-11-02T15:49:05.695523Z",
+      "status": "documented-primary",
+      "original_native_status": "documented",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "upstream manifest change",
+      "affected": "OD-04, OD-05"
+    },
+    {
+      "id": "E17",
+      "claim": "composer.lock projection: locked exact versions incl. fatfree-core 3.9.3 (GPL-3.0), f3-cortex dev-master (GPL-3.0), f3-sheet v0.4.3 (GPL-3.0), f3-cron v1.3.0 (GPL-3.0-only), html-to-markdown 5.2.3 (MIT), monolog 3.12.1 (MIT), firebase/php-jwt v7.2.1 (BSD-3-Clause); transitive GPL/LGPL inferred. Packet labels projection \"not independently verified\"; declared SPDX labels not inspected licence files",
+      "source": "S2 composer.lock projection lines 1-744",
+      "source_report": {
+        "task": "MAP-045",
+        "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+        "path": "docs/map/specs/loop-map-045-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+      },
+      "scope": "Pathfinder/EVE-WHMapper dependencies and licences",
+      "observed": "commit 06af7d86, retrieved 2026-11-02T15:49:06.142709Z",
+      "status": "inspected-source",
+      "original_native_status": "inspected, unverified",
+      "contradictions": "MAP-048 says the lockfile is absent from its options packet; MAP-045 separately supplies a lock projection. Batch-wide exact package metadata is available, but individual licences and legal compatibility remain unchecked",
+      "invalidation": "lock hash mismatch or supplied lockfile difference",
+      "affected": "OD-04"
+    },
+    {
+      "id": "E18",
+      "claim": "EVE-WHMapper WHMapper.csproj: net10.0; EF Core 10.*, Npgsql 10.*, Npgsql.EntityFrameworkCore.PostgreSQL 10.* → PostgreSQL evidenced; MudBlazor 9.9.0; Redis cache/dataprotection 10.*; wh-effects.json EmbeddedResource; global.json requests SDK 10.0.100 with rollForward=latestMinor; the resolved SDK is not proven by that file alone. No .NET lock supplied",
+      "source": "S3 WHMapper.csproj lines 1-51; S3 src/global.json at 2a493fad9acec9a8e15b619f7943ae8b6e7f30da",
+      "source_report": {
+        "task": "MAP-045",
+        "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+        "path": "docs/map/specs/loop-map-045-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+      },
+      "scope": "Pathfinder/EVE-WHMapper dependencies and licences",
+      "observed": "commit 2a493fad, retrieved 2026-11-02T15:49:06.542909Z",
+      "status": "documented-primary",
+      "original_native_status": "documented",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "upstream csproj change",
+      "affected": "OD-04, OD-12"
+    },
+    {
+      "id": "E19",
+      "claim": "Root MIT notices ×3 (esi-docs CCP hf 2015; Pathfinder Mark Friedrich 2017; WHMapper pfh59 2023): each covers its own repository only. esi-docs docs/resources/license.md: developer agreement must be signed before third-party apps; agreement https://developers.eveonline.com/license-agreement, acceptance status not established for the owner; no acceptance performed by this run, no commercial/ISK model approved",
+      "source": "S1 license.md lines 1-3 + root LICENSE texts",
+      "source_report": {
+        "task": "MAP-045",
+        "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+        "path": "docs/map/specs/loop-map-045-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+      },
+      "scope": "Pathfinder/EVE-WHMapper dependencies and licences",
+      "observed": "license.md retrieved 2026-11-02T15:49:07.347027Z; root LICENSE texts quoted inline, no separate fetch receipt",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "licence change / agreement review",
+      "affected": "OD-05"
+    },
+    {
+      "id": "E20",
+      "claim": "Root MIT does not settle transitive licences, assets (favicon/logo, wh-effects.json), EVE game data, ESI terms, CCP agreement",
+      "source": "MAP-045 §3.5 framing",
+      "source_report": {
+        "task": "MAP-045",
+        "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+        "path": "docs/map/specs/loop-map-045-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+      },
+      "scope": "Pathfinder/EVE-WHMapper dependencies and licences",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-045 at 7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d; no runtime measurement",
+      "status": "proposed",
+      "original_native_status": "proposed framing",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-04, OD-05"
+    },
+    {
+      "id": "E21",
+      "claim": "EveMapperRequirementHandlerBase: NameIdentifier must parse as int; client_uid cookie client-supplied, not trusted alone; primary-account path via GetAccountsAsync/GetPrimaryAccountAsync; null-primaryAccount falls through to direct authenticated-character authorization (no return in null branch); no try/catch around IsAuthorizedAsync; helper exceptions abort request",
+      "source": "S3 Services/EveMapper/AuthorizationPolicies/EveMapperRequirementHandlerBase.cs lines 1-65",
+      "source_report": {
+        "task": "MAP-046",
+        "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+        "path": "docs/map/specs/loop-map-046-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+      },
+      "scope": "map access/bootstrap/membership",
+      "observed": "commit 2a493fad, retrieved 2026-11-02 between 15:49:07 and 15:49:09 UTC",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "supplied helper implementation differing",
+      "affected": "OD-09, OD-10"
+    },
+    {
+      "id": "E22",
+      "claim": "EveMapperAccessHandler / EveMapperAdminHandler (21 lines each): thin delegates to IEveMapperAccessHelper.IsEveMapperUserAccessAuthorized / IsEveMapperAdminAccessAuthorized; helper bodies, policy registration, endpoint mapping absent",
+      "source": "S3 EveMapperAccessHandler.cs lines 1-21; EveMapperAdminHandler.cs lines 1-21",
+      "source_report": {
+        "task": "MAP-046",
+        "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+        "path": "docs/map/specs/loop-map-046-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+      },
+      "scope": "map access/bootstrap/membership",
+      "observed": "commit 2a493fad, retrieved 2026-11-02 between 15:49:07 and 15:49:09 UTC",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-09"
+    },
+    {
+      "id": "E23",
+      "claim": "WHMapAccess: grant row Id/WHMapId/EveEntityId/EveEntityName/EveEntity/GrantedAt; comment: no entries ⇒ all instance members; ≥1 entry ⇒ explicit grants only. Upstream permissive default; enforcement query/middleware not supplied",
+      "source": "S3 Models/Db/WHMapAccess.cs lines 1-47",
+      "source_report": {
+        "task": "MAP-046",
+        "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+        "path": "docs/map/specs/loop-map-046-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+      },
+      "scope": "map access/bootstrap/membership",
+      "observed": "commit 2a493fad, retrieved 2026-11-02 between 15:49:07 and 15:49:09 UTC",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source (model + comment only)",
+      "contradictions": "Upstream empty-list permissiveness differs from the blueprint proposed explicit-grant default; this is a policy choice, not evidence that enforcement has been tested",
+      "invalidation": "enforcement implementation reading rows differently",
+      "affected": "OD-13, MAP-042 §5 R06"
+    },
+    {
+      "id": "E24",
+      "claim": "InstanceRegistrationHelper: requires authenticated primary account; owner character/corporation/alliance; corporation requires CorporationId>0, alliance AllianceId>0; creation lock and CanRegisterAsync (one instance per owner entity); creating character id/name recorded. Tests mock all dependencies; nothing executed",
+      "source": "S3 Services/EveMapper/InstanceRegistrationHelper.cs lines 1-119",
+      "source_report": {
+        "task": "MAP-046",
+        "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+        "path": "docs/map/specs/loop-map-046-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+      },
+      "scope": "map access/bootstrap/membership",
+      "observed": "commit 2a493fad, retrieved 2026-11-02 between 15:49:07 and 15:49:09 UTC",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-10"
+    },
+    {
+      "id": "E25",
+      "claim": "No first-owner seed or initial-admin designation visible; cache invalidation on grant revocation/membership change/logout absent from pack",
+      "source": "MAP-046 §3.3/§3.6 gap",
+      "source_report": {
+        "task": "MAP-046",
+        "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+        "path": "docs/map/specs/loop-map-046-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+      },
+      "scope": "map access/bootstrap/membership",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-046 at d30912f7966fe966e1db29789d16452f7ec33474; no runtime measurement",
+      "status": "unresolved",
+      "original_native_status": "unresolved",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-10, OD-07, OD-09"
+    },
+    {
+      "id": "E26",
+      "claim": "WHSignature: Name StringLength(7) \"Bad Signature Format\"; Group default \"Unknow\"; Type optional; HasSameContent compares Name/Group/Type ignoring audit fields; IsIdentified = Group != Unknow and Type non-empty (\"probed to 100%\"). Upstream constraint only; MAP-042 OD-11 leaves candidate max-length undecided",
+      "source": "S3 Models/Db/WHSignature.cs lines 1-112",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "commit 2a493fad; no per-file retrieval timestamp supplied in packet",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source (upstream constraint, not mandate)",
+      "contradictions": "Upstream constraints/test fixtures are not authoritative universal game rules. Candidate policy may inherit the selected base constraint; do not claim these tests were executed",
+      "invalidation": "upstream change or owner adoption",
+      "affected": "OD-11, MAP-042 §5 R02 note"
+    },
+    {
+      "id": "E27",
+      "claim": "Import fixtures: SCAN rows IGU-360 unresolved 0,0% / WAM-436 Wormhole Unstable Wormhole 100,0%; assertions: unchanged → 0 created/changed; partial 42,5% → group set, 0 fully-scanned; decimal separators 100,0%/100.0%/100.0 % all fully scanned. Fixtures unexecuted here; not a CCP scan-format spec",
+      "source": "S3 src/WHMapper.Tests/WHHelper/WHSignatureHelperImportTests.cs lines 1-114",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "commit 2a493fad; no per-file retrieval timestamp supplied",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source fixtures (assertions not executed)",
+      "contradictions": "Upstream constraints/test fixtures are not authoritative universal game rules. Candidate policy may inherit the selected base constraint; do not claim these tests were executed",
+      "invalidation": "test/behaviour change",
+      "affected": "OD-11"
+    },
+    {
+      "id": "E28",
+      "claim": "Pathfinder ConnectionModel: nominalLifespan Schema::DT_INT default null, no unit; JUMP_MASS_TYPES WhJumpMassS/M/L/Xl; JUMP_MASS_BUCKETS descending 1,000,000,000→Xl, 375,000,000→L, 62,000,000→M, 5,000→S (comment: matches init.js Init.wormholeSizes, not supplied); jumpMassTypeFromMass kg input; defaultMassFromEndpoints C13→small C1→medium, most restrictive wins; applyMassFromWormholeTypeId reads local Universe TypeModel, groupId == ESI_GROUP_WORMHOLE_ID (value not supplied); ConnectionLog shipMass logged. All are implementation constants, not authoritative CCP rules",
+      "source": "S2 app/Model/Pathfinder/ConnectionModel.php complete 647 lines",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "commit 06af7d86; no per-file retrieval timestamp supplied",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "upstream change",
+      "affected": "OD-06, MAP-042 WH-F14"
+    },
+    {
+      "id": "E29",
+      "claim": "WHSystemLink: EndOfLifeStatus Normal, Size Large, MassStatus Normal; JumpHistory collection (WHJumpLog class referenced, file absent)",
+      "source": "S3 Models/Db/WHSystemLink.cs lines 1-48",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "commit 2a493fad; no per-file retrieval timestamp supplied",
+      "status": "inspected-source",
+      "original_native_status": "inspected-source",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-06"
+    },
+    {
+      "id": "E30",
+      "claim": "SDE access: static data changes only with game updates; latest at developers.eveonline.com/static-data/; JSON Lines or YAML; latest.jsonl record key sde gives build number; data zips eve-online-static-data-<build>-<variant>.zip; changes/<build>.jsonl; latest-jsonl.zip/latest-yaml.zip redirect; ETag/Last-Modified supported, non-static cached 5 minutes. No build number, zip or SDE content fetched",
+      "source": "S1 docs/services/static-data/index.md lines 1-60",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "commit 98b42d5; receipt sha256 e5ae49a7910c59c95d4075c5a5808658bd8f47c164b400bbc7197d8d423a75e1, etag \"c1fd1e5af7d67ea4451079101b5b6596145a7ba02edb938a9132b6d37c964657\"; no per-file retrieval timestamp supplied",
+      "status": "documented-primary",
+      "original_native_status": "documented-primary instruction",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "esi-docs change",
+      "affected": "OD-06, mass/life data sourcing"
+    },
+    {
+      "id": "E31",
+      "claim": "WHJumpLog jump-evidence fields (pilot, ship, mass, jump date) pinned by MAP-042 §4 but absent from next-observations-sources.md",
+      "source": "MAP-047 §2 absence note",
+      "source_report": {
+        "task": "MAP-047",
+        "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+        "path": "docs/map/specs/loop-map-047-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+      },
+      "scope": "signature/mass/observation boundaries",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-047 at d23a249231ca47e97f38889c06da78bb5a8ff599; no runtime measurement",
+      "status": "unresolved",
+      "original_native_status": "unavailable evidence",
+      "contradictions": "This is a packet-local omission: earlier MAP-042 points to a pinned WHJumpLog source. It is not proof that the file or prior evidence does not exist",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-06, MAP-042 §5 R04"
+    },
+    {
+      "id": "E32",
+      "claim": "Pathfinder: PHP 8.5 badge, composer >=8.2, ext-sodium; v3.0 breaking changes: DB schema v2 columns on system/connection/map/character + map_group table; ESI tokens plaintext → libsodium crypto_secretbox 32-byte hex key, fails closed if blank; SMTP removed; ini → env; WHITELIST → ALLOWLIST; PKCE default; deployment/migration/backup guidance in external pathfinder-containers, not supplied. README claims unverified",
+      "source": "S2 README.md + composer.json",
+      "source_report": {
+        "task": "MAP-048",
+        "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+        "path": "docs/map/specs/loop-map-048-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+      },
+      "scope": "fork/database options",
+      "observed": "commit 06af7d86; README receipt sha256 1d7c461a1e06cb0425312d1380a34ff994632986f00728130e19c9196f9a1bd1; composer.json retrieved 2026-11-02T15:49:05.695523Z per MAP-045 packet; no README retrieval timestamp in MAP-048 packet",
+      "status": "inspected-source",
+      "original_native_status": "inspected public metadata (claims not verified)",
+      "contradictions": "No additional conflict identified within the supplied material; this does not constitute independent runtime verification",
+      "invalidation": "newer commit",
+      "affected": "OD-02, OD-12"
+    },
+    {
+      "id": "E33",
+      "claim": "EVE-WHMapper: net10.0; EF Core/Npgsql 10.* → PostgreSQL assumption; docker-compose postgres:17-alpine named volume postgres:/data/postgres; redis:8-alpine network-only, no data volume; image ghcr.io/pfh59/eve-whmapper:latest; placeholder EveSSO__ClientId/Secret. README claims (multi-account, per-map access, auto ESI tracking, route planner, jump module, public instance whmapper.ovh) unverified",
+      "source": "S3 WHMapper.csproj + deploy/docker/eve-whmapper/docker-compose.yml + README.md",
+      "source_report": {
+        "task": "MAP-048",
+        "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+        "path": "docs/map/specs/loop-map-048-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+      },
+      "scope": "fork/database options",
+      "observed": "commit 2a493fad; csproj retrieved 2026-11-02T15:49:06.542909Z per MAP-045 packet; README/docker-compose receipts given in MAP-048 packet, no retrieval timestamps",
+      "status": "inspected-source",
+      "original_native_status": "inspected public metadata",
+      "contradictions": "PostgreSQL is evidenced for the WHMapper option; this does not name Pathfinder's engine or establish that any deployment/restore was tested",
+      "invalidation": "newer commit or supplied lockfile",
+      "affected": "OD-02, OD-12"
+    },
+    {
+      "id": "E34",
+      "claim": "New implementation: zero code evidence; option C is unevidenced, not a demonstrated shortcut; borrowings (signature dedupe, per-map access, ESI SSO/PKCE, encrypted-token-at-rest pattern, map isolation) are suggestions only",
+      "source": "MAP-048 §5 + MAP-042 §3/§11",
+      "source_report": {
+        "task": "MAP-048",
+        "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+        "path": "docs/map/specs/loop-map-048-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+      },
+      "scope": "fork/database options",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-048 at d5299f396d5878ca6b436aa49dede05b11b4f8dd; no runtime measurement",
+      "status": "proposed",
+      "original_native_status": "proposed",
+      "contradictions": "Absence of new-implementation code does not establish that new code is cheaper or faster than extending an existing mapper",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-02"
+    },
+    {
+      "id": "E35",
+      "claim": "Backup/restore: neither packet contains restore-test evidence, row-count comparison, import into empty DB, or credentials/grant non-leakage validation; backup creation distinct from restore verification (MAP-042 §5 R10, §9, §11)",
+      "source": "MAP-048 §7 + MAP-042 §11",
+      "source_report": {
+        "task": "MAP-048",
+        "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+        "path": "docs/map/specs/loop-map-048-wh-research.md",
+        "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+      },
+      "scope": "fork/database options",
+      "observed": "Not directly observed; synthesis/gap recorded in MAP-048 at d5299f396d5878ca6b436aa49dede05b11b4f8dd; no runtime measurement",
+      "status": "unresolved",
+      "original_native_status": "proposed distinction / missing evidence",
+      "contradictions": "Writing a restore plan or producing a backup/checksum does not supply executed restore evidence",
+      "invalidation": "Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only",
+      "affected": "OD-08"
+    }
+  ],
+  "source_reports": [
+    {
+      "task": "MAP-043",
+      "commit": "5b46475c3852fc61de308a8af10426e2625dcb78",
+      "path": "docs/map/specs/loop-map-043-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/37"
+    },
+    {
+      "task": "MAP-044",
+      "commit": "6b5f1853fa1f65509a222d6724795dec3f3f5f6f",
+      "path": "docs/map/specs/loop-map-044-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/38"
+    },
+    {
+      "task": "MAP-045",
+      "commit": "7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d",
+      "path": "docs/map/specs/loop-map-045-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/39"
+    },
+    {
+      "task": "MAP-046",
+      "commit": "d30912f7966fe966e1db29789d16452f7ec33474",
+      "path": "docs/map/specs/loop-map-046-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/40"
+    },
+    {
+      "task": "MAP-047",
+      "commit": "d23a249231ca47e97f38889c06da78bb5a8ff599",
+      "path": "docs/map/specs/loop-map-047-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41"
+    },
+    {
+      "task": "MAP-048",
+      "commit": "d5299f396d5878ca6b436aa49dede05b11b4f8dd",
+      "path": "docs/map/specs/loop-map-048-wh-research.md",
+      "pr": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42"
+    }
+  ],
+  "metadata_receipts": [
+    {
+      "url": "https://esi.evetech.net/meta/compatibility-dates",
+      "retrieved_at": "2026-11-02T15:49:01.061611+00:00",
+      "sha256": "7ac78423fb677a08e0edaac0c8fb71e3a70a6abb1e98071fddc45a4aad61e299",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 208
+    },
+    {
+      "url": "https://esi.evetech.net/meta/openapi.json?compatibility_date=2026-08-18",
+      "retrieved_at": "2026-11-02T15:49:01.330345+00:00",
+      "sha256": "9a9a0f4af77216300e960cfd2576c9baac085a8170022e40c928c28622d80fc6",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 614672
+    },
+    {
+      "url": "https://login.eveonline.com/.well-known/oauth-authorization-server",
+      "retrieved_at": "2026-11-02T15:49:01.485329+00:00",
+      "sha256": "dc04adbd7e6c74e1e6c3e50efa20a0bd7814bef66a04ec6526f8ce3fe16eb572",
+      "etag": null,
+      "last_modified": null,
+      "bytes": 813
+    }
+  ],
+  "checks": [
+    "All 35 evidence IDs present exactly once",
+    "Every entry has claim/source/scope/observed/status/contradictions/invalidation/affected fields",
+    "All status values use the four controlled labels; unknown evidence remains unresolved",
+    "All six source reports have immutable commits and are completed released drafts",
+    "HTTP metadata receipts checked against saved original public-source bytes",
+    "Cross-report lockfile scope, option naming and revocation/issuer distinctions explicitly reconciled"
+  ]
+}

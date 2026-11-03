@@ -1,3 +1,9 @@
+# Current direction: WHMapper with Tools and optional Hosting modules
+
+The owner favours two mods to EVE-WHMapper: WH Tools and optional Hosting, with Oracle Always Free investigated as a backend behind Cloudflare. Read docs/map/WH-BLUEPRINT.md and docs/map/research/RESEARCH-HANDOFF.md. Research handoff MAP-049 is completed as draft PR #43; the owner-directed v2 proposal is draft PR #44, authored/reconciled by Codex from native Hermes research. Preserve the distinction between inspected/documented source, proposed defaults, owner requirements and actual runtime evidence. Core IDs follow the pinned mapper; a supported runtime plugin ABI has not been demonstrated, so the proposed integration uses compile-time modules and a maintained bridge. No implementation/deployment, cloud account change, existing-server use, paid purchase, merge or independent acceptance is authorised merely by these planning records. The completed workers are stopped; do not restart an audit loop without a new owner request.
+
+---
+
 # WH blueprint planning package — complete for review
 
 Start with the [WH blueprint guide](docs/map/WH-BLUEPRINT.md). All seven planning stages are published as drafts, including the [corrected consolidated blueprint](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/36). The guide links exact revisions, source evidence, build order, tests and the OD-01..14 decision/evidence register. WH mapping/intel/operations is the core; cloud is optional. Completion means the planning package is assembled, not that the app is implemented, independently accepted or build-ready. No drafts were merged.
