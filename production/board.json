@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 177,
+  "board_revision": 178,
   "updated_on": "2026-11-03",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5603,6 +5603,74 @@
           }
         }
       ]
+    },
+    {
+      "id": "MAP-050",
+      "title": "Review and publish WHMapper Tools + Hosting blueprint v2",
+      "status": "ready",
+      "depends_on": [],
+      "inputs": [
+        {
+          "revision": "6e023274d7cb692f36b132d980d5a335d4387897",
+          "paths": [
+            "docs/map/specs/loop-map-042-wh-design.md"
+          ],
+          "evidence_type": "Historical completed unaccepted candidate; owner now favours two modules instead of new-app-first"
+        },
+        {
+          "revision": "1c853a2c267494e8e2d9507214fb2d2ffe8573ed",
+          "paths": [
+            "docs/map/specs/loop-map-049-wh-research.md"
+          ],
+          "source_task": "MAP-049",
+          "evidence_type": "Completed research register, Codex-normalized; source claims/proposals, not accepted facts or runtime evidence"
+        },
+        {
+          "revision": "01e3a01b4e4deb9317f304aa2977be8f2a8e6dec",
+          "paths": [
+            "docs/map/research/NEXT-SOURCE-SNAPSHOT.json",
+            "docs/map/research/next-auth-sources.md",
+            "docs/map/research/next-esi-sources.md",
+            "docs/map/research/next-dependencies-sources.md",
+            "docs/map/research/next-access-sources.md",
+            "docs/map/research/next-observations-sources.md",
+            "docs/map/research/next-options-sources.md"
+          ],
+          "evidence_type": "Pinned primary-source/HTTP evidence with licence notices; not performed implementation tests"
+        },
+        {
+          "revision": "9ef8585addc52d9a42ed8997f7d5cdddad5cac55",
+          "paths": [
+            "docs/map/research/WHMAPPER-MODULE-INTEGRATION-SOURCES.md",
+            "docs/map/research/ORACLE-CLOUDFLARE-OPTION.md"
+          ],
+          "evidence_type": "Coordinator-inspected upstream registration/models and dated provider documentation; conditional deployment proposal"
+        }
+      ],
+      "output_paths": [
+        "docs/map/specs/map-050-01-architecture.md",
+        "docs/map/specs/map-050-02-wh-tools.md",
+        "docs/map/specs/map-050-03-hosting.md",
+        "docs/map/specs/map-050-04-build-and-acceptance.md",
+        "docs/map/specs/map-050-05-oracle-cloudflare.md",
+        "docs/map/specs/map-050-06-integration-sources.md"
+      ],
+      "scope": "Owner requested completion and favours two mods to WHMapper, one Tools and one optional Hosting; Oracle Always Free as a backend option behind Cloudflare. Review prepared coordinator documents against completed research/source pins, resolve type/compatibility and cross-reference issues, and publish a concrete proposed build/acceptance package. No app implementation, server/cloud/account changes, purchases, merge, project acceptance or fabricated runtime evidence. This task claim covers exclusive final verification/publication of prepared coordinator drafts, not a claim of native Hermes authorship.",
+      "acceptance": [
+        "Explicit two-module/maintained integration design preserves upstream IDs and states ABI limitations; Hosting optional and authority scoped.",
+        "Provide source/proposal distinctions, typed examples, operation IDs, ordered build steps, requirement/test traceability and conditional Oracle/Cloudflare qualification.",
+        "Exact output readback and immutable source manifest; independent project review pending, no implementation/deployment or accepted-fact claim."
+      ],
+      "external_research_required": false,
+      "runtime_tests_required": false,
+      "claim": null,
+      "submission": null,
+      "accepted_revision": null,
+      "loop_policy": 1,
+      "loop_kind": "whmapper-mods-v2",
+      "loop_cycle": 300,
+      "loop_area": "build-and-acceptance",
+      "loop_key": "owner-whmapper-mods-v2"
     }
   ],
   "backlog": [
@@ -6698,6 +6766,12 @@
       "task_id": "MAP-049",
       "date": "2026-11-03T00:06:26.890163+00:00",
       "note": "Codex coordinator corrected/adjudicated native revision findings; exact output readback; claim released; no native recheck, acceptance or merge."
+    },
+    {
+      "event": "autonomous-follow-up-admitted",
+      "task_id": "MAP-050",
+      "date": "2026-11-03T00:08:41.019043+00:00",
+      "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
     }
   ]
 }
