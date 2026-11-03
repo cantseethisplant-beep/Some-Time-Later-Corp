@@ -39,6 +39,12 @@ Review pending: coordinator review of this evidence register; consolidation into
 - Cross-report lockfile scope, option naming and revocation/issuer distinctions explicitly reconciled
 No fresh native recheck or independent acceptance.
 
+## Final source qualifications
+Qualified SDK declaration versus roll-forward resolution using inspected src/global.json
+Clarified developer-agreement acceptance is unknown for the owner; no acceptance was performed by this run
+Added same-compatibility-date metadata/header invalidation to API evidence
+No new inference or acceptance.
+
 ## Automated screening
 {
   "task_id": "MAP-049",
@@ -60,7 +66,7 @@ No fresh native recheck or independent acceptance.
 {
   "task_id": "MAP-049",
   "reviewer": "Codex coordinator — explicit owner-requested research handoff completion",
-  "at": "2026-11-02T23:53:48.904832+00:00",
+  "at": "2026-11-03T00:06:18.490441+00:00",
   "native_critic_decision": "revise",
   "native_rechecked": false,
   "independent_acceptance": false,
@@ -68,7 +74,10 @@ No fresh native recheck or independent acceptance.
     "Normalized 35 entries to controlled evidence statuses and complete fields without fabricating observations",
     "Added per-entry contradiction/validity notes and explicit cross-report/packet scope",
     "Corrected source attribution for HTTP metadata; clarified access-token versus ID-token/client-auth algorithm metadata",
-    "Reconciled Composer-lock packet scope and per-report option labels; retained original reports and limitations"
+    "Reconciled Composer-lock packet scope and per-report option labels; retained original reports and limitations",
+    "Qualified SDK declaration versus roll-forward resolution using inspected src/global.json",
+    "Clarified developer-agreement acceptance is unknown for the owner; no acceptance was performed by this run",
+    "Added same-compatibility-date metadata/header invalidation to API evidence"
   ],
   "checks": [
     "All 35 evidence IDs present exactly once",
@@ -78,5 +87,5 @@ No fresh native recheck or independent acceptance.
     "HTTP metadata receipts checked against saved original public-source bytes",
     "Cross-report lockfile scope, option naming and revocation/issuer distinctions explicitly reconciled"
   ],
-  "corrected_payload_sha256": "bb84fdaf4ced705fa5213ba511409b5f4c70702e48f4bccc926ccc87f8bb813d"
+  "corrected_payload_sha256": "fbcad0d10e9f749a47fbc5be14a0bf7a836dd8f1df5654a54c8a3b978a50850e"
 }
