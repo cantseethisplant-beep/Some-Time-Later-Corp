@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 178,
+  "board_revision": 179,
   "updated_on": "2026-11-03",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5607,7 +5607,7 @@
     {
       "id": "MAP-050",
       "title": "Review and publish WHMapper Tools + Hosting blueprint v2",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -5663,7 +5663,17 @@
       ],
       "external_research_required": false,
       "runtime_tests_required": false,
-      "claim": null,
+      "claim": {
+        "token": "s2Uv7rsGIlg8BGTXE4UXo8MoOo5fBW9C",
+        "worker_id": "codex-coordinator-map-050",
+        "run": "eve-blueprint-20261030",
+        "claimed_at": "2026-11-03T00:08:43.939558+00:00",
+        "last_activity_at": "2026-11-03T00:08:43.939558+00:00",
+        "released_at": null,
+        "branch": "hermes/map-050-codex-modules-v2",
+        "input_revision": "9ef8585addc52d9a42ed8997f7d5cdddad5cac55",
+        "coordinator": "Explicit owner-requested document reconciliation/publication; no native Hermes generation"
+      },
       "submission": null,
       "accepted_revision": null,
       "loop_policy": 1,
@@ -6772,6 +6782,12 @@
       "task_id": "MAP-050",
       "date": "2026-11-03T00:08:41.019043+00:00",
       "note": "User authorised gap-driven draft loop. Completed unaccepted sources are review material only; no acceptance or technical evidence implied."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-050",
+      "date": "2026-11-03T00:08:43.939558+00:00",
+      "note": "Codex final cross-check/publication of prepared two-module blueprint; no native generation or implementation."
     }
   ]
 }
