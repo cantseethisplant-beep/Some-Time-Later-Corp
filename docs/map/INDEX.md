@@ -1,3 +1,9 @@
+# Current P0 specification v3 — submitted for review
+
+[Use the WH blueprint guide](WH-BLUEPRINT.md) for MAP-051 draft PR #45. Seven v2 review gaps are specified; 152 document/schema/fixture checks pass. Required component/runtime evidence and independent acceptance remain open; this is not repository build-ready completion. Earlier packages listed below are historical scope, not simultaneous P0 requirements.
+
+---
+
 # Build map
 
 **Status: incomplete; no completed-map claim.** This index is integrated by the coordinator after task acceptance. Queue status and ownership live only in [the task board](../../production/board.json).

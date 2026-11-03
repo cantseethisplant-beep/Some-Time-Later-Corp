@@ -1,3 +1,13 @@
+# Latest: bounded WHMapper blueprint v3
+
+https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/45
+
+All seven review gaps have concrete spec dispositions. 152 document/schema/fixture checks passed (47 fixtures, 12 definitions); ten exact-readback published files. Package: WH-BLUEPRINT-V3-REVIEW.zip; SHA-256 032df2c7d207e3229fbf9b36ec51e1703fd832dde95ab343ea3838bb8768ebe7.
+
+Independent acceptance and required baseline/bridge/dependency evidence remain open; Q01..Q25 app qualification NOT_RUN. No listed .NET SDK or Docker here. No app/cloud implementation, server use, paid route, merge or worker restart. Hermes requests unchanged at 255/800. Start at blueprint-v3/00-START.md, then P0-B00..02 in an authorised isolated build environment. Earlier entries below are historical.
+
+---
+
 # Hermes production — resume here
 
 Updated: 2026-11-03T00:12:19.379384+00:00

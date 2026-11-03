@@ -1,0 +1,79 @@
+{
+  "schema_version": 3,
+  "task_id": "MAP-051",
+  "pr_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/45",
+  "output_commit": "58dc0f5d39b88949d5b33e96a7522cfc3f100b37",
+  "files": [
+    {
+      "name": "00-START.md",
+      "path": "docs/map/specs/map-051-00-start.md",
+      "sha256": "09a82737486e0bb03b30524db5d80c6daec44b9b4a2b85919e8071d0f0cf25dd"
+    },
+    {
+      "name": "01-ACCESS-AND-CONSENT.md",
+      "path": "docs/map/specs/map-051-01-access-and-consent.md",
+      "sha256": "0f46831b9ba13bdab04655ff103f467221a8189b98bd57e65b74525e8cbd8ca4"
+    },
+    {
+      "name": "02-TOOLS-CONTRACT.md",
+      "path": "docs/map/specs/map-051-02-tools-contract.md",
+      "sha256": "e4a2a69e06abc9389f87ec7c6a39d4facd2198b1aeb976fadb37e57e428eaf71"
+    },
+    {
+      "name": "03-DATA-AND-TRANSACTIONS.md",
+      "path": "docs/map/specs/map-051-03-data-and-transactions.md",
+      "sha256": "2d9ae6a22e81b647941cd39e2d56e373734195b5c29ce28d238e7a326e97d4b8"
+    },
+    {
+      "name": "04-SCAN-AND-FUTURE-SCOPE.md",
+      "path": "docs/map/specs/map-051-04-scan-and-future-scope.md",
+      "sha256": "63b208ffe9072da0a745975ebcb492868b1b7a74c60e53237d16d1d0e891555b"
+    },
+    {
+      "name": "05-RECOVERY-AND-MIGRATIONS.md",
+      "path": "docs/map/specs/map-051-05-recovery-and-migrations.md",
+      "sha256": "d925abc30854e0a8c91892849d3b2347ef03e2d356461121adfeda2e9a2d8e86"
+    },
+    {
+      "name": "06-BUILD-AND-QUALIFICATION.md",
+      "path": "docs/map/specs/map-051-06-build-and-qualification.md",
+      "sha256": "7186d4c5ae1e53996969c0c9ae952bb000221a53cbc43bc6a5705e89eb345588"
+    },
+    {
+      "name": "07-HOSTING-READONLY.md",
+      "path": "docs/map/specs/map-051-07-hosting-readonly.md",
+      "sha256": "aeb4d50749d4ff97a454228faa5ce4fa1fe1439a13914db99c13fa561b5b7b5c"
+    },
+    {
+      "name": "08-REVIEW-AND-SOURCES.md",
+      "path": "docs/map/specs/map-051-08-review-and-sources.md",
+      "sha256": "685bcce2c93df0b8650e40a2ad11586af3d12c338839cb1c0a992283756fa36b"
+    },
+    {
+      "name": "09-CONTRACT-SCHEMA.md",
+      "path": "docs/map/specs/map-051-09-contract-schema.md",
+      "sha256": "21fe0076e98e3b08ac492c7845996024ccea11c379eae06c94280e50c746b7a9"
+    }
+  ],
+  "base_commit": "2a493fad9acec9a8e15b619f7943ae8b6e7f30da",
+  "checks_passed": 152,
+  "contract_fixtures": 47,
+  "specification_dispositions": "R01..R07 specified",
+  "repository_build_ready": false,
+  "accepted": false,
+  "app_runtime_verified": false,
+  "package": {
+    "zip": "WH-BLUEPRINT-V3-REVIEW.zip",
+    "entries": 34,
+    "sha256": "032df2c7d207e3229fbf9b36ec51e1703fd832dde95ab343ea3838bb8768ebe7",
+    "task_id": "MAP-051",
+    "pr_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/45",
+    "output_commit": "58dc0f5d39b88949d5b33e96a7522cfc3f100b37",
+    "checks_passed": 152,
+    "fixtures": 47,
+    "new_hermes_requests": 0,
+    "model_attempts": 255,
+    "repository_build_ready": false,
+    "app_runtime_verified": false
+  }
+}

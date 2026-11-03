@@ -1,3 +1,11 @@
+# Current specification: bounded WHMapper blueprint v3
+
+Read [the v3 blueprint guide](docs/map/WH-BLUEPRINT.md). MAP-051 draft PR #45 resolves the seven v2 review gaps with exact P0 Tools contracts and optional read-only Hosting. It has 152 specification checks, including 47 contract fixtures; app/component qualification and independent acceptance remain open. Do not interpret checked prose as a tested app or repository build-ready approval. The qualified-baseline next step is P0-B00..02, not a restarted general audit. Preserve the WH-first/public-private boundary, free-only Hermes ledger and stopped workers. No app/cloud build, existing-server access, costs or acceptance is authorised merely by a planning record.
+
+Earlier direction/status sections below are historical context; this v3 guide controls conflicting P0 policy.
+
+---
+
 # Current direction: WHMapper with Tools and optional Hosting modules
 
 The owner favours two mods to EVE-WHMapper: WH Tools and optional Hosting, with Oracle Always Free investigated as a backend behind Cloudflare. Read docs/map/WH-BLUEPRINT.md and docs/map/research/RESEARCH-HANDOFF.md. Research handoff MAP-049 is completed as draft PR #43; the owner-directed v2 proposal is draft PR #44, authored/reconciled by Codex from native Hermes research. Preserve the distinction between inspected/documented source, proposed defaults, owner requirements and actual runtime evidence. Core IDs follow the pinned mapper; a supported runtime plugin ABI has not been demonstrated, so the proposed integration uses compile-time modules and a maintained bridge. No implementation/deployment, cloud account change, existing-server use, paid purchase, merge or independent acceptance is authorised merely by these planning records. The completed workers are stopped; do not restart an audit loop without a new owner request.
