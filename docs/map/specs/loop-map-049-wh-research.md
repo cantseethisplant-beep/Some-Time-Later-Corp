@@ -146,7 +146,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00
 - **Status:** inspected-source
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** re-fetch hash mismatch
+- **Invalidation:** re-fetch hash mismatch; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-03
 
 ### E11
@@ -158,7 +158,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00
 - **Status:** inspected-source
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** spec change under new date
+- **Invalidation:** spec change under new date; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-03, OD-06
 
 ### E12
@@ -170,7 +170,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** commit 98b42d5; no per-file receipt timestamp supplied
 - **Status:** documented-primary
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** header/extension change
+- **Invalidation:** header/extension change; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-03, OD-06
 
 ### E13
@@ -182,7 +182,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** commit 98b42d5; no per-file receipt timestamp supplied
 - **Status:** documented-primary
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only
+- **Invalidation:** Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-06
 
 ### E14
@@ -194,7 +194,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** commit 98b42d5; no per-file receipt timestamp supplied
 - **Status:** documented-primary
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only
+- **Invalidation:** Reassess if the referenced upstream commit, metadata snapshot, implementation, owner decision or actual runtime evidence changes; scope remains this packet only; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-06
 
 ### E15
@@ -206,7 +206,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 - **Observed:** ESI compatibility date 2026-08-18; specification reports 2026-08-18; fetched 2026-11-02T15:49:01.330345+00:00
 - **Status:** inspected-source
 - **Contradictions:** No additional conflict identified within the supplied material; this does not constitute independent runtime verification
-- **Invalidation:** new paths under new date
+- **Invalidation:** new paths under new date; revalidate if actual schema/headers or stored metadata hash changes, even at the same compatibility date
 - **Affected:** OD-03, jump-log requirement
 
 ### E16
@@ -235,8 +235,8 @@ Entries below are normalized coordinator-reviewed research records, not independ
 
 ### E18
 
-- **Claim:** EVE-WHMapper WHMapper.csproj: net10.0; EF Core 10.*, Npgsql 10.*, Npgsql.EntityFrameworkCore.PostgreSQL 10.* → PostgreSQL evidenced; MudBlazor 9.9.0; Redis cache/dataprotection 10.*; wh-effects.json EmbeddedResource; global.json pins SDK 10.0.100. No .NET lock supplied
-- **Source:** S3 WHMapper.csproj lines 1-51
+- **Claim:** EVE-WHMapper WHMapper.csproj: net10.0; EF Core 10.*, Npgsql 10.*, Npgsql.EntityFrameworkCore.PostgreSQL 10.* → PostgreSQL evidenced; MudBlazor 9.9.0; Redis cache/dataprotection 10.*; wh-effects.json EmbeddedResource; global.json requests SDK 10.0.100 with rollForward=latestMinor; the resolved SDK is not proven by that file alone. No .NET lock supplied
+- **Source:** S3 WHMapper.csproj lines 1-51; S3 src/global.json at 2a493fad9acec9a8e15b619f7943ae8b6e7f30da
 - **Source report:** [MAP-045](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d/docs/map/specs/loop-map-045-wh-research.md)
 - **Scope:** Pathfinder/EVE-WHMapper dependencies and licences
 - **Observed:** commit 2a493fad, retrieved 2026-11-02T15:49:06.542909Z
@@ -247,7 +247,7 @@ Entries below are normalized coordinator-reviewed research records, not independ
 
 ### E19
 
-- **Claim:** Root MIT notices ×3 (esi-docs CCP hf 2015; Pathfinder Mark Friedrich 2017; WHMapper pfh59 2023): each covers its own repository only. esi-docs docs/resources/license.md: developer agreement must be signed before third-party apps; agreement https://developers.eveonline.com/license-agreement, unsigned, no commercial/ISK model approved
+- **Claim:** Root MIT notices ×3 (esi-docs CCP hf 2015; Pathfinder Mark Friedrich 2017; WHMapper pfh59 2023): each covers its own repository only. esi-docs docs/resources/license.md: developer agreement must be signed before third-party apps; agreement https://developers.eveonline.com/license-agreement, acceptance status not established for the owner; no acceptance performed by this run, no commercial/ISK model approved
 - **Source:** S1 license.md lines 1-3 + root LICENSE texts
 - **Source report:** [MAP-045](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/7b747f7f57c6c66cc55104e3230fb1f6c8ad5f8d/docs/map/specs/loop-map-045-wh-research.md)
 - **Scope:** Pathfinder/EVE-WHMapper dependencies and licences
