@@ -1,7 +1,7 @@
 # Hermes production — resume here
 
-Updated: 2026-11-02T23:54:06.082715+00:00
-Research handoff complete: all seven research tasks submitted as unaccepted drafts; MAP-049 corrected by Codex with full evidence-field/provenance checks. Blueprint reconciliation now authorised separately; no server used.
+Updated: 2026-11-03T00:12:19.379384+00:00
+Completed research handoff and owner-directed WHMapper Tools/Hosting blueprint v2; Oracle/Cloudflare remains a conditional pilot option. Independent review/build authorisation next; no server or app deployment.
 
 Stop mode: **queue_completion**; current session lease: 2026-11-03T04:53:46.560977+00:00
 Local serial coordinator; no recurring Codex check-ins. Native drafting and automated criticism use only the free allowance.
@@ -58,6 +58,7 @@ Conservative run attempts so far: 255
 - MAP-047: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/41
 - MAP-048: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/42
 - MAP-049: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/43
+- MAP-050: review — https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/44
 
 ## Review handoff
 Read the live board, each draft PR and production/handoffs. Local AUTONOMOUS-HANDOFF.md, PROGRESS.md, outbox native drafts/critic reports, archives and state/processed provide exact checkpoints.
