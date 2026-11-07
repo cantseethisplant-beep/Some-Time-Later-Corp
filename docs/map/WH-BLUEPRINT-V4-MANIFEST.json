@@ -82,8 +82,8 @@
   "server_launched": false,
   "package": {
     "zip": "WH-BLUEPRINT-V4-SERVER-HANDOFF.zip",
-    "entries": 37,
-    "sha256": "4f7335de27f04e2cb97dfc4b0cddd7edd1deb7af9a6a0eebd5b1bd283b67913b",
+    "entries": 38,
+    "sha256": "9025f69c8f36fd1824c255cd552852f6aac2f022f01e4becdd26378d09967bc8",
     "task_id": "MAP-052",
     "pr_url": "https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/46",
     "output_commit": "a3698c314fe6487104f60a8ae94d00120e29ed94",
@@ -93,5 +93,6 @@
     "model_attempts": 255,
     "repository_build_ready": false,
     "app_runtime_verified": false
-  }
+  },
+  "portable_checker": "tools/validate_blueprint.py --package . (Python 3 + jsonschema, no Windows coordinator)"
 }

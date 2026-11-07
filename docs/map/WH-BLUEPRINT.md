@@ -47,7 +47,7 @@ No SDK/Docker installation on the laptop is needed for this phase. Actual server
 
 - Draft: https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/46. Output: `a3698c314fe6487104f60a8ae94d00120e29ed94`.
 - [V4 source/package manifest](WH-BLUEPRINT-V4-MANIFEST.json).
-- Portable artifact: `WH-BLUEPRINT-V4-SERVER-HANDOFF.zip`, 37 allowlisted files, SHA-256 `4f7335de27f04e2cb97dfc4b0cddd7edd1deb7af9a6a0eebd5b1bd283b67913b`; available from the creator.
+- Portable artifact: `WH-BLUEPRINT-V4-SERVER-HANDOFF.zip`, 38 allowlisted files, SHA-256 `9025f69c8f36fd1824c255cd552852f6aac2f022f01e4becdd26378d09967bc8`; available from the creator.
 - [Previous v3 guide](WH-BLUEPRINT-V3.md), [v2 guide](WH-BLUEPRINT-V2.md), [v1 guide](WH-BLUEPRINT-V1.md) are historical.
 - [Source-qualified research](research/RESEARCH-HANDOFF.md) retains original dates/limits; no cloud account eligibility is invented.
 
