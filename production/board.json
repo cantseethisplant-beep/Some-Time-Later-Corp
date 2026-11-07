@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "board_revision": 184,
+  "board_revision": 185,
   "updated_on": "2026-11-07",
   "rules": "docs/PRODUCTION.md",
   "max_active_claims_per_worker": 1,
@@ -5954,7 +5954,7 @@
     {
       "id": "MAP-052",
       "title": "Review gaps and prepare server-AI blueprint v4 handoff",
-      "status": "ready",
+      "status": "claimed",
       "depends_on": [],
       "inputs": [
         {
@@ -6017,7 +6017,17 @@
       "runtime_tests_required": false,
       "accepted_revision": null,
       "submission": null,
-      "claim": null
+      "claim": {
+        "token": "EOTA4l0JyzDT_VmHTpMTT0uW7-rbzEfi",
+        "worker_id": "codex-blueprint-v4-20261107",
+        "claimed_at": "2026-11-07T10:05:42.495487+00:00",
+        "last_activity_at": "2026-11-07T10:05:42.495487+00:00",
+        "released_at": null,
+        "branch": "hermes/map-052-server-blueprint-v4",
+        "input_revision": "58dc0f5d39b88949d5b33e96a7522cfc3f100b37",
+        "run": "codex-document-reconciliation-20261107",
+        "coordinator": "Explicit owner-requested Codex document work; not native Hermes"
+      }
     }
   ],
   "backlog": [
@@ -7155,6 +7165,12 @@
       "task_id": "MAP-052",
       "date": "2026-11-07T10:05:40.369706+00:00",
       "note": "Explicit owner request for bounded seven-gap reconciliation; no native worker restart."
+    },
+    {
+      "event": "claimed",
+      "task_id": "MAP-052",
+      "date": "2026-11-07T10:05:42.495487+00:00",
+      "note": "Exclusive Codex contract reconciliation; no app code or native inference."
     }
   ]
 }
