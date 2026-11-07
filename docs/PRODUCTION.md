@@ -1,6 +1,8 @@
-# Current direction: WHMapper with Tools and optional Hosting modules
+# Current direction: server-AI blueprint handoff v4
 
-The owner favours two mods to EVE-WHMapper: WH Tools and optional Hosting, with Oracle Always Free investigated as a backend behind Cloudflare. Read docs/map/WH-BLUEPRINT.md and docs/map/research/RESEARCH-HANDOFF.md. Research handoff MAP-049 is completed as draft PR #43; the owner-directed v2 proposal is draft PR #44, authored/reconciled by Codex from native Hermes research. Preserve the distinction between inspected/documented source, proposed defaults, owner requirements and actual runtime evidence. Core IDs follow the pinned mapper; a supported runtime plugin ABI has not been demonstrated, so the proposed integration uses compile-time modules and a maintained bridge. No implementation/deployment, cloud account change, existing-server use, paid purchase, merge or independent acceptance is authorised merely by these planning records. The completed workers are stopped; do not restart an audit loop without a new owner request.
+Read [the current blueprint guide](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/main/docs/map/WH-BLUEPRINT.md), MAP-052 draft PR #46. The server AIs are the future builders; the laptop has no required build/runtime/recovery role. V4 has twelve focused gap dispositions, portable intake and a dependency-safe proposed server queue. 188 specification checks pass, including 52 contract fixtures; component/runtime evidence and independent acceptance remain open. No server was contacted/launched by this handoff, no app was built and no cloud provisioned. Use read-only server intake and independent review before admitting implementation tasks under existing authority. Preserve public MAP/private BUILD ownership separation, selected-repo/credential boundaries and free-only inference controls. Do not restart the old laptop Hermes loop or copy its Windows secrets/runtime state to the server.
+
+Earlier status/direction sections below are historical when they conflict with v4.
 
 ---
 

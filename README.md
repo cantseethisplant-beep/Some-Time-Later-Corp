@@ -1,8 +1,8 @@
-# Current specification: bounded WHMapper blueprint v3
+# Current direction: server-AI blueprint handoff v4
 
-Read [the v3 blueprint guide](docs/map/WH-BLUEPRINT.md). MAP-051 draft PR #45 resolves the seven v2 review gaps with exact P0 Tools contracts and optional read-only Hosting. It has 152 specification checks, including 47 contract fixtures; app/component qualification and independent acceptance remain open. Do not interpret checked prose as a tested app or repository build-ready approval. The qualified-baseline next step is P0-B00..02, not a restarted general audit. Preserve the WH-first/public-private boundary, free-only Hermes ledger and stopped workers. No app/cloud build, existing-server access, costs or acceptance is authorised merely by a planning record.
+Read [the current blueprint guide](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/main/docs/map/WH-BLUEPRINT.md), MAP-052 draft PR #46. The server AIs are the future builders; the laptop has no required build/runtime/recovery role. V4 has twelve focused gap dispositions, portable intake and a dependency-safe proposed server queue. 188 specification checks pass, including 52 contract fixtures; component/runtime evidence and independent acceptance remain open. No server was contacted/launched by this handoff, no app was built and no cloud provisioned. Use read-only server intake and independent review before admitting implementation tasks under existing authority. Preserve public MAP/private BUILD ownership separation, selected-repo/credential boundaries and free-only inference controls. Do not restart the old laptop Hermes loop or copy its Windows secrets/runtime state to the server.
 
-Earlier direction/status sections below are historical context; this v3 guide controls conflicting P0 policy.
+Earlier status/direction sections below are historical when they conflict with v4.
 
 ---
 

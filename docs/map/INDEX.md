@@ -1,6 +1,6 @@
-# Current P0 specification v3 — submitted for review
+# Current specification: v4 server-AI handoff
 
-[Use the WH blueprint guide](WH-BLUEPRINT.md) for MAP-051 draft PR #45. Seven v2 review gaps are specified; 152 document/schema/fixture checks pass. Required component/runtime evidence and independent acceptance remain open; this is not repository build-ready completion. Earlier packages listed below are historical scope, not simultaneous P0 requirements.
+[Use the blueprint guide](WH-BLUEPRINT.md) for MAP-052 draft PR #46, the server intake prompt, gap review and planned queue. The server AIs are the future builders; laptop tooling is irrelevant. Twelve gaps have specification dispositions; component/runtime evidence and independent acceptance remain open. No server task was launched. Earlier packages below are historical where conflicting.
 
 ---
 

@@ -1,3 +1,15 @@
+# Latest handoff: server-AI blueprint v4
+
+https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/46
+
+Output a3698c314fe6487104f60a8ae94d00120e29ed94. Twelve gap dispositions, thirteen current documents, 188 document/schema/vector checks (52 contract fixtures). Server intake prompt in blueprint-v4/10-SERVER-AI-HANDOFF.md; gap ledger in 11 and proposed queue in 12. Laptop has no required build/runtime/recovery role. Server environment intake, independent acceptance and actual component/runtime qualification remain open. No server connection/launch, app build/deployment, paid service, merge or new Hermes inference. Old native ledger 255/800 remains stopped.
+
+Package WH-BLUEPRINT-V4-SERVER-HANDOFF.zip; SHA-256 4f7335de27f04e2cb97dfc4b0cddd7edd1deb7af9a6a0eebd5b1bd283b67913b.
+
+Earlier entries below are historical where conflicting.
+
+---
+
 # Latest: bounded WHMapper blueprint v3
 
 https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/45

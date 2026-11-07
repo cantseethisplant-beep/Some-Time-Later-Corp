@@ -1,43 +1,54 @@
-# WHMapper module blueprint v3
+# WHMapper blueprint v4 — handoff for server AIs
 
-Updated 3 November 2026. Creator: VelesPhylakos. Current specification: **MAP-051, draft PR #45**. The owner requested completion of the seven v2 review gaps. This is Codex-authored reconciliation of completed unaccepted Hermes research and pinned sources; no native inference or acceptance is claimed.
+Updated 7 November 2026. Creator: VelesPhylakos. **MAP-052 draft PR #46** is the current server-AI specification candidate. The owner clarified that the server AIs will build later; the laptop is a documentation workspace, with no required build/runtime/recovery role.
 
 ## Start here
 
-[Bounded scope and readiness definitions](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-00-start.md). This v3 governs the selected P0 scope and supersedes contradictory design policy in v2/v1. Research/source evidence remains version-bound.
+1. [Server intake and copy/paste prompt](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-10-server-ai-handoff.md).
+2. [Gap review, corrections and remaining gates](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-11-gaps-and-dispositions.md).
+3. [Finite proposed server queue and ownership rules](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-12-server-work-queue.md).
+4. [Scope and contract reading order](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-00-start.md).
 
-| Document | Purpose |
+V4 supersedes conflicting v3 policy for P0. The build executor, later production origin and independent recovery host are distinct roles; an online laptop is not a dependency. Server identity/tools/credentials/queue are observed there during intake, not guessed from old notes. This document pass did not connect to or launch the server AIs.
+
+## Current documents
+
+| File | Role |
 |---|---|
-| [01-ACCESS-AND-CONSENT.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-01-access-and-consent.md) | Separate read/contribution consent, grant matrix, owner pairing/transfer/recovery |
-| [02-TOOLS-CONTRACT.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-02-tools-contract.md) | Exact HTTP/events, errors/limits, cursor and offline behavior |
-| [03-DATA-AND-TRANSACTIONS.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-03-data-and-transactions.md) | Schema, transactions/idempotency, outbox, deletion and retry-body privacy |
-| [04-SCAN-AND-FUTURE-SCOPE.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-04-scan-and-future-scope.md) | P0 sidecar-only writes and precise later-feature boundaries |
-| [05-RECOVERY-AND-MIGRATIONS.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-05-recovery-and-migrations.md) | Durable key ring, migration ownership/readiness, backup/journal/restore targets |
-| [06-BUILD-AND-QUALIFICATION.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-06-build-and-qualification.md) | Nine build steps, twenty-five future qualification checks, selected release sets |
-| [07-HOSTING-READONLY.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-07-hosting-readonly.md) | Optional metadata ledger, explicit roles/approvals and no provider effects |
-| [08-REVIEW-AND-SOURCES.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-08-review-and-sources.md) | R01..R07 dispositions, required patch inventory and primary source record |
-| [09-CONTRACT-SCHEMA.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/58dc0f5d39b88949d5b33e96a7522cfc3f100b37/docs/map/specs/map-051-09-contract-schema.md) | Twelve JSON schema definitions and forty-seven contract fixtures |
+| [00-START.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-00-start.md) | P0 contract or source/fixture record |
+| [01-ACCESS-AND-CONSENT.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-01-access-and-consent.md) | P0 contract or source/fixture record |
+| [02-TOOLS-CONTRACT.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-02-tools-contract.md) | P0 contract or source/fixture record |
+| [03-DATA-AND-TRANSACTIONS.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-03-data-and-transactions.md) | P0 contract or source/fixture record |
+| [04-SCAN-AND-FUTURE-SCOPE.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-04-scan-and-future-scope.md) | P0 contract or source/fixture record |
+| [05-RECOVERY-AND-MIGRATIONS.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-05-recovery-and-migrations.md) | P0 contract or source/fixture record |
+| [06-BUILD-AND-QUALIFICATION.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-06-build-and-qualification.md) | P0 contract or source/fixture record |
+| [07-HOSTING-READONLY.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-07-hosting-readonly.md) | P0 contract or source/fixture record |
+| [08-REVIEW-AND-SOURCES.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-08-review-and-sources.md) | P0 contract or source/fixture record |
+| [09-CONTRACT-SCHEMA.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-09-contract-schema.md) | P0 contract or source/fixture record |
+| [10-SERVER-AI-HANDOFF.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-10-server-ai-handoff.md) | Server handoff/gap/queue contract |
+| [11-GAPS-AND-DISPOSITIONS.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-11-gaps-and-dispositions.md) | Server handoff/gap/queue contract |
+| [12-SERVER-WORK-QUEUE.md](https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/blob/a3698c314fe6487104f60a8ae94d00120e29ed94/docs/map/specs/map-052-12-server-work-queue.md) | Server handoff/gap/queue contract |
 
-## What is specified
+## Improvements and limits
 
-P0 reuses the pinned WHMapper and adds manual system notes with source/time/age, revisions/conflicts, grants/consent, deletion, invalidations and recovery. Hosting remains a disabled-by-default optional offers/request/approval ledger. It does not deploy anything. Combined scan writes, provenance/corroboration automation, route overlays/export and provider execution are explicitly later scope. Exactly two user-facing modules use a maintained compile-time bridge. Integer core IDs remain unchanged.
+Twelve focused gap dispositions cover laptop assumptions, recovery availability, delete/retry journal ordering, complete lock order, permission-event scope, disabled-module retention, revoking former members, canonical digest/virtual-state fixtures, journal export/checkpoint rules, server ownership/resume/evidence and runtime singleton qualification. V3 findings R01..R07 remain traceable.
 
-Design defaults are explicit, not invented provider facts: contribution consent controls new contributions, reading uses separate permission; prior notes have declared retention; owner recovery is defined; durable keys and off-host deny/delete journaling are required for the selected live profile. The operator must acknowledge actual live-data/availability policy and supply private configuration before live use. Oracle remains a conditional origin behind Cloudflare; current account/region/quota/ARM/domain/backup conditions are checked only for that deployment.
+**188 document/schema/vector checks passed**, including **52 contract fixtures** across **12 definitions** and **4 digest vectors**. Thirteen output files have exact remote readback and an immutable output revision. These are specification checks; required app/component/runtime qualification and independent acceptance remain open. No app build/deployment or fully build-ready claim is made.
 
-## Checks and honest remaining gates
+P0 remains the pinned WHMapper plus the manual system-note workflow and optional record-only Hosting. Later scan/core writes, advanced Tools and provider execution are explicit future scope. A capability worksheet is proposed to map desired WH features to inspected/tested base reuse and remaining additions, so the first slice is not mistaken for the completed long-term product.
 
-The seven review findings now have concrete specification dispositions. **152 document/schema/fixture checks passed**, including **47 valid/invalid contract fixtures** across **12 schema definitions**. Exact UTF-8 output readback verified for all ten files. These are specification checks, not app tests.
+## Next server step
 
-**Repository build-ready completion has not passed.** Independent acceptance and required exact dependency/licence/asset/baseline/bridge evidence remain. This laptop currently has no listed .NET SDK and no Docker command, so no untouched-base compile, app run, migration/security/restore or ARM/capacity qualification is claimed. The twenty-five Q checks are NOT_RUN. No owner policy/account values are fabricated.
+Hand over the intake prompt and package. The server coordinator first verifies hashes and permissions, performs read-only environment intake and independent review, then admits eligible tasks under its existing authority. The eleven SV tasks are PLANNED proposals, not running workers or a live ready queue. No automatic creation of tasks from unfinished results, paid model fallback, quota reset, unrelated server access or blanket audit loop. Future implementation and raw evidence belong in private Eve-Cloud.
 
-Next concrete work is P0-B00..02 in an authorised isolated build environment, not another general research/audit cycle. A failed check revises only the affected contract/evidence. No app/cloud implementation, existing-server access, costs, native worker restart or merge occurred. The Hermes counter remains 255/800; this document work used zero new Hermes calls.
+No SDK/Docker installation on the laptop is needed for this phase. Actual server tooling/architecture/repository access, resolved dependencies/licences, bridge/runtime evidence, independent review and private operator/live policy/recovery/domain/account configuration remain specifically owned gates in document 11. No native Hermes inference was used; the old local worker stays stopped at 255/800.
 
-## Frozen identities and downloads
+## Immutable identity and artifact
 
-- Blueprint draft: https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/45; output commit `58dc0f5d39b88949d5b33e96a7522cfc3f100b37`.
-- [v3 source manifest](WH-BLUEPRINT-V3-MANIFEST.json) records each immutable source path/hash.
-- Offline review artifact: `WH-BLUEPRINT-V3-REVIEW.zip`, 34 allowlisted files, SHA-256 `032df2c7d207e3229fbf9b36ec51e1703fd832dde95ab343ea3838bb8768ebe7` (available from the creator; not uploaded as an arbitrary public binary).
-- [Previous v2 guide](WH-BLUEPRINT-V2.md) and [v1 guide](WH-BLUEPRINT-V1.md) are historical.
-- [Completed research handoff](research/RESEARCH-HANDOFF.md) retains source statuses and limitations.
+- Draft: https://github.com/cantseethisplant-beep/Some-Time-Later-Corp/pull/46. Output: `a3698c314fe6487104f60a8ae94d00120e29ed94`.
+- [V4 source/package manifest](WH-BLUEPRINT-V4-MANIFEST.json).
+- Portable artifact: `WH-BLUEPRINT-V4-SERVER-HANDOFF.zip`, 37 allowlisted files, SHA-256 `4f7335de27f04e2cb97dfc4b0cddd7edd1deb7af9a6a0eebd5b1bd283b67913b`; available from the creator.
+- [Previous v3 guide](WH-BLUEPRINT-V3.md), [v2 guide](WH-BLUEPRINT-V2.md), [v1 guide](WH-BLUEPRINT-V1.md) are historical.
+- [Source-qualified research](research/RESEARCH-HANDOFF.md) retains original dates/limits; no cloud account eligibility is invented.
 
-Submission is not independent acceptance. See [production rules](../PRODUCTION.md) and the live [task board](../../production/board.json).
+Submission remains distinct from independent acceptance. Public MAP task ownership stays in [the board](../../production/board.json); future private BUILD authority is defined in document 12.
